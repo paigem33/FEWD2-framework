@@ -57,6 +57,7 @@ html {
 }
 body {
   font-size: 1em;
+  font-family: 'Raleway', sans-serif;
   line-height: 1.25;
 }
 /*Typography*/
@@ -158,6 +159,17 @@ blockquote {
     }
 }
 /*Link styles*/
+
+a {
+    text-decoration: none;
+    color: #000080;
+}
+a:visited {
+    color: #00004d;
+}
+a:hover {
+    text-decoration: underline;
+}
 
 /*Buttons*/
 
@@ -263,6 +275,22 @@ input {
     }
 }
 /*lists*/
+/*This is just to see the bullets*/
+ul {
+    margin: 25px;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    padding: 3px;
+}
+.listCircle {
+    list-style-type: circle;
+}
+.listBullet {
+    list-style-type: disc;
+}
 
 /*Tables*/
 
