@@ -42,10 +42,12 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
 .column {
     flex: 1;
 }
-.column.colLarge {
+.colLarge {
+     flex: 1;
     flex: 50%;
 }
-.column.colSmall {
+.colSmall {
+     flex: 1;
     flex: 25%;
 }
 .row {
