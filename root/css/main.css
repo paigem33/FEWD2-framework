@@ -5,7 +5,6 @@
 }
 p {
     background-color: indianred;
-    margin: 10px;
 }
 
 /*Resets across browsers*/
@@ -60,6 +59,69 @@ body {
   font-family: 'Raleway', sans-serif;
   line-height: 1.25;
 }
+
+/*NAVIGATION*/
+.nav1-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.nav1-flex .icon {
+    font-size: 30px;
+}
+.mainNav1 {
+    background-color: #f2f2f2;
+    padding: 5px 0;
+    display: none;
+}
+.mainNav1 a {
+    display: block;
+    color: #000000;
+    font-size: 1.25em;
+    text-align: center;
+    padding: 5px;
+}
+.mainNav1 a:visited {
+    color: #000000;
+}
+.mainNav1 a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+.nav1-subMenu {
+    font-size: 1em;
+    display: none;
+}
+@media screen and (min-width: 700px) {
+    .nav1 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav1 .icon {
+        display: none;
+    }
+    .fa-chevron-down {
+        display: none;
+    }
+    .mainNav1 {
+        background-color: #fff;
+        display: block;
+        display: flex;
+        justify-content: space-around;
+    }
+    .mainNav1 li {
+        padding: 5px 20px;
+    }
+    .nav1-subMenu {
+        position: absolute;
+        background-color: #f2f2f2;
+        padding: 5px;
+        margin-top: 5px;
+        display: none;
+    }
+}
+
 /*Typography*/
 /*standard typography*/
 p {
@@ -275,10 +337,7 @@ input {
     }
 }
 /*lists*/
-/*This is just to see the bullets*/
-ul {
-    margin: 25px;
-}
+
 ul {
     list-style-type: none;
 }
