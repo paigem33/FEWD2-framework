@@ -8,21 +8,42 @@ p {
     margin: 10px;
 }
 
-/*Resets across browsers*/
+/*RESETS - Chris_____________________________*/
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
 * {
     padding: 0;
     margin: 0;
+    box-sizing: inherit;
 }
-button:focus, .button:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
+article,aside,figcaption,figure,
+footer,header,menu,nav,section { 
+    display:block;
+}
+
+/* button:focus, .button:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
     outline: none;
-}
-/*Gets rid of default styles on ios*/
-input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea {
+} */
+
+/*Gets rid of default styles on iOS*/
+/* input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-}
+} */
 
+/*Responsive images*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*End of RESETS_____________________________*/
 
 /*Setting up the grid*/
 .container {
