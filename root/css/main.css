@@ -8,7 +8,7 @@ p {
     margin: 10px;
 }
 
-/*RESETS - Chris_____________________________*/
+/*RESETS____________________________________*/
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -26,28 +26,12 @@ article,aside,figcaption,figure,
 footer,header,menu,nav,section { 
     display:block;
 }
-
-/* button:focus, .button:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
-    outline: none;
-} */
-
-/*Gets rid of default styles on iOS*/
-/* input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-} */
-
-/*Responsive images*/
-img {
-    max-width: 100%;
-    height: auto;
-}
 /*End of RESETS_____________________________*/
 
-/*Setting up the grid*/
+/*GRID____________________________________*/
 .container {
     width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
     box-sizing: border-box;
@@ -57,247 +41,344 @@ img {
 }
 @media screen and (min-width:700px){
     .group {
-    display: flex;
-    flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .column {
+        flex: 1;
+    }
+    .colLarge {
+        flex: 1;
+        flex: 50%;
+    }
+    .colSmall {
+        flex: 1;
+        flex: 25%;
+    }
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
 }
-.column {
-    flex: 1;
-}
-.column.colLarge {
-    flex: 50%;
-}
-.column.colSmall {
-    flex: .25;
-}
-}
+/*End of GRID____________________________________*/
 
 /*Base styles: font sizes*/
 
 html {
-  font-size: 100%;
-}
-body {
-  font-size: 1em;
-  line-height: 1.25;
-}
-/*Typography*/
-/*standard typography*/
-p {
+    font-size: 100%;
+  }
+  body {
     font-size: 1em;
+    font-family: 'Raleway', sans-serif;
     line-height: 1.25;
-}
-h1 {
-    font-size: 2.25em;
-    line-height: 1.25;
-}
-h2 {
-    font-size: 1.875em;
-    line-height: 1.15384615;
-}
-h3 {
-    font-size: 1.625em;
-    line-height: 1.375;
-}
-h4 {
-    font-size: 1.50em;
-    line-height: 1.11111111;
-}
-h5 {
-    font-size: 1.25em;
-    line-height: 1;
-}
-h6 {
-    font-size: 1em;
-    line-height: 1;
-}
-blockquote {
-    font-size: 1.25em;
-    line-height: 1.25;
-}
-/*typography classes*/
-.uppercase {
-    text-transform: uppercase;
-}
-.lowercase {
-    text-transform: lowercase;
-}
-.capitalize {
-    text-transform: capitalize;
-}
-.bold {
-    font-weight: bold;
-}
-.italic, .cite, .variable {
-    font-style: italic;
-}
-.code {
-    font-family: monospace;
-}
-.center-text {
-    text-align: center;
-}
-.left-text {
-    text-align: left;
-}
-.right-text {
-    text-align: right;
-}
-.justify-text {
-    text-align: justify;
-}
-@media screen and (min-width: 700px) {
-    p {
-    line-height: 1.375;
-    }
-    h1 {
-        font-size: 3.25em;
-        line-height: 1.05;
-    }
-    h2 {
-        font-size: 2.5em;
-        line-height: 1.25;
-    }
-    h3 {
-        font-size: 2.25em;
-        line-height: 1.25;
-    }
-    h4 {
-        font-size: 1.75em;
-        line-height: 1.22222222;
-    }
-    h5 {
-        font-size: 1.50em;
-        line-height: 1em;
-    }
-    h6 {
-        font-size: 1.25em;
-        line-height: 1em;
-    }
-    blockquote {
-        font-size: 1.5em;
-        line-height: 1.45;
-    }
-}
-/*Link styles*/
-
-/*Buttons*/
-
-/*four different colors*/
-button, .button, input[type="submit"], input[type="reset"], input[type="button"] {
-    background-color: transparent;
-    margin: 5px;
-    border-radius: 4px;
-    border: solid 1px #808080;
-    display: inline-block;
-    padding: 10px;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-size: 1em;
-    height: 40px;
-}
-button.basic, .button.basic, input[type="submit"].basic, input[type="reset"].basic, input[type="button"].basic {
-    background-color: #808080;
-    color: white;
-}
-button.blue, .button.blue, input[type="submit"].blue, input[type="reset"].blue, input[type="button"].blue {
-    background-color: #3333ff;
-    color: white;
-    border-color: #3333ff
-}
-button.green, .button.green, input[type="submit"].green, input[type="reset"].green, input[type="button"].green {
-    background-color: #009900;
-    color: white;
-    border-color: #009900;
-}
-button.orange, .button.orange, input[type="submit"].orange, input[type="reset"].orange, input[type="button"].orange {
-    background-color: #e65c00;
-    color: white;
-    border-color: #e65c00;
-}
-button.red, .button.red, input[type="submit"].red, input[type="reset"].red, input[type="button"].red {
-    background-color: #e60000;
-    border-color: #e60000;
-    color: white;
-}
-button.red:hover, .button.red:hover, input[type="submit"].red:hover, input[type="reset"].red:hover, input[type="button"].red:hover {
-    background-color: #ff1a1a;
-}
-button.orange:hover, .button.orange:hover, input[type="submit"].orange:hover, input[type="reset"].orange:hover, input[type="button"].orange:hover {
-    background-color: #ff751a;
-}
-button.green:hover, .button.green:hover, input[type="submit"].green:hover, input[type="reset"].green:hover, input[type="button"].green:hover {
-    background-color: #00cc00;
-}
-button.blue:hover, .button.blue:hover, input[type="submit"].blue:hover, input[type="reset"].blue:hover, input[type="button"].blue:hover {
-    background-color: #6666ff;
-}
-button.basic:hover, .button.basic:hover, input[type="submit"].basic:hover, input[type="reset"].basic:hover, input[type="button"].basic:hover {
-    background-color: #595959
-}
-button:hover, .button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
-    background-color: #d9d9d9;
-}
-button:active, .button:active, input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active {
-    transform: translateY(1px);
-    filter: saturate(150%);
-}
-
-
-/*three different sizes, normal is just the default*/
-
-button.xsmall, .button.xsmall, input[type="submit"].xsmall, input[type="reset"].xsmall, input[type="button"].xsmall {
-    padding: 5px;
-    height: 25px;
-    font-size: .7em
-}
-button.small, .button.small, input[type="submit"].small, input[type="reset"].small, input[type="button"].small {
-    padding: 5px;
-    height: 30px;
-    font-size: .85em
-}
-button.large, .button.large, input[type="submit"].large, input[type="reset"].large, input[type="button"].large {
-    padding: 15px;
-    font-size: 1.25em;
-    height: 55px;
-}
-/*Forms*/
-form {
-    border: solid 3px grey;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 0 10px;
-    text-align: center;
-}
-label {
-    display: block;
-}
-input {
-    border: solid 1px grey;
-    border-radius: 5px;
-    max-width: 100%;
-    line-height: 2;
-    padding-left: .5em;
-}
-@media screen and (min-width:700px){
-    form {
-        text-align: left;
-    }
-}
-/*lists*/
-
-/*Tables*/
-
-/*Misc*/
-
-/*Makes content not show up on print*/
-@media print {
-    .no-print {
-        display: none;
-    }
-}
-.responiveImg {
-    width: 100%;
-    height: auto;
-}
-
-/*Media queries*/
+  }
+  
+  /*NAVIGATION*/
+  .nav1-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+  }
+  .nav1-flex .icon {
+      font-size: 30px;
+  }
+  .mainNav1 {
+      background-color: #f2f2f2;
+      padding: 5px 0;
+      display: none;
+  }
+  .mainNav1 a {
+      display: block;
+      color: #000000;
+      font-size: 1.25em;
+      text-align: center;
+      padding: 5px;
+  }
+  .mainNav1 a:visited {
+      color: #000000;
+  }
+  .mainNav1 a:hover {
+      text-decoration: none;
+      color: #000000;
+  }
+  .nav1-subMenu {
+      font-size: 1em;
+      display: none;
+  }
+  @media screen and (min-width: 700px) {
+      .nav1 {
+          display: flex;
+          justify-content: space-between;
+      }
+      .nav1 .icon {
+          display: none;
+      }
+      .fa-chevron-down {
+          display: none;
+      }
+      .mainNav1 {
+          background-color: #fff;
+          display: block;
+          display: flex;
+          justify-content: space-around;
+      }
+      .mainNav1 li {
+          padding: 5px 20px;
+      }
+      .nav1-subMenu {
+          position: absolute;
+          background-color: #f2f2f2;
+          padding: 5px;
+          margin-top: 5px;
+          display: none;
+      }
+  }
+  
+  /*Typography*/
+  /*standard typography*/
+  p {
+      font-size: 1em;
+      line-height: 1.25;
+  }
+  h1 {
+      font-size: 2.25em;
+      line-height: 1.25;
+  }
+  h2 {
+      font-size: 1.875em;
+      line-height: 1.15384615;
+  }
+  h3 {
+      font-size: 1.625em;
+      line-height: 1.375;
+  }
+  h4 {
+      font-size: 1.50em;
+      line-height: 1.11111111;
+  }
+  h5 {
+      font-size: 1.25em;
+      line-height: 1;
+  }
+  h6 {
+      font-size: 1em;
+      line-height: 1;
+  }
+  blockquote {
+      font-size: 1.25em;
+      line-height: 1.25;
+  }
+  /*typography classes*/
+  .uppercase {
+      text-transform: uppercase;
+  }
+  .lowercase {
+      text-transform: lowercase;
+  }
+  .capitalize {
+      text-transform: capitalize;
+  }
+  .bold {
+      font-weight: bold;
+  }
+  .italic, .cite, .variable {
+      font-style: italic;
+  }
+  .code {
+      font-family: monospace;
+  }
+  .center-text {
+      text-align: center;
+  }
+  .left-text {
+      text-align: left;
+  }
+  .right-text {
+      text-align: right;
+  }
+  .justify-text {
+      text-align: justify;
+  }
+  @media screen and (min-width: 700px) {
+      p {
+      line-height: 1.375;
+      }
+      h1 {
+          font-size: 3.25em;
+          line-height: 1.05;
+      }
+      h2 {
+          font-size: 2.5em;
+          line-height: 1.25;
+      }
+      h3 {
+          font-size: 2.25em;
+          line-height: 1.25;
+      }
+      h4 {
+          font-size: 1.75em;
+          line-height: 1.22222222;
+      }
+      h5 {
+          font-size: 1.50em;
+          line-height: 1em;
+      }
+      h6 {
+          font-size: 1.25em;
+          line-height: 1em;
+      }
+      blockquote {
+          font-size: 1.5em;
+          line-height: 1.45;
+      }
+  }
+  /*Link styles*/
+  
+  a {
+      text-decoration: none;
+      color: #000080;
+  }
+  a:visited {
+      color: #00004d;
+  }
+  a:hover {
+      text-decoration: underline;
+  }
+  
+  /*Buttons*/
+  
+  /*four different colors*/
+  button, .button, input[type="submit"], input[type="reset"], input[type="button"] {
+      background-color: transparent;
+      margin: 5px;
+      border-radius: 4px;
+      border: solid 1px #808080;
+      display: inline-block;
+      padding: 10px;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-size: 1em;
+      height: 40px;
+  }
+  button.basic, .button.basic, input[type="submit"].basic, input[type="reset"].basic, input[type="button"].basic {
+      background-color: #808080;
+      color: white;
+  }
+  button.blue, .button.blue, input[type="submit"].blue, input[type="reset"].blue, input[type="button"].blue {
+      background-color: #3333ff;
+      color: white;
+      border-color: #3333ff
+  }
+  button.green, .button.green, input[type="submit"].green, input[type="reset"].green, input[type="button"].green {
+      background-color: #009900;
+      color: white;
+      border-color: #009900;
+  }
+  button.orange, .button.orange, input[type="submit"].orange, input[type="reset"].orange, input[type="button"].orange {
+      background-color: #e65c00;
+      color: white;
+      border-color: #e65c00;
+  }
+  button.red, .button.red, input[type="submit"].red, input[type="reset"].red, input[type="button"].red {
+      background-color: #e60000;
+      border-color: #e60000;
+      color: white;
+  }
+  button.red:hover, .button.red:hover, input[type="submit"].red:hover, input[type="reset"].red:hover, input[type="button"].red:hover {
+      background-color: #ff1a1a;
+  }
+  button.orange:hover, .button.orange:hover, input[type="submit"].orange:hover, input[type="reset"].orange:hover, input[type="button"].orange:hover {
+      background-color: #ff751a;
+  }
+  button.green:hover, .button.green:hover, input[type="submit"].green:hover, input[type="reset"].green:hover, input[type="button"].green:hover {
+      background-color: #00cc00;
+  }
+  button.blue:hover, .button.blue:hover, input[type="submit"].blue:hover, input[type="reset"].blue:hover, input[type="button"].blue:hover {
+      background-color: #6666ff;
+  }
+  button.basic:hover, .button.basic:hover, input[type="submit"].basic:hover, input[type="reset"].basic:hover, input[type="button"].basic:hover {
+      background-color: #595959
+  }
+  button:hover, .button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+      background-color: #d9d9d9;
+  }
+  button:active, .button:active, input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active {
+      transform: translateY(1px);
+      filter: saturate(150%);
+  }
+  
+  
+  /*three different sizes, normal is just the default*/
+  
+  button.xsmall, .button.xsmall, input[type="submit"].xsmall, input[type="reset"].xsmall, input[type="button"].xsmall {
+      padding: 5px;
+      height: 25px;
+      font-size: .7em
+  }
+  button.small, .button.small, input[type="submit"].small, input[type="reset"].small, input[type="button"].small {
+      padding: 5px;
+      height: 30px;
+      font-size: .85em
+  }
+  button.large, .button.large, input[type="submit"].large, input[type="reset"].large, input[type="button"].large {
+      padding: 15px;
+      font-size: 1.25em;
+      height: 55px;
+  }
+  /*Forms*/
+  form {
+      border: solid 3px grey;
+      border-radius: 5px;
+      padding: 5px;
+      margin: 0 10px;
+      text-align: center;
+  }
+  label {
+      display: block;
+  }
+  input {
+      border: solid 1px grey;
+      border-radius: 5px;
+      max-width: 100%;
+      line-height: 2;
+      padding-left: .5em;
+  }
+  @media screen and (min-width:700px){
+      form {
+          text-align: left;
+      }
+  }
+  /*lists*/
+  
+  ul {
+      list-style-type: none;
+  }
+  li {
+      padding: 3px;
+  }
+  .listCircle {
+      list-style-type: circle;
+  }
+  .listBullet {
+      list-style-type: disc;
+  }
+  
+  /*Tables*/
+  
+  /*Misc*/
+  
+  /*Makes content not show up on print*/
+  @media print {
+      .no-print {
+          display: none;
+      }
+  }
+  .responiveImg {
+      width: 100%;
+      height: auto;
+  }
+  
+  /*Media queries*/
