@@ -167,6 +167,20 @@ article, aside, figcaption, figure, footer, header, menu, nav, section {
 }
 /*End of DISPLAY & SPACING____________________________________*/
 
+/*HELPER CLASSES____________________________________*/
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.clearfix {
+    overflow: auto;
+    clear: both;
+}
+/*End of HELPER CLASSES____________________________________*/
+
+
 /*Base styles: font sizes*/
 
 html {
