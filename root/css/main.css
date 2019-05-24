@@ -69,6 +69,104 @@ article, aside, figcaption, figure, footer, header, menu, nav, section {
 }
 /*End of GRID____________________________________*/
 
+/*DISPLAY & SPACING____________________________________*/
+/* Flex */
+.flex {
+    display: flex;
+}
+/* Justify Content */
+.flex.justify-content-start {
+    justify-content: flex-start;
+}
+.flex.justify-content-end {
+    justify-content: flex-end;
+}
+.flex.justify-content-center {
+    justify-content: center;
+}
+.flex.justify-content-between {
+    justify-content: space-between;
+}
+.flex.justify-content-around {
+    justify-content: space-around;
+}
+.flex.justify-content-evenly {
+    justify-content: space-evenly;
+}
+/* Align Self */
+.flex.align-self-auto {
+    align-self: auto;
+}
+.flex.align-self-start {
+    align-self: flex-start;
+}
+.flex.align-self-end {
+    align-self: flex-end;
+}
+.flex.align-self-center {
+    align-self: center;
+}
+.flex.align-self-baseline {
+    align-self: baseline;
+}
+.flex.align-self-stretch {
+    align-self: stretch;
+}
+/* Align-Items */
+.flex.align-items-stretch {
+    align-items: stretch;
+}
+.flex.align-items-start {
+    align-items: flex-start;
+}
+.flex.align-items-end {
+    align-items: flex-end;
+}
+.flex.align-items-center {
+    align-items: center;
+}
+.flex.align-items-baseline {
+    align-items: baseline;
+}
+/* Block/Inline */
+.block {
+    display: block;
+}
+.inline-block {
+    display: inline-block;
+}
+.inline {
+    display: inline;
+}
+/* Margins */
+.mx-auto {
+    margin: 0 auto;
+}
+.my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.margin-1 {
+    margin: 0.25em;
+}
+.margin-2 {
+    margin: 0.5em;
+}
+.margin-3 {
+    margin: 1em;
+}
+/* Padding */
+.padding-1 {
+    padding: 0.25em;
+}
+.padding-2 {
+    padding: 0.5em;
+}
+.padding-3 {
+    padding: 1em;
+}
+/*End of DISPLAY & SPACING____________________________________*/
+
 /*Base styles: font sizes*/
 
 html {
