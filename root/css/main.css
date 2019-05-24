@@ -4,7 +4,7 @@
     background-color: yellow;
 }
 p {
-    background-color: rgb(194, 116, 116);
+    background-color: indianred;
     margin: 10px;
 }
 
@@ -22,44 +22,49 @@ html {
     margin: 0;
     box-sizing: inherit;
 }
-article,aside,figcaption,figure,
-footer,header,menu,nav,section { 
-    display:block;
+article, aside, figcaption, figure, footer, header, menu, nav, section { 
+    display: block;
 }
 /*End of RESETS_____________________________*/
 
 /*GRID____________________________________*/
+/* Common Screen Widths: 
+ - Phones: 320px to 414px
+ - Tablets: 768px to 1024px 
+ - Laptops/Desktops: 1366px
+ */
+
 .container {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 10px;
-    box-sizing: border-box;
 }
 .container.small {
     max-width: 960px;
 }
-@media screen and (min-width:700px){
-    .group {
-        display: flex;
-        flex-wrap: wrap;
+.group, .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-1, .col-2, .col-3, .col-4, .col-33, .col-66 {
+  flex: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .col-3, .col-33 {
+        flex: 33%;
     }
-    .column {
-        flex: 1;
-    }
-    .colLarge {
-        flex: 1;
+    .col-2, .col-4 {
         flex: 50%;
     }
-    .colSmall {
-        flex: 1;
-        flex: 25%;
+    .col-66 {
+        flex: 66%;
     }
-    .row {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+}
+
+@media (min-width: 1024px) {
+    .col-4 {
+        flex: 25%;
     }
 }
 /*End of GRID____________________________________*/
