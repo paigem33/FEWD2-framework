@@ -493,9 +493,64 @@ html {
           display: none;
       }
   }
-  .responiveImg {
+  .responsiveImg {
       width: 100%;
       height: auto;
   }
   
   /*Media queries*/
+
+/* COMPONENTS______________________________ */
+/* Header */
+.header {
+    max-height: 600px;
+    overflow: hidden;
+}
+.header > img {
+    vertical-align: middle;
+    border-style: none;
+}
+.header > div {
+    display: block;
+    top: 10%;
+    width: 100%;
+    position: absolute;
+}
+.header > div > h1 {
+    text-align: center;
+    margin: 0 1rem;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    font-size: 6vw;
+}
+.header > div > p {
+    text-align: center;
+    margin: 0 1rem;
+    padding: 0 1rem;
+    font-size: 3vw;
+    background-color: transparent;
+}
+.header > div > button {
+    float: right;
+    margin: 2rem 4rem;
+    font-size: 2vw;
+    background-color: rgba(255,255,255,0.1);
+    color: #ccc;
+}
+
+@media (min-width: 768px) {
+    .header > div {
+        top: 15%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header > div {
+        top: 30%;
+    }
+    .header > div > button {
+        padding: 0rem;
+    }
+}
+
+/* End of COMPONENTS______________________________ */
