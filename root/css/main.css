@@ -180,9 +180,7 @@ article, aside, figcaption, figure, footer, header, menu, nav, section {
 }
 /*End of HELPER CLASSES____________________________________*/
 
-
 /*Base styles: font sizes*/
-
 html {
     font-size: 100%;
   }
@@ -502,17 +500,16 @@ html {
 
 /* COMPONENTS______________________________ */
 /* Header */
-.header {
-    max-height: 600px;
-    overflow: hidden;
+.container.small > .header > div {
+    max-width: 960px;
 }
-.header > img {
-    vertical-align: middle;
-    border-style: none;
+.header {
+    max-height: 450px;
+    overflow: hidden;
 }
 .header > div {
     display: block;
-    top: 10%;
+    top: 8%;
     width: 100%;
     position: absolute;
 }
@@ -521,13 +518,13 @@ html {
     margin: 0 1rem;
     padding: 0 1rem;
     text-transform: uppercase;
-    font-size: 6vw;
+    font-size: 5vw;
 }
 .header > div > p {
     text-align: center;
     margin: 0 1rem;
     padding: 0 1rem;
-    font-size: 3vw;
+    font-size: 2.5vw;
     background-color: transparent;
 }
 .header > div > button {
@@ -540,17 +537,29 @@ html {
 
 @media (min-width: 768px) {
     .header > div {
-        top: 15%;
+        top: 10%;
+    }
+    .header {
+        max-height: 300px;
     }
 }
 
 @media (min-width: 1024px) {
+    .header {
+        max-height: 350px;
+    }
     .header > div {
-        top: 30%;
+        top: 15%;
+    }
+    .header > div > h1 {
+        font-size: 4rem;
+    }
+    .header > div > p {
+        font-size: 2.5rem;
     }
     .header > div > button {
-        padding: 0rem;
+        padding: 0.25rem;
+        font-size: 1.5rem;
     }
 }
-
 /* End of COMPONENTS______________________________ */
