@@ -82,10 +82,10 @@ body {
     text-align: center;
     padding: 5px;
 }
-.mainNav1 a:visited {
+.mainNav1 a:visited, .mainNav2 a:visited {
     color: #000000;
 }
-.mainNav1 a:hover {
+.mainNav1 a:hover, .mainNav2 a:hover {
     text-decoration: none;
     color: #000000;
 }
@@ -94,21 +94,21 @@ body {
     display: none;
 }
 @media screen and (min-width: 700px) {
-    .nav1 {
+    .nav1, .nav2 {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     .nav1 .icon {
         display: none;
     }
-    .fa-chevron-down {
-        display: none;
-    }
-    .mainNav1 {
+    .mainNav1, .nav2 .mainNav2 {
         background-color: #fff;
         display: block;
         display: flex;
         justify-content: space-around;
+        align-items: center;
+        height: 55px;
     }
     .mainNav1 li {
         padding: 5px 20px;
@@ -120,8 +120,40 @@ body {
         margin-top: 5px;
         display: none;
     }
+     .nav2 .mainNav2 {
+        background-color: #fff;
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 75%;
+    }
+    .nav2-name {
+        margin-right: 50px;
+    }
 }
-
+/*NAV 2 bottom of screen*/
+.mainNav2 {
+    display: flex;
+    background-color: #f2f2f2;
+    padding: 5px 0;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+.mainNav2 a {
+    display: block;
+    color: #000000;
+    font-size: 1.25em;
+    text-align: center;
+    padding: 5px;
+}
+.nav2-name {
+    padding: 10px;
+}
 /*Typography*/
 /*standard typography*/
 p {
