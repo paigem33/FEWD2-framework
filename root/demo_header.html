@@ -10,15 +10,32 @@
     <div class="container">
     <!-- <div class="container small"> -->
     <body>
-
         <header class="header">
-            <img class="responsiveImg" src="img/aperture-vintage-578817-unsplash.gif" alt="Aperture Vintage Unsplash">
-            <div>
-                <h1>Header message</h1>
+            <!-- Option to change img class to align-self-start, align-self-center etc. -->
+            <img class="responsiveImg flex align-self-end" src="img/aperture-vintage-578817-unsplash.gif" alt="">
+            <div class="">
+                <h1 class="">Header message</h1>
                 <p>Descriptive Text Goes Here.</p>
-                <button class="button">Click Me Please</button>
+                <div class="">
+                    <button class="button">Click Me Please</button>
+                </div>
             </div>
-        </header>      
+        </header>
+        <div class="code-example">
+            <pre>
+                <code>
+                    &lt;<b>header</b> <i>class</i>=<u>"header"</u>&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp; <span>&lt;!-- Option to change img class to align-self-start, align-self-center etc. --&gt;</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;<b>img</b> <i>class</i>=<u>"responsiveImg"</u> <i>src</i>=<u>"path-to-your-images/your-image.gif"</u> <i>alt</i>=<u>"Add alt text only when adding image"</u>&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;<b>div</b>&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;<b>h1</b>&gt;Header message&lt;<b>/h1</b>&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;<b>p</b>&gt;Descriptive Text Goes Here.&lt;<b>/p</b>&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;<b>button</b> <i>class</i>=<u>"button"</u>&gt;Click Me Please&lt;<b>/button</b>&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;<b>/div</b>&gt;
+                    &lt;<b>/header</b>&gt;
+                </code>
+            </pre>
+        </div>
     </body>
-</div>
+    </div> <!-- End of div.container -->
 </html>

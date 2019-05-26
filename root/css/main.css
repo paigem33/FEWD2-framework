@@ -482,9 +482,7 @@ html {
   }
   
   /*Tables*/
-  
-  /*Misc*/
-  
+
   /*Makes content not show up on print*/
   @media print {
       .no-print {
@@ -496,7 +494,7 @@ html {
       height: auto;
   }
   
-  /*Media queries*/
+/*Media queries*/
 
 /* COMPONENTS______________________________ */
 /* Header */
@@ -504,62 +502,96 @@ html {
     max-width: 960px;
 }
 .header {
-    max-height: 450px;
+    min-height: 8.5rem;
+    max-height: 9.5rem;
+    background-color: rgb(247, 242, 242);
+    display: flex;
     overflow: hidden;
 }
+.header > img {
+    max-width: 100% ;
+    height: 100%;
+}
 .header > div {
-    display: block;
-    top: 8%;
     width: 100%;
     position: absolute;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
 }
 .header > div > h1 {
-    text-align: center;
-    margin: 0 1rem;
-    padding: 0 1rem;
     text-transform: uppercase;
-    font-size: 5vw;
+    font-size: 2.25rem;
+    color: #f1f1f1;
+    text-shadow: 1px 1px #000;
+    margin: 0;
 }
 .header > div > p {
-    text-align: center;
-    margin: 0 1rem;
-    padding: 0 1rem;
-    font-size: 2.5vw;
+    color: #f1f1f1;
+    text-shadow: 1px 1px #000;
     background-color: transparent;
+    font-size: 1.25rem;
+    margin: 0;
 }
-.header > div > button {
-    float: right;
-    margin: 2rem 4rem;
-    font-size: 2vw;
-    background-color: rgba(255,255,255,0.1);
-    color: #ccc;
+.header > div > div > button {
+    background-color: rgba(255,255,255,0.3 );
+    color: #f1f1f1;
+    text-shadow: 1px 1px #000;
 }
 
 @media (min-width: 768px) {
-    .header > div {
-        top: 10%;
-    }
     .header {
-        max-height: 300px;
+        min-height: 12rem;
+    }
+    .header > div > h1 {
+        font-size: 3rem;
+    }
+    .header > div > p {
+        font-size: 1.75rem;
     }
 }
 
 @media (min-width: 1024px) {
     .header {
-        max-height: 350px;
-    }
-    .header > div {
-        top: 15%;
-    }
-    .header > div > h1 {
-        font-size: 4rem;
-    }
-    .header > div > p {
-        font-size: 2.5rem;
-    }
-    .header > div > button {
-        padding: 0.25rem;
-        font-size: 1.5rem;
+        max-height: 15rem;
     }
 }
 /* End of COMPONENTS______________________________ */
+
+/*MISC________________________________*/
+/* Code Examples */
+/* https://www.sitepoint.com/best-practice-for-code-examples/ */
+.code-example {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+pre {
+    background-color: rgb(52, 55, 56);
+    color: #e7e5e5;
+    padding: 0 2em;
+    border-radius: 0.5em;
+}
+pre span {
+    color: rgb(106, 172, 106);
+}
+pre b {
+    font-weight: normal;
+    color:rgb(87, 135, 190);
+}
+pre u {
+    text-decoration: none;
+    color:rgb(219, 157, 128);
+}
+pre i {
+    text-decoration: none;
+    font-style: normal;
+    color:rgb(173, 208, 228);
+}
+pre code {
+    white-space: pre-line;
+}
+
+/*End of MISC________________________________*/
