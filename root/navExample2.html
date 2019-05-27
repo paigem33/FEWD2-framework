@@ -20,6 +20,9 @@
         } else {
             $('.nav1-showSub').hover(function(){
             $(this).next().stop().slideToggle();
+            });
+            $('.nav2-showSub').hover(function(){
+            $(this).children('ul').stop().slideToggle();
             })
         }
 })
@@ -33,6 +36,12 @@
             <li><a href="#">Menu Item</a></li>
             <li><a href="#">Menu Item</a></li>
             <li><a href="#">Menu Item</a></li>
+            <li class="nav2-showSub display-large">
+                <a href="#">Sub Menu</a>
+                <ul class="nav2-subMenu">
+                    <li><a href="#">Sub Item</a></li>
+                    <li><a href="#">Sub Item</a></li>
+                </ul>
         </ul>
     </nav>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad accusantium quod molestias labore, ratione blanditiis, iure quasi a dolor deleniti recusandae dicta mollitia, praesentium quae animi ab nesciunt cupiditate veniam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto placeat in dolore dolores suscipit beatae sunt eius, excepturi eos saepe nisi accusantium odio minima. Veniam dolores praesentium ipsum sunt dolorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, sit blanditiis eaque, assumenda totam odio. At facere, porro rerum recusandae sit ducimus minus fugit alias. Numquam consectetur, maiores quo distinctio.</p>

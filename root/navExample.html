@@ -19,7 +19,7 @@
         })
         } else {
             $('.nav1-showSub').hover(function(){
-            $(this).next().stop().slideToggle();
+            $(this).children('ul').stop().slideToggle();
             })
         }
 })
@@ -33,16 +33,17 @@
        </div>
         <ul class="mainNav1">
             <li><a href="#">Menu Item</a></li>
-            <li>
-                <a href="#" class="nav1-showSub">Sub Menu</a>
+            
+            <li class="nav1-showSub">
+                <a href="#">Sub Menu</a>
                 <ul class="nav1-subMenu">
                     <li><a href="#">Sub Item</a></li>
                     <li><a href="#">Sub Item</a></li>
                 </ul>
             </li>
             <li><a href="#">Menu Item</a></li>
-            <li>
-                <a href="#" class="nav1-showSub">Sub Menu</a>
+            <li class="nav1-showSub">
+                <a href="#">Sub Menu</a>
                 <ul class="nav1-subMenu">
                     <li><a href="#">Sub Item</a></li>
                     <li><a href="#">Sub Item</a></li>

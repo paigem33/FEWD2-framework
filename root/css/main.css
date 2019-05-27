@@ -89,10 +89,11 @@ body {
     text-decoration: none;
     color: #000000;
 }
-.nav1-subMenu {
+.nav1-subMenu, .nav2-subMenu {
     font-size: 1em;
     display: none;
 }
+
 @media screen and (min-width: 700px) {
     .nav1, .nav2 {
         display: flex;
@@ -113,22 +114,26 @@ body {
     .mainNav1 li {
         padding: 5px 20px;
     }
-    .nav1-subMenu {
+    .nav1-subMenu, .nav2-subMenu {
         position: absolute;
         background-color: #f2f2f2;
         padding: 5px;
         margin-top: 5px;
         display: none;
+        z-index: 10;
     }
      .nav2 .mainNav2 {
         background-color: #fff;
-        position: relative;
+        position: static;
         top: 0;
         right: 0;
         width: 75%;
     }
     .nav2-name {
         margin-right: 50px;
+    }
+    .nav2 .mainNav2 .display-large {
+        display: block;
     }
 }
 /*NAV 2 bottom of screen*/
@@ -153,6 +158,12 @@ body {
 }
 .nav2-name {
     padding: 10px;
+}
+.mainNav2 .display-large {
+    display: none;
+}
+.mainNav2 .nav2-subMenu {
+    display: none;
 }
 /*Typography*/
 /*standard typography*/
