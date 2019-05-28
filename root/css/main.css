@@ -74,6 +74,29 @@ article, aside, figcaption, figure, footer, header, menu, nav, section {
 .flex {
     display: flex;
 }
+/* Flex Direction */
+.flex.direction-row {
+    flex-direction: row;
+}
+.flex.direction-row-reverse {
+    flex-direction: row-reverse;
+}
+.flex.direction-column {
+    flex-direction: column;
+}
+.flex.direction-column-reverse {
+    flex-direction: column-reverse;
+}
+/* Flex Wrap */
+.flex.nowrap {
+    flex-wrap: nowrap;
+}
+.flex.wrap {
+    flex-wrap: wrap;
+}
+.flex.wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
 /* Justify Content */
 .flex.justify-content-start {
     justify-content: flex-start;
@@ -128,6 +151,10 @@ article, aside, figcaption, figure, footer, header, menu, nav, section {
 .flex.align-items-baseline {
     align-items: baseline;
 }
+/* Flex Grow */
+.flex.grow {
+    flex-grow: 1;
+}
 /* Block/Inline */
 .block {
     display: block;
@@ -143,8 +170,7 @@ article, aside, figcaption, figure, footer, header, menu, nav, section {
     margin: 0 auto;
 }
 .my-auto {
-    margin-top: auto;
-    margin-bottom: auto;
+   margin: auto 0;
 }
 .margin-1 {
     margin: 0.25em;
