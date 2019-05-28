@@ -5,7 +5,7 @@ $(function(){
             $('.mainNav1').stop().slideToggle();
         })
         $('.nav1-showSub').click(function(){
-            $(this).next().stop().slideToggle();
+            $(this).children('ul').stop().slideToggle();
         })
         } else {
             $('.nav1-showSub').hover(function(){
