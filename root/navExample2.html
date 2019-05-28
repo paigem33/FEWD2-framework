@@ -8,25 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        $(function(){
-        if ($(window).width() <= 699){
-            $('div.icon').click(function(){
-            $('.mainNav1').stop().slideToggle();
-        })
-        $('.nav1-showSub').click(function(){
-            $(this).next().stop().slideToggle();
-        })
-        } else {
-            $('.nav1-showSub').hover(function(){
-            $(this).next().stop().slideToggle();
-            });
-            $('.nav2-showSub').hover(function(){
-            $(this).children('ul').stop().slideToggle();
-            })
-        }
-})
-    </script>
+    <script src="scripts/main.js"></script>
 </head>
 <body>
     <nav class="nav2">
@@ -45,5 +27,11 @@
         </ul>
     </nav>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad accusantium quod molestias labore, ratione blanditiis, iure quasi a dolor deleniti recusandae dicta mollitia, praesentium quae animi ab nesciunt cupiditate veniam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto placeat in dolore dolores suscipit beatae sunt eius, excepturi eos saepe nisi accusantium odio minima. Veniam dolores praesentium ipsum sunt dolorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, sit blanditiis eaque, assumenda totam odio. At facere, porro rerum recusandae sit ducimus minus fugit alias. Numquam consectetur, maiores quo distinctio.</p>
+    <div class="accordion">
+        <h4>This is an accordion</h4>
+        <div class="accordionContent">
+            <p>This is the hidden content</p>
+        </div>
+    </div>
 </body>
 </html>

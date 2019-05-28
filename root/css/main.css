@@ -404,9 +404,39 @@ li {
         display: none;
     }
 }
-.responiveImg {
+.responsiveImg {
     width: 100%;
     height: auto;
 }
+/*components*/
+/*accordion*/
+
+.accordion {
+          width: 75%;
+          max-width: 700px;
+          padding: 20px;
+          margin: 0 auto;
+          position: relative;
+          border: 1px solid rgba(0,0,0,.1);
+          border-radius: 15px;
+          box-sizing: border-box;
+          transition: all .3s;
+          margin-top: 20px;
+          background-color: #f2f2f2;
+        }
+        .accordion h1, .accordion h2, .accordion h3, .accordion h4, .accordion h5, .accordion h5 {
+            cursor: pointer;
+        }
+        .accordion.active {
+          background-color: #f6f7f8;
+          box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+        }
+        .accordionContent {
+          color: #96999d;
+          align-items: center;
+          font-weight: 500;
+            display: none;
+            padding-top: 10px
+        }
 
 /*Media queries*/
