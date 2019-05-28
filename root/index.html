@@ -2,204 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Framework project ideas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSEO | Home</title>
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            if ($(window).width() <= 699){
+                $('div.icon').click(function(){
+                $('.mainNav1').stop().slideToggle();
+            })
+            $('.nav1-showSub').click(function(){
+                $(this).next().stop().slideToggle();
+            })
+            } else {
+                $('.nav1-showSub').hover(function(){
+                $(this).children('ul').stop().slideToggle();
+                })
+            }
+        })
+    </script>
 </head>
-    <div class="container small">
-    <body>
-        <div class="group row">
-            <div class="col-1"><p>1 column</p></div>
-        </div>
-        <div class="group row">
-            <div class="col-2 my-auto"><p>2 columns max., my-auto</p></div>
-            <div class="col-2"><p>2 columns max.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut et excepturi nihil magnam quis consequatur iusto dolorum autem enim facilis sequi beatae suscipit, velit quisquam tenetur at expedita itaque id!</p></div>
-        </div>
-        <div class="group row">
-            <div class="col-3"><p>3 columns max.</p></div>
-            <div class="col-3"><p>3 columns max.</p></div>
-            <div class="col-3"><p>3 columns max.</p></div>
-        </div>
-        <div class="group row">
-            <div class="col-4"><p>4 columns max.</p></div>
-            <div class="col-4"><p>4 columns max.</p></div>
-            <div class="col-4"><p>4 columns max.</p></div>
-            <div class="col-4"><p>4 columns max.</p></div>
-        </div>
-        <div class="group row">
-            <div class="col-33"><p>1/3 column width</p></div>
-            <div class="col-66"><p>2/3 column width</p></div>
-        </div>
-        <div class="group row">
-            <div class="col-66"><p>2/3 column width</p></div>
-            <div class="col-33"><p>1/3 column width</p></div>
-        </div>
-        <div style="border: solid 5px #000;" class="padding-1 flex wrap">
-            <h4 style="color: rgb(17, 24, 77); background-color:rgb(116, 114, 148);border: solid 5px navy;width:75%" class="mx-auto padding-1">75% width heading with class of mx-auto and padding-1</h4>
-            <h4 style="color: rgb(27, 18, 194); background-color: #7679da;border: solid 5px blue;" class="padding-2 margin-3">75% width heading with class of padding-2, margin-3</h4>
-            <h4 style="color: rgb(146, 14, 158); background-color: #aa8ac9;border: solid 5px purple;width:85%" class="padding-3 flex justify-content-end">75% width | padding-3 | flex | justify-content-end</h4>
-            <h4 style="color: rgb(121, 28, 28); background-color: #d19595;border: solid 5px red;width:50%" class="margin-1">50% width heading with class of margin-1</h4>
-            <h4 style="color: rgb(136, 111, 11); background-color: #b59041;border: solid 5px orange;width:30%;" class="margin-3 flex">30% width | margin-3</h4>
-            <h4 style="color: rgb(109, 122, 34); background-color: #cdd272;border: solid 5px yellow;width:100%" class="margin-2 flex justify-content-center">10% width | margin-2 | flex | justify-content-center</h4>
+<body>
+    <nav class="nav1">
+       <div class="nav1-flex">
+           <div class="nav1-name"><h4>CS<span class="bold">SE</span><i class="fas fa-search"></i></h4></div>
+            <div class="icon"><i class="fas fa-bars"></i></div>
+       </div>
+        <ul class="mainNav1">
+            <li><a href="#">Menu Item</a></li>
             
-            <div style="border: solid 2px rgb(187, 181, 181);" class="container padding-1 margin-1 flex wrap">
-                <h4 style="color: rgb(73, 109, 44); background-color: #97c562de;border: solid 5px lightgreen;" class="flex grow">no width set| flex | grow</h4>
-                <h4 style="color: rgb(73, 150, 164); background-color: #5aa89398;border: solid 5px lightseagreen;" class="">no width set</h4>
-                <h4 style="color: rgb(5, 80, 45); background-color: #b7f4c379;border: solid 5px green;" class="">no width set </h4>
-            </div>
-            
-            <div style="border: solid 2px rgb(187, 181, 181);" class="container padding-1 margin-1 flex wrap">
-                <h4 style="color: rgb(73, 109, 44); background-color: #97c562de;border: solid 5px lightgreen;" class="">no width set</h4>
-                <h4 style="color: rgb(73, 150, 164); background-color: #5aa89398;border: solid 5px lightseagreen;" class="flex grow">no width set| flex | grow</h4>
-                <h4 style="color: rgb(5, 80, 45); background-color: #b7f4c379;border: solid 5px green;" class="">no width set </h4>
-            </div>
-
-            <div style="border: solid 2px rgb(187, 181, 181);" class="container padding-1 margin-1 flex wrap">
-                <h4 style="color: rgb(73, 109, 44); background-color: #97c562de;border: solid 5px lightgreen;" class="">no width set</h4>
-                <h4 style="color: rgb(73, 150, 164); background-color: #5aa89398;border: solid 5px lightseagreen;" class="">no width set</h4>
-                <h4 style="color: rgb(5, 80, 45); background-color: #b7f4c379;border: solid 5px green;" class="flex grow">no width set| flex | grow</h4>
-            </div>
-        
-            
-        </div>
-        <div class>
-            <button class="button">Click me please</button>
-            <button class="button basic">Click me</button>
-            <button class="button blue">Click me</button>
-            <button class="button green">Click me</button>
-            <button class="button orange">Click me</button>
-            <button class="button red">Click me</button>
-        </div>
-        <div class>
-            <button class="button">I'm normal</button>
-            <button class="button basic xsmall">I'm extra small</button>
-            <button class="button blue xsmall">I'm extra small</button>
-            <button class="button green small">I'm small</button>
-            <button class="button orange small">I'm small</button>
-            <button class="button red large">I'm large</button>
-        </div>
-        <div class="no-print">
-            <h1>Hello, none of us will print</h1>
-            <h2>Hello, none of us will print</h2>
-            <h3>Hello, none of us will print</h3>
-            <h4>Hello, none of us will print</h4>
-            <h5>Hello, none of us will print</h5>
-            <h6>Hello, none of us will print</h6>
-        </div>
-        <div class="group">
-            <p class="uppercase column">I have a class of uppercase</p>
-            <p class="lowercase column">I have a class of lowercase</p>
-            <p class="capitalize column">I have a class of capitalize</p>
-        </div>
-        <div class="group">
-            <form action="#" class="column">
-                <div class="group">
-                    <div class="column">
-                        <label for="fName">First Name:</label>
-                        <input type="fNAme">
-                    </div>
-                    <div class="column">
-                        <label for="mName">Middle Name:</label>
-                        <input type="mName">
-                    </div>
-                    <div class="column">
-                        <label for="lName">Last Name:</label>
-                        <input type="lName">
-                    </div>
-                </div>
-                <div class="group">
-                    <div class="column">
-                        <label for="street">Street Address:</label>
-                        <input type="street">
-                    </div>
-                </div>
-                <div class="group">
-                    <div class="column">
-                        <label for="city">City:</label>
-                        <input type="city">
-                    </div>
-                    <div class="column">
-                        <label for="state">State:</label>
-                        <input type="state">
-                    </div>
-                    <div class="column">
-                        <label for="zip">Zip Code:</label>
-                        <input type="zip">
-                    </div>
-                </div>
-            </form>
-            <form action="#" class="column">
-                <div class="group">
-                    <div class="column">
-                        <label for="fName">First Name:</label>
-                        <input type="fNAme">
-                    </div>
-                    <div class="column">
-                        <label for="mName">Middle Name:</label>
-                        <input type="mName">
-                    </div>
-                    <div class="column">
-                        <label for="lName">Last Name:</label>
-                        <input type="lName">
-                    </div>
-                </div>
-                <div class="group">
-                    <div class="column">
-                        <label for="street">Street Address:</label>
-                        <input type="street">
-                    </div>
-                </div>
-                <div class="group">
-                    <div class="column">
-                        <label for="city">City:</label>
-                        <input type="city">
-                    </div>
-                    <div class="column">
-                        <label for="state">State:</label>
-                        <input type="state">
-                    </div>
-                    <div class="column">
-                        <label for="zip">Zip Code:</label>
-                        <input type="zip">
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div>
-            <p class="bold">I have a class of bold</p>
-            <p class="italic">I have a class of italic</p>
-            <p class="cite">I have a class of cite</p>
-            <p class="variable">I have a class of variable</p>
-            <p class="code">I have a class of code</p>
-        </div>
-        <div class="group">
-            <a href="#" class="column">I'm a default link</a>
-            <a href="#" class="column">I'm a default link</a>
-        </div>
-        <div class="group">
-            <div class="column">
-                <ul class="listCircle">
-                    <li>I am a list item</li>
-                    <li>I am a list item</li>
-                    <li>I am a list item</li>
+            <li class="nav1-showSub">
+                <a href="#">Sub Menu</a>
+                <ul class="nav1-subMenu">
+                    <li><a href="#">Sub Item</a></li>
+                    <li><a href="#">Sub Item</a></li>
                 </ul>
-            </div>
-            <div class="column">
-                <ul class="listBullet">
-                    <li>I am a list item</li>
-                    <li>I am a list item</li>
-                    <li>I am a list item</li>
+            </li>
+            <li><a href="#">Menu Item</a></li>
+            <li class="nav1-showSub">
+                <a href="#">Sub Menu</a>
+                <ul class="nav1-subMenu">
+                    <li><a href="#">Sub Item</a></li>
+                    <li><a href="#">Sub Item</a></li>
                 </ul>
-            </div>
-            <div class="column">
-                <ol>
-                    <li>I am a list item</li>
-                    <li>I am a list item</li>
-                    <li>I am a list item</li>
-                </ol>
-            </div>
-        </div>
-    </body>
-</div>
+            </li>
+            <li><a href="#">Menu Item</a></li>
+        </ul>
+    </nav>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad accusantium quod molestias labore, ratione blanditiis, iure quasi a dolor deleniti recusandae dicta mollitia, praesentium quae animi ab nesciunt cupiditate veniam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto placeat in dolore dolores suscipit beatae sunt eius, excepturi eos saepe nisi accusantium odio minima. Veniam dolores praesentium ipsum sunt dolorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, sit blanditiis eaque, assumenda totam odio. At facere, porro rerum recusandae sit ducimus minus fugit alias. Numquam consectetur, maiores quo distinctio.</p>
+</body>
 </html>

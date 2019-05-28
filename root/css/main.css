@@ -1,12 +1,64 @@
-/*just for display purposes*/
-
+/*CUSTOM______________________________________*/
+/* Just for display purposes */
 .group {
-    background-color: yellow;
+    background-color: #f1f1f1;
 }
 p {
-    background-color: indianred;
+    background-color: #d9d9d9;
     margin: 10px;
 }
+/* Code Examples */
+/* https://www.sitepoint.com/best-practice-for-code-examples/ */
+.code-example {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+pre {
+    background-color: rgb(52, 55, 56);
+    color: #e7e5e5;
+    padding: 0 2em;
+    border-radius: 0.5em;
+}
+pre span {
+    color: rgb(106, 172, 106);
+}
+pre b {
+    font-weight: normal;
+    color:rgb(87, 135, 190);
+}
+pre u {
+    text-decoration: none;
+    color:rgb(219, 157, 128);
+}
+pre i {
+    text-decoration: none;
+    font-style: normal;
+    color:rgb(173, 208, 228);
+}
+pre code {
+    white-space: pre-line;
+}
+/* Logo/Text */
+.nav1-name > h4 {
+    border: solid 5px rgb(173, 208, 228);
+    border-radius: 15px;
+    padding: -5px;
+    font-weight: normal;
+    color: rgb(173, 208, 228);
+    background-color: rgba(153, 207, 226, 0.1);
+}
+.nav1-name > h4 > span {
+    font-weight: bold;
+    color: rgb(33, 101, 179);
+}
+.nav1-name > h4 > i {
+    top: 3px;
+    position: relative;
+    color: rgb(255, 166, 0);
+}
+
+/*End of CUSTOM______________________________________*
 
 /*RESETS____________________________________*/
 html {
@@ -631,37 +683,6 @@ html {
 /* End of COMPONENTS______________________________ */
 
 /*MISC________________________________*/
-/* Code Examples */
-/* https://www.sitepoint.com/best-practice-for-code-examples/ */
-.code-example {
-    display: flex;
-    justify-content: center;
-    margin: 2rem;
-}
-pre {
-    background-color: rgb(52, 55, 56);
-    color: #e7e5e5;
-    padding: 0 2em;
-    border-radius: 0.5em;
-}
-pre span {
-    color: rgb(106, 172, 106);
-}
-pre b {
-    font-weight: normal;
-    color:rgb(87, 135, 190);
-}
-pre u {
-    text-decoration: none;
-    color:rgb(219, 157, 128);
-}
-pre i {
-    text-decoration: none;
-    font-style: normal;
-    color:rgb(173, 208, 228);
-}
-pre code {
-    white-space: pre-line;
-}
+/* Code Examples moved to CUSTOM section */
 
 /*End of MISC________________________________*/
