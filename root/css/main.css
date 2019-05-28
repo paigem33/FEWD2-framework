@@ -155,9 +155,6 @@ article, aside, figcaption, figure, footer, header, menu, nav, section {
 .flex.grow {
     flex-grow: 1;
 }
-.flex.stretch {
-    align-items: shrink;
-}
 /* Block/Inline */
 .block {
     display: block;
