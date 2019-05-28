@@ -216,67 +216,111 @@ html {
     line-height: 1.25;
   }
   
-  /*NAVIGATION*/
-  .nav1-flex {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-  }
-  .nav1-flex .icon {
-      font-size: 30px;
-  }
-  .mainNav1 {
-      background-color: #f2f2f2;
-      padding: 5px 0;
-      display: none;
-  }
-  .mainNav1 a {
-      display: block;
-      color: #000000;
-      font-size: 1.25em;
-      text-align: center;
-      padding: 5px;
-  }
-  .mainNav1 a:visited {
-      color: #000000;
-  }
-  .mainNav1 a:hover {
-      text-decoration: none;
-      color: #000000;
-  }
-  .nav1-subMenu {
-      font-size: 1em;
-      display: none;
-  }
-  @media screen and (min-width: 700px) {
-      .nav1 {
-          display: flex;
-          justify-content: space-between;
-      }
-      .nav1 .icon {
-          display: none;
-      }
-      .fa-chevron-down {
-          display: none;
-      }
-      .mainNav1 {
-          background-color: #fff;
-          display: block;
-          display: flex;
-          justify-content: space-around;
-      }
-      .mainNav1 li {
-          padding: 5px 20px;
-      }
-      .nav1-subMenu {
-          position: absolute;
-          background-color: #f2f2f2;
-          padding: 5px;
-          margin-top: 5px;
-          display: none;
-      }
-  }
+ /*NAVIGATION*/
+.nav1-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.nav1-flex .icon {
+    font-size: 30px;
+}
+.mainNav1 {
+    background-color: #f2f2f2;
+    padding: 5px 0;
+    display: none;
+}
+.mainNav1 a {
+    display: block;
+    color: #000000;
+    font-size: 1.25em;
+    text-align: center;
+    padding: 5px;
+}
+.mainNav1 a:visited, .mainNav2 a:visited {
+    color: #000000;
+}
+.mainNav1 a:hover, .mainNav2 a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+.nav1-subMenu, .nav2-subMenu {
+    font-size: 1em;
+    display: none;
+}
+
+@media screen and (min-width: 700px) {
+    .nav1, .nav2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav1 .icon {
+        display: none;
+    }
+    .mainNav1, .nav2 .mainNav2 {
+        background-color: #fff;
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 55px;
+    }
+    .mainNav1 li {
+        padding: 5px 20px;
+    }
+    .nav1-subMenu, .nav2-subMenu {
+        position: absolute;
+        background-color: #f2f2f2;
+        padding: 5px;
+        margin-top: 5px;
+        display: none;
+        z-index: 10;
+    }
+     .nav2 .mainNav2 {
+        background-color: #fff;
+        position: static;
+        top: 0;
+        right: 0;
+        width: 75%;
+    }
+    .nav2-name {
+        margin-right: 50px;
+    }
+    .nav2 .mainNav2 .display-large {
+        display: block;
+    }
+}
+/*NAV 2 bottom of screen*/
+.mainNav2 {
+    display: flex;
+    background-color: #f2f2f2;
+    padding: 5px 0;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+.mainNav2 a {
+    display: block;
+    color: #000000;
+    font-size: 1.25em;
+    text-align: center;
+    padding: 5px;
+}
+.nav2-name {
+    padding: 10px;
+}
+.mainNav2 .display-large {
+    display: none;
+}
+.mainNav2 .nav2-subMenu {
+    display: none;
+}
   
   /*Typography*/
   /*standard typography*/
