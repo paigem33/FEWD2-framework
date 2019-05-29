@@ -40,7 +40,7 @@ pre code {
     white-space: pre-line;
 }
 /* Logo/Text */
-.nav1-name > h4 {
+.nav1-name h4 {
     border: solid 5px rgb(173, 208, 228);
     border-radius: 15px;
     padding: -5px;
@@ -48,11 +48,11 @@ pre code {
     color: rgb(173, 208, 228);
     background-color: rgba(153, 207, 226, 0.1);
 }
-.nav1-name > h4 > span {
+.nav1-name span {
     font-weight: bold;
     color: rgb(33, 101, 179);
 }
-.nav1-name > h4 > i {
+.nav1-name i {
     top: 3px;
     position: relative;
     color: rgb(255, 166, 0);
@@ -613,6 +613,7 @@ html {
   }
   .responsiveImg {
       width: 100%;
+      max-width: 100%;
       height: auto;
   }
   
@@ -620,19 +621,14 @@ html {
 
 /* COMPONENTS______________________________ */
 /* Header */
-.container.small > .header > div {
-    max-width: 960px;
-}
 .header {
-    min-height: 8.5rem;
-    max-height: 9.5rem;
     background-color: rgb(247, 242, 242);
     display: flex;
     overflow: hidden;
 }
-.header > img {
-    max-width: 100% ;
-    height: 100%;
+.header.short {
+    min-height: 8.5rem;
+    max-height: 9.5rem;
 }
 .header > div {
     width: 100%;
@@ -643,43 +639,60 @@ html {
     align-self: center;
     align-items: center;
 }
-.header > div > h1 {
-    text-transform: uppercase;
+.header h1 {
     font-size: 2.25rem;
     color: #f1f1f1;
     text-shadow: 1px 1px #000;
+    /* I'm open to the idea of rgba background on all tags; the reason I put the text shadow here specifically in the header is in case the user provides no image, and there is a light background behind light text. Could also set a contrasting (in this case dark) background by default when there's no image. I think this is where I was waiting on what the other framework categories will look like (e.g. if there ends up being classes like a bg-light, bg-dark, text-dark, etc.) */
     margin: 0;
 }
-.header > div > p {
+.header p {
     color: #f1f1f1;
     text-shadow: 1px 1px #000;
     background-color: transparent;
     font-size: 1.25rem;
     margin: 0;
 }
-.header > div > div > button {
-    background-color: rgba(255,255,255,0.3 );
-    color: #f1f1f1;
-    text-shadow: 1px 1px #000;
-}
 
 @media (min-width: 768px) {
-    .header {
+    .header.short {
         min-height: 12rem;
     }
-    .header > div > h1 {
+    .header h1 {
         font-size: 3rem;
     }
-    .header > div > p {
+    .header p {
         font-size: 1.75rem;
     }
 }
 
 @media (min-width: 1024px) {
-    .header {
+    .header.short {
         max-height: 15rem;
     }
 }
+/* Accordion */
+.accordion {
+    width: 75%;
+    max-width: 700px;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+}
+.accordion h1, .accordion h2, .accordion h3, .accordion h4, .accordion h5, .accordion h5 {
+    cursor: pointer;
+}
+.accordion.active {
+    background-color: #f6f7f8;
+    box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+}
+.accordionContent {
+    color: #96999d;
+    align-items: center;
+    font-weight: 500;
+    display: none;
+    padding-top: 10px;
+}
+
 /* End of COMPONENTS______________________________ */
 
 /*MISC________________________________*/
