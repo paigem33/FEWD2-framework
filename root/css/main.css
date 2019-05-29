@@ -650,90 +650,103 @@ th, td {
 }
 
 .iconEx li {
-    height: 55px;
     display: inline-block;
 }
 
 .about {
     left: 0px;
+    height: 55px;
     width: 50px;
     background: url("../images/iconSprite.png") 0 0;
 }
 
 .home {
     left: 0px;
+    height: 55px;
     width: 50px;
     background: url("../images/iconSprite.png") 0 -53px;
 }
 
 .contact {
     left: 0px;
+    height: 55px;
     width: 50px;
     background: url("../images/iconSprite.png") 0 -106px;
 }
 
 .location {
     left: 0px;
+    height: 55px;
     width: 50px;
     background: url("../images/iconSprite.png") 0 -160px;
 }
 
 .projects {
     left: 0px;
+    height: 55px;
     width: 50px;
     background: url("../images/iconSprite.png") 0 -214px;
 }
 
 .insta {
     left: 0px;
+    height: 55px;
     width: 50px;
     background: url("../images/iconSprite.png") 0 -268px;
 }
 
 .fb {
     left: 0px;
+    height: 55px;
     width: 50px;
     background: url("../images/iconSprite.png") 0 -322px;
 }
 
 .in {
     left: 0px;
+    height: 55px;
     width: 50px;
     background: url("../images/iconSprite.png") 0 -376px;
 }
 
 .twitter {
     left: 0px;
+    height: 55px;
     width: 50px;
     background: url("../images/iconSprite.png") 0 -430px;
 }
 
 .upload {
     left: 0px;
+    height: 55px;
     width: 50px;
     background: url("../images/iconSprite.png") 0 -484px;
 }
 
 .download {
     left: 0px;
+    height: 55px;
     width: 50px;
     background: url("../images/iconSprite.png") 0 -539px;
 }
 
 .print {
     left: 0px;
+    height: 55px;
     width: 50px;
     background: url("../images/iconSprite.png") 0 -593px;
 }
 
 .hamMenu {
     left: 0px;
+    height: 55px;
     width: 50px;
     background: url("../images/iconSprite.png") 0 -647px;
 }
 
 .hamX {
     left: 0px;
+    height: 55px;
     width: 50px;
     background: url("../images/iconSprite.png") 0 -700px;
 }
