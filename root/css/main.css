@@ -610,7 +610,51 @@ html {
       border-color: #96f7a9;
       outline: 0;
       box-shadow: 0 0 0 0.2rem rgba(150, 247, 247, 0.25);
-    }
+}
+/*Dropwdown list*/
+.select{
+     margin: 1em 0;
+    display: inline-block;
+    width: 100%;
+    border: solid 1px white;
+    border-radius: 7px;
+    height: 2.5em;
+    padding: 0.55em;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #495057;
+}
+textarea.form-control{
+    height: auto;
+}
+.select:focus{
+      color: #495057;
+      background-color: #fff;
+      border-color: #96f7a9;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(150, 247, 247, 0.25);
+}
+.form-check {
+  position: relative;
+  display: block;
+  padding-left: 1.25rem;
+  margin: 1em 0;
+}
+
+.form-checkbox {
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  position: absolute;
+  margin-top: 0.1rem;
+  margin-left: -1.25rem;
+}
+fieldset{
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
   @media screen and (min-width:700px){
       form {
           text-align: left;
