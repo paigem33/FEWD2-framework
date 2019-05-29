@@ -293,8 +293,166 @@ li {
 }
 
 /*Tables*/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+.tableEx {
+    background-color: #81aff9;
+    padding: 1rem;
+}
+.resTable {
+    overflow-x: auto;
+}
+
+.table-simple {
+    background-color: #fff;
+}
+.table-zebra {
+    background-color: #fff;
+}
+.table-zebra tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.table-invert {
+    background-color: #000;
+    color: #fff;
+}
+.table-invert.table-zebra tr:nth-child(even){
+    background-color: #414142;
+}
+
+/*Icons*/
+
+.iconEx {
+    background-color: #ccc;
+    padding: .5rem;
+}
+
+.iconEx li {
+    height: 50px;
+    display: inline-block;
+}
+
+.about {
+    left: 0px;
+    width: 44px;
+    background: url("../images/iconSprite.png") 0 0;
+}
+
+.home {
+    left: 0px;
+    width: 44px;
+    background: url("../images/iconSprite.png") 0 -53px;
+}
+
+.contact {
+    left: 0px;
+    width: 44px;
+    background: url("../images/iconSprite.png") 0 -106px;
+}
+
+.location {
+    left: 0px;
+    width: 44px;
+    background: url("../images/iconSprite.png") 0 -160px;
+}
+
+.projects {
+    left: 0px;
+    width: 44px;
+    background: url("../images/iconSprite.png") 0 -214px;
+}
+
+.insta {
+    left: 0px;
+    width: 44px;
+    background: url("../images/iconSprite.png") 0 -268px;
+}
+
+.fb {
+    left: 0px;
+    width: 44px;
+    background: url("../images/iconSprite.png") 0 -322px;
+}
+
+.in {
+    left: 0px;
+    width: 44px;
+    background: url("../images/iconSprite.png") 0 -376px;
+}
+
+.twitter {
+    left: 0px;
+    width: 44px;
+    background: url("../images/iconSprite.png") 0 -430px;
+}
+
+.upload {
+    left: 0px;
+    width: 44px;
+    background: url("../images/iconSprite.png") 0 -484px;
+}
+
+.download {
+    left: 0px;
+    width: 44px;
+    background: url("../images/iconSprite.png") 0 -539px;
+}
+
+.print {
+    left: 0px;
+    width: 44px;
+    background: url("../images/iconSprite.png") 0 -593px;
+}
+
+.hamMenu {
+    left: 0px;
+    width: 44px;
+    background: url("../images/iconSprite.png") 0 -647px;
+}
+
+.hamX {
+    left: 0px;
+    width: 44px;
+    background: url("../images/iconSprite.png") 0 -700px;
+}
+
 
 /*Misc*/
+/*Mask Images*/
+.maskEx {
+    background-color: #81aff9;
+    padding: 1rem;
+}
+
+.pixelMask {
+    -webkit-mask-image: url(../images/pixelMask.png);
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.stripeMask {
+    -webkit-mask-image: url(../images/stripeMask.png);
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.circuitMask {
+    -webkit-mask-image: url(../images/circuitMask.png);
+    -webkit-mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+}
+
 
 /*Makes content not show up on print*/
 @media print {
