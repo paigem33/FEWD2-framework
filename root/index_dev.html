@@ -92,79 +92,83 @@
             <p class="lowercase column">I have a class of lowercase</p>
             <p class="capitalize column">I have a class of capitalize</p>
         </div>
-        <div class="group">
-            <form action="#" class="column">
-                <div class="group">
-                    <div class="column">
-                        <label for="fName">First Name:</label>
-                        <input type="fNAme">
+            <div class="group">
+           <h2>FORMS</h2>
+            <form action="#" class="col-1 ">
+                <div class="group-form">
+                    <div class="col-2">
+                        <label for="exampleEmail">Email</label>
+                        <input class="form-control" type="text" placeholder="Email">
                     </div>
-                    <div class="column">
-                        <label for="mName">Middle Name:</label>
-                        <input type="mName">
+                     <div class="col-2">
+                        <label for="examplePassword">Password</label>
+                        <input class="form-control" type="password" placeholder="Password">
                     </div>
-                    <div class="column">
-                        <label for="lName">Last Name:</label>
-                        <input type="lName">
+                    
+                </div>
+                
+                <div class="group-form">
+                    <div class="col-1">
+                       <label class="" for="exampleSelect">Preference</label>
+                          <select class="select" id="exampleSelect">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
                     </div>
                 </div>
-                <div class="group">
-                    <div class="column">
-                        <label for="street">Street Address:</label>
-                        <input type="street">
-                    </div>
+                <div class="group-form">
+                  <div class="col-1">
+                      <label for="exampleTextArea">Large textarea</label>
+                      <textarea class="form-control" id="exampleTextArea" rows="10"></textarea>
+                  </div>
                 </div>
-                <div class="group">
-                    <div class="column">
-                        <label for="city">City:</label>
-                        <input type="city">
-                    </div>
-                    <div class="column">
-                        <label for="state">State:</label>
-                        <input type="state">
-                    </div>
-                    <div class="column">
-                        <label for="zip">Zip Code:</label>
-                        <input type="zip">
-                    </div>
+                
+                 <div class="group-form">
+                   <div class="col-1">
+                     <label>Check Boxes</label>
+                     <div class="form-check">
+                          <input class="form-checkbox" type="checkbox" value="" id="defaultCheck">
+                          <label class="" for="defaultCheck">Default checkbox</label>
+                      </div>
+                   </div>
+                   
+                   <div class="col-1">
+                     <label>Radio Buttons</label>
+                      <div class="col-1">
+                         <div class="form-check">
+                              <input class="form-checkbox" name="exampleRadios" type="radio" value="" id="defaultRadio">
+                              <label class="" for="defaultRadio">Default radio</label>
+                          </div>
+                       </div>
+                      <div class="form-check">
+                          <input class="form-checkbox" name="exampleRadios" type="radio" value="" id="defaultRadio1">
+                          <label class="" for="defaultRadio1">Default radio</label>
+                      </div>
+                   </div>
                 </div>
+                
+                
+                <fieldset>
+                   
+                     <div class="group-form">
+                        <div class="col-2">
+                            <label for="exampleEmail">Email</label>
+                            <input class="form-control" type="text" placeholder="Email">
+                        </div>
+                         <div class="col-2">
+                            <label for="examplePassword">Password</label>
+                            <input class="form-control" type="password" placeholder="Password">
+                        </div>
+                    
+                    </div>
+                </fieldset>
+                
+                
+              
             </form>
-            <form action="#" class="column">
-                <div class="group">
-                    <div class="column">
-                        <label for="fName">First Name:</label>
-                        <input type="fNAme">
-                    </div>
-                    <div class="column">
-                        <label for="mName">Middle Name:</label>
-                        <input type="mName">
-                    </div>
-                    <div class="column">
-                        <label for="lName">Last Name:</label>
-                        <input type="lName">
-                    </div>
-                </div>
-                <div class="group">
-                    <div class="column">
-                        <label for="street">Street Address:</label>
-                        <input type="street">
-                    </div>
-                </div>
-                <div class="group">
-                    <div class="column">
-                        <label for="city">City:</label>
-                        <input type="city">
-                    </div>
-                    <div class="column">
-                        <label for="state">State:</label>
-                        <input type="state">
-                    </div>
-                    <div class="column">
-                        <label for="zip">Zip Code:</label>
-                        <input type="zip">
-                    </div>
-                </div>
-            </form>
+            
         </div>
         <div>
             <p class="bold">I have a class of bold</p>
@@ -390,5 +394,77 @@
                </div>
             </div>
     </body>
+    <footer class="footer1">
+       <div class="group">  
+               <div class="col-1 my-auto">
+                   <ul class="group mainNav1">
+                    <li><a href="#">Menu Item</a></li>
+
+                    <li class="nav1-showSub">
+                        <a href="#">Sub Menu</a>
+                        <ul class="nav1-subMenu">
+                            <li><a href="#">Sub Item</a></li>
+                            <li><a href="#">Sub Item</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Menu Item</a></li>
+                    <li class="nav1-showSub">
+                        <a href="#">Sub Menu</a>
+                        <ul class="nav1-subMenu">
+                            <li><a href="#">Sub Item</a></li>
+                            <li><a href="#">Sub Item</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Menu Item</a></li>
+                </ul>
+               </div>
+          
+           <div class="col-1 footer-icons my-auto">
+               <ul>
+                    <li class="insta"></li>
+                       <li class="fb"></li>
+                       <li class="in"></li>
+                       <li class="twitter"></li>
+               </ul>
+           </div>
+           <div class="copyright my-auto">©2019 CSSEO Framework</div>
+        </div>
+    </footer>
+    <footer class="footer2">
+       <div class="group">  
+               <div class="col-1 my-auto">
+                   <ul class="group mainNav1">
+                    <li><a href="#">Menu Item</a></li>
+
+                    <li class="nav1-showSub">
+                        <a href="#">Sub Menu</a>
+                        <ul class="nav1-subMenu">
+                            <li><a href="#">Sub Item</a></li>
+                            <li><a href="#">Sub Item</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Menu Item</a></li>
+                    <li class="nav1-showSub">
+                        <a href="#">Sub Menu</a>
+                        <ul class="nav1-subMenu">
+                            <li><a href="#">Sub Item</a></li>
+                            <li><a href="#">Sub Item</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Menu Item</a></li>
+                </ul>
+               </div>
+          
+           <div class="col-1 footer-icons my-auto">
+               <ul>
+                    <li class="insta"></li>
+                       <li class="fb"></li>
+                       <li class="in"></li>
+                       <li class="twitter"></li>
+               </ul>
+           </div>
+           <div class="copyright my-auto">©2019 CSSEO Framework</div>
+        </div>
+    </footer>
 </div>
 </html>
