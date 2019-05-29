@@ -1,13 +1,24 @@
-
 /*CUSTOM______________________________________*/
 /* Just for display purposes */
-.group {
-    background-color: #f1f1f1;
-}
+
 p {
     background-color: #d9d9d9;
     margin: 10px;
 }
+.tableEx {
+    background-color: #81aff9;
+    padding: 1rem;
+}
+.iconEx {
+    background-color: #ccc;
+    padding: .5rem;
+}
+
+.iconEx li {
+    height: 50px;
+    display: inline-block;
+}
+
 /* Code Examples */
 /* https://www.sitepoint.com/best-practice-for-code-examples/ */
 .code-example {
@@ -44,7 +55,7 @@ pre code {
 .nav1-name h4 {
     border: solid 5px rgb(173, 208, 228);
     border-radius: 15px;
-    padding: -5px;
+    padding: 5px;
     font-weight: normal;
     color: rgb(173, 208, 228);
     background-color: rgba(153, 207, 226, 0.1);
@@ -76,15 +87,18 @@ html {
     margin: 0;
     box-sizing: inherit;
 }
-article, aside, figcaption, figure, footer, header, menu, nav, section { 
+article, aside, figcaption, figure, footer, header, menu, nav, section {
     display: block;
+}
+button, .button {
+  outline: none;
 }
 /*End of RESETS_____________________________*/
 
 /*GRID____________________________________*/
-/* Common Screen Widths: 
+/* Common Screen Widths:
  - Phones: 320px to 414px
- - Tablets: 768px to 1024px 
+ - Tablets: 768px to 1024px
  - Laptops/Desktops: 1366px
  */
 
@@ -97,11 +111,6 @@ article, aside, figcaption, figure, footer, header, menu, nav, section {
 .container.small {
     max-width: 960px;
 }
-.group, .row {
-
-    display: flex;
-    flex-wrap: wrap;
-}
 .col-1, .col-2, .col-3, .col-4, .col-33, .col-66 {
   flex: 100%;
   box-sizing: border-box;
@@ -136,7 +145,7 @@ article, aside, figcaption, figure, footer, header, menu, nav, section {
     flex-direction: row;
 }
 .flex.direction-row-reverse {
-    flex-direction: row-reverse;
+    flex-direction:row-reverse;
 }
 .flex.direction-column {
     flex-direction: column;
@@ -151,23 +160,6 @@ article, aside, figcaption, figure, footer, header, menu, nav, section {
 .flex.wrap {
     flex-wrap: wrap;
 }
-
-.col-1, .col-2, .col-3, .col-4, .col-33, .col-66 {
-  flex: 100%;
-  box-sizing: border-box;
-}
-
-@media (min-width: 768px) {
-    .col-3, .col-33 {
-        flex: 33%;
-    }
-    .col-2, .col-4 {
-        flex: 50%;
-    }
-    .col-66 {
-        flex: 66%;
-    }
-
 .flex.wrap-reverse {
     flex-wrap: wrap-reverse;
 }
@@ -230,9 +222,7 @@ article, aside, figcaption, figure, footer, header, menu, nav, section {
 .flex.grow {
     flex-grow: 1;
 }
-.flex.stretch {
-    align-items: shrink;
-}
+
 /* Block/Inline */
 .block {
     display: block;
@@ -284,33 +274,11 @@ article, aside, figcaption, figure, footer, header, menu, nav, section {
 }
 /*End of HELPER CLASSES____________________________________*/
 
-@media (min-width: 1024px) {
-    .col-4 {
-        flex: 25%;
-    }
-}
 /*End of GRID____________________________________*/
 
 /*DISPLAY & SPACING____________________________________*/
-/* Flex */
-.flex {
-    display: flex;
-}
 
-/* Flex Direction */
-.flex.direction-row {
-    flex-direction: row;
-}
-.flex.direction-row-reverse {
-    flex-direction: row-reverse;
-
-body {
-  font-size: 1em;
-  font-family: 'Raleway', sans-serif;
-  line-height: 1.25;
-}
-
-/*NAVIGATION*/
+/*NAVIGATION_______________________________________*/
 .nav1-flex {
     display: flex;
     justify-content: space-between;
@@ -344,7 +312,7 @@ body {
     display: none;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
     .nav1, .nav2 {
         display: flex;
         justify-content: space-between;
@@ -415,255 +383,18 @@ body {
 .mainNav2 .nav2-subMenu {
     display: none;
 }
-/*Typography*/
-/*standard typography*/
-p {
-    font-size: 1em;
-    line-height: 1.25;
+/* end of NAVIGATION___________________*/
 
-}
-.flex.direction-column {
-    flex-direction: column;
-}
-.flex.direction-column-reverse {
-    flex-direction: column-reverse;
-}
-/* Flex Wrap */
-.flex.nowrap {
-    flex-wrap: nowrap;
-}
-.flex.wrap {
-    flex-wrap: wrap;
-}
-.flex.wrap-reverse {
-    flex-wrap: wrap-reverse;
-}
-/* Justify Content */
-.flex.justify-content-start {
-    justify-content: flex-start;
-}
-.flex.justify-content-end {
-    justify-content: flex-end;
-}
-.flex.justify-content-center {
-    justify-content: center;
-}
-.flex.justify-content-between {
-    justify-content: space-between;
-}
-.flex.justify-content-around {
-    justify-content: space-around;
-}
-.flex.justify-content-evenly {
-    justify-content: space-evenly;
-}
-/* Align Self */
-.flex.align-self-auto {
-    align-self: auto;
-}
-.flex.align-self-start {
-    align-self: flex-start;
-}
-.flex.align-self-end {
-    align-self: flex-end;
-}
-.flex.align-self-center {
-    align-self: center;
-}
-.flex.align-self-baseline {
-    align-self: baseline;
-}
-.flex.align-self-stretch {
-    align-self: stretch;
-}
-/* Align-Items */
-.flex.align-items-stretch {
-    align-items: stretch;
-}
-.flex.align-items-start {
-    align-items: flex-start;
-}
-.flex.align-items-end {
-    align-items: flex-end;
-}
-.flex.align-items-center {
-    align-items: center;
-}
-.flex.align-items-baseline {
-    align-items: baseline;
-}
-/* Flex Grow */
-.flex.grow {
-    flex-grow: 1;
-}
-/* Block/Inline */
-.block {
-    display: block;
-}
-.inline-block {
-    display: inline-block;
-}
-.inline {
-    display: inline;
-}
-/* Margins */
-.mx-auto {
-    margin: 0 auto;
-}
-.my-auto {
-   margin: auto 0;
-}
-.margin-1 {
-    margin: 0.25em;
-}
-.margin-2 {
-    margin: 0.5em;
-}
-.margin-3 {
-    margin: 1em;
-}
-/* Padding */
-.padding-1 {
-    padding: 0.25em;
-}
-.padding-2 {
-    padding: 0.5em;
-}
-.padding-3 {
-    padding: 1em;
-}
-/*End of DISPLAY & SPACING____________________________________*/
-
-/*HELPER CLASSES____________________________________*/
-.float-left {
-    float: left;
-}
-.float-right {
-    float: right;
-}
-.clearfix {
-    overflow: auto;
-    clear: both;
-}
-/*End of HELPER CLASSES____________________________________*/
-
-/*Base styles: font sizes*/
-html {
-    font-size: 100%;
-  }
-  body {
-    font-size: 1em;
-    font-family: 'Raleway', sans-serif;
-    line-height: 1.25;
-  }
-  
- /*NAVIGATION*/
-.nav1-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-.nav1-flex .icon {
-    font-size: 30px;
-}
-.mainNav1 {
-    background-color: #f2f2f2;
-    padding: 5px 0;
-    display: none;
-}
-.mainNav1 a {
-    display: block;
-    color: #000000;
-    font-size: 1.25em;
-    text-align: center;
-    padding: 5px;
-}
-.mainNav1 a:visited, .mainNav2 a:visited {
-    color: #000000;
-}
-.mainNav1 a:hover, .mainNav2 a:hover {
-    text-decoration: none;
-    color: #000000;
-}
-.nav1-subMenu, .nav2-subMenu {
-    font-size: 1em;
-    display: none;
-}
-
-@media screen and (min-width: 700px) {
-    .nav1, .nav2 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+/*Typography___________________________*/
+/*Base styles: font sizes_________________*/
+  html {
+      font-size: 100%;
     }
-    .nav1 .icon {
-        display: none;
+    body {
+      font-size: 1em;
+      font-family: 'Raleway', sans-serif;
+      line-height: 1.25;
     }
-    .mainNav1, .nav2 .mainNav2 {
-        background-color: #fff;
-        display: block;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 55px;
-    }
-    .mainNav1 li {
-        padding: 5px 20px;
-    }
-    .nav1-subMenu, .nav2-subMenu {
-        position: absolute;
-        background-color: #f2f2f2;
-        padding: 5px;
-        margin-top: 5px;
-        display: none;
-        z-index: 10;
-    }
-     .nav2 .mainNav2 {
-        background-color: #fff;
-        position: static;
-        top: 0;
-        right: 0;
-        width: 75%;
-    }
-    .nav2-name {
-        margin-right: 50px;
-    }
-    .nav2 .mainNav2 .display-large {
-        display: block;
-    }
-}
-/*NAV 2 bottom of screen*/
-.mainNav2 {
-    display: flex;
-    background-color: #f2f2f2;
-    padding: 5px 0;
-    overflow: hidden;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    height: 80px;
-}
-.mainNav2 a {
-    display: block;
-    color: #000000;
-    font-size: 1.25em;
-    text-align: center;
-    padding: 5px;
-}
-.nav2-name {
-    padding: 10px;
-}
-.mainNav2 .display-large {
-    display: none;
-}
-.mainNav2 .nav2-subMenu {
-    display: none;
-}
-  
-  /*Typography*/
   /*standard typography*/
   p {
       font-size: 1em;
@@ -728,7 +459,7 @@ html {
   .justify-text {
       text-align: justify;
   }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 768px) {
       p {
       line-height: 1.375;
       }
@@ -762,7 +493,7 @@ html {
       }
   }
   /*Link styles*/
-  
+
   a {
       text-decoration: none;
       color: #000080;
@@ -773,9 +504,9 @@ html {
   a:hover {
       text-decoration: underline;
   }
-  
-  /*Buttons*/
-  
+
+  /*Buttons_______________________*/
+
   /*four different colors*/
   button, .button, input[type="submit"], input[type="reset"], input[type="button"] {
       background-color: transparent;
@@ -796,7 +527,7 @@ html {
   button.blue, .button.blue, input[type="submit"].blue, input[type="reset"].blue, input[type="button"].blue {
       background-color: #3333ff;
       color: white;
-      border-color: #3333ff
+      border-color: #3333ff;
   }
   button.green, .button.green, input[type="submit"].green, input[type="reset"].green, input[type="button"].green {
       background-color: #009900;
@@ -826,7 +557,7 @@ html {
       background-color: #6666ff;
   }
   button.basic:hover, .button.basic:hover, input[type="submit"].basic:hover, input[type="reset"].basic:hover, input[type="button"].basic:hover {
-      background-color: #595959
+      background-color: #595959;
   }
   button:hover, .button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
       background-color: #d9d9d9;
@@ -835,52 +566,35 @@ html {
       transform: translateY(1px);
       filter: saturate(150%);
   }
-  
-  
+
   /*three different sizes, normal is just the default*/
-  
+
   button.xsmall, .button.xsmall, input[type="submit"].xsmall, input[type="reset"].xsmall, input[type="button"].xsmall {
       padding: 5px;
       height: 25px;
-      font-size: .7em
+      font-size: .7em;
   }
   button.small, .button.small, input[type="submit"].small, input[type="reset"].small, input[type="button"].small {
       padding: 5px;
       height: 30px;
-      font-size: .85em
+      font-size: .85em;
   }
   button.large, .button.large, input[type="submit"].large, input[type="reset"].large, input[type="button"].large {
       padding: 15px;
       font-size: 1.25em;
       height: 55px;
   }
+  /* END OF BUTTONS_________________________ */
+
   /*Forms*/
-  form {
-      border: solid 3px grey;
-      border-radius: 5px;
-      padding: 5px;
-      margin: 0 10px;
-      text-align: center;
-  }
-  label {
-      display: block;
-  }
-  input {
-      border: solid 1px grey;
-      border-radius: 5px;
-      max-width: 100%;
-      line-height: 2;
-      padding-left: .5em;
-  }
-  @media screen and (min-width:700px){
-      form {
-          text-align: left;
-      }
-  }
+
+/* End of forms_____________________ */
+
   /*lists*/
-  
+
   ul {
       list-style-type: none;
+      margin: 5px;
   }
   li {
       padding: 3px;
@@ -891,44 +605,22 @@ html {
   .listBullet {
       list-style-type: disc;
   }
-  
-  /*Tables*/
-/*Tables*/
+
+
+/*Tables__________________________________*/
 table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
     border: 1px solid #ccc;
 }
-
-
 th, td {
     text-align: left;
     padding: 8px;
 }
-
-a {
-    text-decoration: none;
-    color: #000080;
-}
-a:visited {
-    color: #00004d;
-}
-a:hover {
-    text-decoration: underline;
-}
-
-/*Buttons*/
-
-
-.tableEx {
-    background-color: #81aff9;
-    padding: 1rem;
-}
 .resTable {
     overflow-x: auto;
 }
-
 .table-simple {
     background-color: #fff;
 }
@@ -938,7 +630,6 @@ a:hover {
 .table-zebra tr:nth-child(even){
     background-color: #f2f2f2;
 }
-
 .table-invert {
     background-color: #000;
     color: #fff;
@@ -947,119 +638,111 @@ a:hover {
     background-color: #414142;
 }
 
-/*Icons*/
-
-.iconEx {
-    background-color: #ccc;
-    padding: .5rem;
-}
-
-.iconEx li {
-    height: 50px;
-    display: inline-block;
-}
+/*Icons__________________________________*/
 
 .about {
     left: 0px;
-    width: 44px;
+    height: 55px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 0;
 }
 
 .home {
     left: 0px;
-    width: 44px;
+    height: 55px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -53px;
 }
 
 .contact {
     left: 0px;
-    width: 44px;
+    height: 55px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -106px;
 }
 
 .location {
     left: 0px;
-    width: 44px;
+    height: 55px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -160px;
 }
 
 .projects {
     left: 0px;
-    width: 44px;
+    height: 55px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -214px;
 }
 
 .insta {
     left: 0px;
-    width: 44px;
+    height: 55px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -268px;
 }
 
 .fb {
     left: 0px;
-    width: 44px;
+    height: 55px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -322px;
 }
 
 .in {
     left: 0px;
-    width: 44px;
+    height: 55px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -376px;
 }
 
 .twitter {
     left: 0px;
-    width: 44px;
+    height: 55px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -430px;
 }
 
 .upload {
     left: 0px;
-    width: 44px;
+    height: 55px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -484px;
 }
 
 .download {
     left: 0px;
-    width: 44px;
+    height: 55px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -539px;
 }
 
 .print {
     left: 0px;
-    width: 44px;
+    height: 55px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -593px;
 }
 
 .hamMenu {
     left: 0px;
-    width: 44px;
+    height: 55px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -647px;
 }
 
 
 .hamX {
     left: 0px;
-    width: 44px;
+    height: 55px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -700px;
 }
+/* END Icons______________________________ */
 
-ul {
-    list-style-type: none;
-}
-li {
-    padding: 3px;
-}
-.listCircle {
-    list-style-type: circle;
-}
-.listBullet {
-    list-style-type: disc;
-}
+/*Tables_________________________________*/
 
-/*Tables*/
-
-
+/* MISC_______________________________ */
   /*Makes content not show up on print*/
   @media print {
       .no-print {
@@ -1067,12 +750,11 @@ li {
       }
   }
   .responsiveImg {
-      width: 100%;
       max-width: 100%;
       height: auto;
   }
-  
-/*Media queries*/
+
+/*END misc________________________________*/
 
 /* COMPONENTS______________________________ */
 /* Header */
@@ -1085,7 +767,10 @@ li {
     min-height: 8.5rem;
     max-height: 9.5rem;
 }
-
+.header .bg {
+  background-color: rgba(0,0,0,.5);
+  padding: 15px;
+}
 .header > div {
     width: 100%;
     position: absolute;
@@ -1096,17 +781,13 @@ li {
     align-items: center;
 }
 .header h1 {
-    font-size: 2.25rem;
     color: #f1f1f1;
     text-shadow: 1px 1px #000;
-    /* I'm open to the idea of rgba background on all tags; the reason I put the text shadow here specifically in the header is in case the user provides no image, and there is a light background behind light text. Could also set a contrasting (in this case dark) background by default when there's no image. I think this is where I was waiting on what the other framework categories will look like (e.g. if there ends up being classes like a bg-light, bg-dark, text-dark, etc.) */
     margin: 0;
 }
-.header p {
+.header p, .header h2, .header h3, .header h4 {
     color: #f1f1f1;
     text-shadow: 1px 1px #000;
-    background-color: transparent;
-    font-size: 1.25rem;
     margin: 0;
 }
 
@@ -1115,10 +796,7 @@ li {
         min-height: 12rem;
     }
     .header h1 {
-        font-size: 3rem;
-    }
-    .header p {
-        font-size: 1.75rem;
+      font-size: 4em;
     }
 }
 
@@ -1129,10 +807,17 @@ li {
 }
 /* Accordion */
 .accordion {
-    width: 75%;
-    max-width: 700px;
-    margin-top: 20px;
-    background-color: #f2f2f2;
+            width: 75%;
+            max-width: 700px;
+            padding: 20px;
+            margin: 0 auto;
+            position: relative;
+            border: 1px solid rgba(0,0,0,.1);
+            border-radius: 15px;
+            box-sizing: border-box;
+            transition: all .3s;
+            margin-top: 20px;
+            background-color: #f2f2f2;
 }
 .accordion h1, .accordion h2, .accordion h3, .accordion h4, .accordion h5, .accordion h5 {
     cursor: pointer;
@@ -1147,146 +832,9 @@ li {
     font-weight: 500;
     display: none;
     padding-top: 10px;
-
-.responsiveImg {
-    max-width: 100%;
-    height: auto;
-
-}
-/* Code Examples */
-/* https://www.sitepoint.com/best-practice-for-code-examples/ */
-.code-example {
-    display: flex;
-    justify-content: center;
-    margin: 2rem;
-}
-pre {
-    background-color: rgb(52, 55, 56);
-    color: #e7e5e5;
-    padding: 0 2em;
-    border-radius: 0.5em;
-}
-pre span {
-    color: rgb(106, 172, 106);
-}
-pre b {
-    font-weight: normal;
-    color:rgb(87, 135, 190);
-}
-pre u {
-    text-decoration: none;
-    color:rgb(219, 157, 128);
-}
-pre i {
-    text-decoration: none;
-    font-style: normal;
-    color:rgb(173, 208, 228);
-}
-pre code {
-    white-space: pre-line;
-}
-/*components*/
-
-/* Header */
-/* I think we should avoide using decendent selectors, it takes a lot of flexability from the user. I think it would be better to use .header h1 instead of .header > div > h1. Since its safe to assume there will only be one h tag, one paragraph tag, etc in the header it shouldnt be a problem and it gives more flexability.  It is easier to do .header button than it is .header > div > div > button and it makes how the user lays out their html less strict*/
-/* .container.small > .header > div {
-    max-width: 960px;
-} I think this is redundant since container.small already has the max-width of 960*/
-.header {
-    /* min-height: 8.5rem;
-    max-height: 9.5rem; I think we should leave the image the size it is, the set heights distorted my image, it wasnt very plug and play like we are going for */
-    background-color: rgb(247, 242, 242);
-    display: flex;
-    overflow: hidden;
-}
-/* .header > img {
-    max-width: 100% ;
-    height: 100%;
-} Takes away the ability to have the img responsive or not, should just put the responsive class on if wanted*/
-.header > div {
-    width: 100%;
-    position: absolute;
-    margin-bottom: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    align-items: center;
-}
-.header > div > h1 {
-    /* text-transform: uppercase; should probably make this optional, theres already a class to do that*/
-    font-size: 2.25rem;
-    color: #f1f1f1;
-    text-shadow: 1px 1px #000;
-    margin: 0;
-}
-.header > div > p {
-    color: #f1f1f1;
-    text-shadow: 1px 1px #000;
-    /* I think it would be a good idea to have a rgba background on all the tags instead of putting the drop shadow */
-    background-color: transparent;
-    font-size: 1.25rem;
-    margin: 0;
-    text-align: center;
-}
-.header > div > div > button {
-    /* background-color: rgba(255,255,255,0.3 ); buttons already have styles, adding the class of basic puts a color on the default transparent button. we should probably avoid styling buttons differently in different sections in order to keep them uniform. Im open to changing the styles i did if need be */
-    /* color: #f1f1f1; */
-    /* text-shadow: 1px 1px #000; */
 }
 
-@media (min-width: 768px) {
-    .header {
-        /* min-height: 12rem; */
-    }
-    .header > div > h1 {
-        font-size: 3rem;
-    }
-    .header > div > p {
-        font-size: 1.75rem;
-    }
-}
-
-@media (min-width: 1024px) {
-    .header {
-        /* max-height: 15rem; */
-    }
-}
-
-/*accordion*/
-
-
-.accordion {
-          width: 75%;
-          max-width: 700px;
-          padding: 20px;
-          margin: 0 auto;
-          position: relative;
-          border: 1px solid rgba(0,0,0,.1);
-          border-radius: 15px;
-          box-sizing: border-box;
-          transition: all .3s;
-          margin-top: 20px;
-          background-color: #f2f2f2;
-        }
-.accordion h1, .accordion h2, .accordion h3, .accordion h4, .accordion h5, .accordion h5 {
-            cursor: pointer;
-        }
-.accordion.active {
-          background-color: #f6f7f8;
-          box-shadow: 2px 2px 20px rgba(0,0,0,.2);
-        }
-.accordionContent {
-          color: #96999d;
-          align-items: center;
-          font-weight: 500;
-            display: none;
-            padding-top: 10px
-        }
-
-
-/* End of COMPONENTS______________________________ */
-
-/*MISC________________________________*/
+/* End accordion */
 /*Mask Images*/
 .maskEx {
     background-color: #81aff9;
@@ -1310,9 +858,4 @@ pre code {
     -webkit-mask-size: 100%;
     -webkit-mask-repeat: no-repeat;
 }
-
-
-/*End of MISC________________________________*/
-
-/*Media queries*/
-
+/* End of COMPONENTS______________________________ */
