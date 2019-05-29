@@ -9,15 +9,6 @@ p {
     background-color: #81aff9;
     padding: 1rem;
 }
-.iconEx {
-    background-color: #ccc;
-    padding: .5rem;
-}
-
-.iconEx li {
-    height: 50px;
-    display: inline-block;
-}
 
 /* Code Examples */
 /* https://www.sitepoint.com/best-practice-for-code-examples/ */
