@@ -1,13 +1,10 @@
 /*just for display purposes*/
 
-.group {
-    background-color: yellow;
-}
-p {
-    background-color: indianred;
-}
 
 /*Resets across browsers*/
+img {
+  display: block;
+}
 * {
     padding: 0;
     margin: 0;
@@ -637,6 +634,7 @@ pre code {
     background-color: transparent;
     font-size: 1.25rem;
     margin: 0;
+    text-align: center;
 }
 .header > div > div > button {
     /* background-color: rgba(255,255,255,0.3 ); buttons already have styles, adding the class of basic puts a color on the default transparent button. we should probably avoid styling buttons differently in different sections in order to keep them uniform. Im open to changing the styles i did if need be */
