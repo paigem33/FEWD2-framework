@@ -224,6 +224,7 @@ article, aside, figcaption, figure, footer, header, menu, nav, section {
 }
 .my-auto {
    margin: auto 0;
+    
 }
 .margin-1 {
     margin: 0.25em;
@@ -728,7 +729,6 @@ th, td {
 }
 
 .iconEx li {
-    height: 50px;
     display: inline-block;
 }
 
@@ -764,25 +764,26 @@ th, td {
 
 .insta {
     left: 0px;
-    width: 44px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -268px;
 }
 
 .fb {
     left: 0px;
-    width: 44px;
+    width: 50px;
+     height: 60px;
     background: url("../images/iconSprite.png") 0 -322px;
 }
 
 .in {
     left: 0px;
-    width: 44px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -376px;
 }
 
 .twitter {
     left: 0px;
-    width: 44px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -430px;
 }
 
@@ -933,3 +934,31 @@ th, td {
 
 
 /*End of MISC________________________________*/
+
+
+/* FOOTER */
+.copyright{
+    font-size: 1em;
+    height: 3em;
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.footer-icons{
+    margin-top: 10px;
+    text-align: center;
+}
+.footer-icons li{
+    margin: 0 10px;
+    height: 55px;
+    display: inline-block;
+}
+
+@media screen and (max-width:700px){
+    .footer2{
+        display: none;
+    }
+  }
