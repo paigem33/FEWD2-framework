@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation examples</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Framework project ideas</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+        if ($(window).width() <= 699){
+            $('div.icon').click(function(){
+            $('.mainNav1').stop().slideToggle();
+        })
+        $('.nav1-showSub').click(function(){
+            $(this).next().stop().slideToggle();
+        })
+        } else {
+            $('.nav1-showSub').hover(function(){
+            $(this).children('ul').stop().slideToggle();
+            })
+        }
+})
+    </script>
+</head>
+<body>
+    <nav class="nav1">
+       <div class="nav1-flex">
+           <div class="nav1-name">Logo/name</div>
+            <div class="icon"><i class="fas fa-bars"></i></div>
+       </div>
+        <ul class="mainNav1">
+            <li><a href="#">Menu Item</a></li>
+            
+            <li class="nav1-showSub">
+                <a href="#">Sub Menu</a>
+                <ul class="nav1-subMenu">
+                    <li><a href="#">Sub Item</a></li>
+                    <li><a href="#">Sub Item</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Menu Item</a></li>
+            <li class="nav1-showSub">
+                <a href="#">Sub Menu</a>
+                <ul class="nav1-subMenu">
+                    <li><a href="#">Sub Item</a></li>
+                    <li><a href="#">Sub Item</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Menu Item</a></li>
+        </ul>
+    </nav>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad accusantium quod molestias labore, ratione blanditiis, iure quasi a dolor deleniti recusandae dicta mollitia, praesentium quae animi ab nesciunt cupiditate veniam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto placeat in dolore dolores suscipit beatae sunt eius, excepturi eos saepe nisi accusantium odio minima. Veniam dolores praesentium ipsum sunt dolorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, sit blanditiis eaque, assumenda totam odio. At facere, porro rerum recusandae sit ducimus minus fugit alias. Numquam consectetur, maiores quo distinctio.</p>
+</body>
+</html>
