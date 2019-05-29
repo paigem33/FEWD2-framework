@@ -2,32 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSSEO | Home</title>
+    <title>Navigation examples</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Framework project ideas</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         $(function(){
-            if ($(window).width() <= 699){
-                $('div.icon').click(function(){
-                $('.mainNav1').stop().slideToggle();
-            })
-            $('.nav1-showSub').click(function(){
-                $(this).next().stop().slideToggle();
-            })
-            } else {
-                $('.nav1-showSub').hover(function(){
-                $(this).children('ul').stop().slideToggle();
-                })
-            }
+        if ($(window).width() <= 699){
+            $('div.icon').click(function(){
+            $('.mainNav1').stop().slideToggle();
         })
+        $('.nav1-showSub').click(function(){
+            $(this).next().stop().slideToggle();
+        })
+        } else {
+            $('.nav1-showSub').hover(function(){
+            $(this).children('ul').stop().slideToggle();
+            })
+        }
+})
     </script>
 </head>
 <body>
     <nav class="nav1">
        <div class="nav1-flex">
-           <div class="nav1-name"><h4>CS<span class="bold">SE</span><i class="fas fa-search"></i></h4></div>
+           <div class="nav1-name">Logo/name</div>
             <div class="icon"><i class="fas fa-bars"></i></div>
        </div>
         <ul class="mainNav1">
