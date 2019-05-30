@@ -9,22 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700&display=swap" rel="stylesheet">
-    <script>
-        $(function(){
-            if ($(window).width() <= 699){
-                $('div.icon').click(function(){
-                $('.mainNav1').stop().slideToggle();
-            })
-            $('.nav1-showSub').click(function(){
-                $(this).next().stop().slideToggle();
-            })
-            } else {
-                $('.nav1-showSub').hover(function(){
-                $(this).children('ul').stop().slideToggle();
-                })
-            }
-        })
-    </script>
+    <script src="scripts/main.js"></script>
 </head>
 <body>
     <nav class="nav1">

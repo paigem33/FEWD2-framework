@@ -26,7 +26,6 @@ line numbers-COMPONENTS
 
 p {
     background-color: #d9d9d9;
-    margin: 10px;
 }
 .tableEx {
     background-color: #81aff9;
@@ -102,8 +101,10 @@ button:active, .button:active {
 
 /*DISPLAY & SPACING____________________________________*/
 /* Flex */
+@media (min-width: 768px) {
 .flex {
     display: flex;
+}
 }
 /* Flex Direction */
 .flex.direction-row {
@@ -240,6 +241,10 @@ button:active, .button:active {
   p {
       font-size: 1em;
       line-height: 1.25;
+      padding: 10px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    padding: 10px;
   }
   h1 {
       font-size: 2.25em;
@@ -763,9 +768,6 @@ pre code {
     align-items: center;
     padding: 10px;
 }
-.nav1-flex .icon {
-    font-size: 30px;
-}
 .mainNav1 {
     background-color: #f2f2f2;
     padding: 5px 0;
@@ -796,7 +798,7 @@ pre code {
         justify-content: space-between;
         align-items: center;
     }
-    .nav1 .icon {
+    .nav1 .hamMenu {
         display: none;
     }
     .mainNav1, .nav2 .mainNav2 {
@@ -844,6 +846,8 @@ pre code {
     justify-content: space-around;
     align-items: center;
     height: 80px;
+    z-index: 1;
+    margin: 0;
 }
 .mainNav2 a {
     display: block;
@@ -884,7 +888,7 @@ pre code {
     display: inline-block;
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:768px){
     .footer2{
         display: none;
     }
