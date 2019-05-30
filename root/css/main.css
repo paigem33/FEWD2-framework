@@ -1,7 +1,20 @@
 /*CUSTOM______________________________________*/
-/* Just for display purposes */
-.group {
-    background-color: #f1f1f1;
+.tableEx {
+    background-color: #81aff9;
+    padding: 1rem;
+}
+.iconEx {
+    background-color: #fff;
+    padding: 0.5rem;
+}
+.iconEx li {
+    height: 50px;
+    display: inline-block;
+    padding: 0.5rem;
+}
+.maskEx {
+    background-color: #81aff9;
+    padding: 1rem;
 }
 p {
     background-color: #d9d9d9;
@@ -58,7 +71,7 @@ pre code {
     color: rgb(255, 166, 0);
 }
 
-/*End of CUSTOM______________________________________*
+/*End of CUSTOM_____________________________*/
 
 /*RESETS____________________________________*/
 html {
@@ -67,7 +80,6 @@ html {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    outline: none;
 }
 * {
     padding: 0;
@@ -77,9 +89,12 @@ html {
 article, aside, figcaption, figure, footer, header, menu, nav, section { 
     display: block;
 }
+button .button {
+    outline: none;
+}
 /*End of RESETS_____________________________*/
 
-/*GRID____________________________________*/
+/*GRID______________________________________*/
 /* Common Screen Widths: 
  - Phones: 320px to 414px
  - Tablets: 768px to 1024px 
@@ -92,10 +107,6 @@ article, aside, figcaption, figure, footer, header, menu, nav, section {
 }
 .container.small {
     max-width: 960px;
-}
-.group, .row {
-    display: flex;
-    flex-wrap: wrap;
 }
 .col-1, .col-2, .col-3, .col-4, .col-33, .col-66 {
   flex: 100%;
@@ -121,7 +132,7 @@ article, aside, figcaption, figure, footer, header, menu, nav, section {
 }
 /*End of GRID____________________________________*/
 
-/*DISPLAY & SPACING____________________________________*/
+/*DISPLAY & SPACING______________________________*/
 /* Flex */
 .flex {
     display: flex;
@@ -243,9 +254,9 @@ article, aside, figcaption, figure, footer, header, menu, nav, section {
 .padding-3 {
     padding: 1em;
 }
-/*End of DISPLAY & SPACING____________________________________*/
+/*End of DISPLAY & SPACING_____________________*/
 
-/*HELPER CLASSES____________________________________*/
+/*HELPER CLASSES_______________________________*/
 .float-left {
     float: left;
 }
@@ -256,19 +267,9 @@ article, aside, figcaption, figure, footer, header, menu, nav, section {
     overflow: auto;
     clear: both;
 }
-/*End of HELPER CLASSES____________________________________*/
-
-/*Base styles: font sizes*/
-html {
-    font-size: 100%;
-  }
-  body {
-    font-size: 1em;
-    font-family: 'Raleway', sans-serif;
-    line-height: 1.25;
-  }
+/*End of HELPER CLASSES________________________*/
   
- /*NAVIGATION*/
+/*NAVIGATION___________________________________*/
 .nav1-flex {
     display: flex;
     justify-content: space-between;
@@ -302,7 +303,7 @@ html {
     display: none;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
     .nav1, .nav2 {
         display: flex;
         justify-content: space-between;
@@ -373,258 +374,239 @@ html {
 .mainNav2 .nav2-subMenu {
     display: none;
 }
+/*End of NAVIGATION___________________________*/
+
+/*TYPOGRAPHY____________________________*/
+/*Base styles: font sizes*/
+html {
+    font-size: 100%;
+}
+body {
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.25;
+}
+/*Standard typography*/
+p {
+    font-size: 1em;
+    line-height: 1.25;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.25;
+}
+h2 {
+    font-size: 1.875em;
+    line-height: 1.15384615;
+}
+h3 {
+    font-size: 1.625em;
+    line-height: 1.375;
+}
+h4 {
+    font-size: 1.50em;
+    line-height: 1.11111111;
+}
+h5 {
+    font-size: 1.25em;
+    line-height: 1;
+}
+h6 {
+    font-size: 1em;
+    line-height: 1;
+}
+blockquote {
+    font-size: 1.25em;
+    line-height: 1.25;
+}
+/*Typography classes*/
+.uppercase {
+    text-transform: uppercase;
+}
+.lowercase {
+    text-transform: lowercase;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.bold {
+    font-weight: bold;
+}
+.italic, .cite, .variable {
+    font-style: italic;
+}
+.code {
+    font-family: monospace;
+}
+.center-text {
+    text-align: center;
+}
+.left-text {
+    text-align: left;
+}
+.right-text {
+    text-align: right;
+}
+.justify-text {
+    text-align: justify;
+}
+@media screen and (min-width: 768px) {
+    p {
+    line-height: 1.375;
+    }
+    h1 {
+        font-size: 3.25em;
+        line-height: 1.05;
+    }
+    h2 {
+        font-size: 2.5em;
+        line-height: 1.25;
+    }
+    h3 {
+        font-size: 2.25em;
+        line-height: 1.25;
+    }
+    h4 {
+        font-size: 1.75em;
+        line-height: 1.22222222;
+    }
+    h5 {
+        font-size: 1.50em;
+        line-height: 1em;
+    }
+    h6 {
+        font-size: 1.25em;
+        line-height: 1em;
+    }
+    blockquote {
+        font-size: 1.5em;
+        line-height: 1.45;
+    }
+}
+/*Link styles*/
+a {
+    text-decoration: none;
+    color: #000080;
+}
+a:visited {
+    color: #00004d;
+}
+a:hover {
+    text-decoration: underline;
+}
+/*End of TYPOGRAPHY____________________________*/
   
-  /*Typography*/
-  /*standard typography*/
-  p {
-      font-size: 1em;
-      line-height: 1.25;
-  }
-  h1 {
-      font-size: 2.25em;
-      line-height: 1.25;
-  }
-  h2 {
-      font-size: 1.875em;
-      line-height: 1.15384615;
-  }
-  h3 {
-      font-size: 1.625em;
-      line-height: 1.375;
-  }
-  h4 {
-      font-size: 1.50em;
-      line-height: 1.11111111;
-  }
-  h5 {
-      font-size: 1.25em;
-      line-height: 1;
-  }
-  h6 {
-      font-size: 1em;
-      line-height: 1;
-  }
-  blockquote {
-      font-size: 1.25em;
-      line-height: 1.25;
-  }
-  /*typography classes*/
-  .uppercase {
-      text-transform: uppercase;
-  }
-  .lowercase {
-      text-transform: lowercase;
-  }
-  .capitalize {
-      text-transform: capitalize;
-  }
-  .bold {
-      font-weight: bold;
-  }
-  .italic, .cite, .variable {
-      font-style: italic;
-  }
-  .code {
-      font-family: monospace;
-  }
-  .center-text {
-      text-align: center;
-  }
-  .left-text {
-      text-align: left;
-  }
-  .right-text {
-      text-align: right;
-  }
-  .justify-text {
-      text-align: justify;
-  }
-  @media screen and (min-width: 700px) {
-      p {
-      line-height: 1.375;
-      }
-      h1 {
-          font-size: 3.25em;
-          line-height: 1.05;
-      }
-      h2 {
-          font-size: 2.5em;
-          line-height: 1.25;
-      }
-      h3 {
-          font-size: 2.25em;
-          line-height: 1.25;
-      }
-      h4 {
-          font-size: 1.75em;
-          line-height: 1.22222222;
-      }
-      h5 {
-          font-size: 1.50em;
-          line-height: 1em;
-      }
-      h6 {
-          font-size: 1.25em;
-          line-height: 1em;
-      }
-      blockquote {
-          font-size: 1.5em;
-          line-height: 1.45;
-      }
-  }
-  /*Link styles*/
-  
-  a {
-      text-decoration: none;
-      color: #000080;
-  }
-  a:visited {
-      color: #00004d;
-  }
-  a:hover {
-      text-decoration: underline;
-  }
-  
-  /*Buttons*/
-  
-  /*four different colors*/
-  button, .button, input[type="submit"], input[type="reset"], input[type="button"] {
-      background-color: transparent;
-      margin: 5px;
-      border-radius: 4px;
-      border: solid 1px #808080;
-      display: inline-block;
-      padding: 10px;
-      text-transform: uppercase;
-      cursor: pointer;
-      font-size: 1em;
-      height: 40px;
-  }
-  button.basic, .button.basic, input[type="submit"].basic, input[type="reset"].basic, input[type="button"].basic {
-      background-color: #808080;
-      color: white;
-  }
-  button.blue, .button.blue, input[type="submit"].blue, input[type="reset"].blue, input[type="button"].blue {
-      background-color: #3333ff;
-      color: white;
-      border-color: #3333ff
-  }
-  button.green, .button.green, input[type="submit"].green, input[type="reset"].green, input[type="button"].green {
-      background-color: #009900;
-      color: white;
-      border-color: #009900;
-  }
-  button.orange, .button.orange, input[type="submit"].orange, input[type="reset"].orange, input[type="button"].orange {
-      background-color: #e65c00;
-      color: white;
-      border-color: #e65c00;
-  }
-  button.red, .button.red, input[type="submit"].red, input[type="reset"].red, input[type="button"].red {
-      background-color: #e60000;
-      border-color: #e60000;
-      color: white;
-  }
-  button.red:hover, .button.red:hover, input[type="submit"].red:hover, input[type="reset"].red:hover, input[type="button"].red:hover {
-      background-color: #ff1a1a;
-  }
-  button.orange:hover, .button.orange:hover, input[type="submit"].orange:hover, input[type="reset"].orange:hover, input[type="button"].orange:hover {
-      background-color: #ff751a;
-  }
-  button.green:hover, .button.green:hover, input[type="submit"].green:hover, input[type="reset"].green:hover, input[type="button"].green:hover {
-      background-color: #00cc00;
-  }
-  button.blue:hover, .button.blue:hover, input[type="submit"].blue:hover, input[type="reset"].blue:hover, input[type="button"].blue:hover {
-      background-color: #6666ff;
-  }
-  button.basic:hover, .button.basic:hover, input[type="submit"].basic:hover, input[type="reset"].basic:hover, input[type="button"].basic:hover {
-      background-color: #595959
-  }
-  button:hover, .button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
-      background-color: #d9d9d9;
-  }
-  button:active, .button:active, input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active {
-      transform: translateY(1px);
-      filter: saturate(150%);
-  }
-  
-  
-  /*three different sizes, normal is just the default*/
-  
-  button.xsmall, .button.xsmall, input[type="submit"].xsmall, input[type="reset"].xsmall, input[type="button"].xsmall {
-      padding: 5px;
-      height: 25px;
-      font-size: .7em
-  }
-  button.small, .button.small, input[type="submit"].small, input[type="reset"].small, input[type="button"].small {
-      padding: 5px;
-      height: 30px;
-      font-size: .85em
-  }
-  button.large, .button.large, input[type="submit"].large, input[type="reset"].large, input[type="button"].large {
-      padding: 15px;
-      font-size: 1.25em;
-      height: 55px;
-  }
-  /*Forms*/
-  form {
-      border: solid 3px grey;
-      border-radius: 5px;
-      padding: 5px;
-      margin: 0 10px;
-      text-align: center;
-  }
-  label {
-      display: block;
-  }
-  input {
-      border: solid 1px grey;
-      border-radius: 5px;
-      max-width: 100%;
-      line-height: 2;
-      padding-left: .5em;
-  }
-  @media screen and (min-width:700px){
-      form {
-          text-align: left;
-      }
-  }
-  /*lists*/
-  
-  ul {
-      list-style-type: none;
-  }
-  li {
-      padding: 3px;
-  }
-  .listCircle {
-      list-style-type: circle;
-  }
-  .listBullet {
-      list-style-type: disc;
-  }
-  
-  /*Tables*/
-/*Tables*/
+/*BUTTONS______________________________________*/
+/*Four different colors*/
+button, .button, input[type="submit"], input[type="reset"], input[type="button"] {
+    background-color: transparent;
+    margin: 5px;
+    border-radius: 4px;
+    border: solid 1px #808080;
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1em;
+    height: 40px;
+}
+button.basic, .button.basic, input[type="submit"].basic, input[type="reset"].basic, input[type="button"].basic {
+    background-color: #808080;
+    color: white;
+}
+button.blue, .button.blue, input[type="submit"].blue, input[type="reset"].blue, input[type="button"].blue {
+    background-color: #3333ff;
+    color: white;
+    border-color: #3333ff;
+}
+button.green, .button.green, input[type="submit"].green, input[type="reset"].green, input[type="button"].green {
+    background-color: #009900;
+    color: white;
+    border-color: #009900;
+}
+button.orange, .button.orange, input[type="submit"].orange, input[type="reset"].orange, input[type="button"].orange {
+    background-color: #e65c00;
+    color: white;
+    border-color: #e65c00;
+}
+button.red, .button.red, input[type="submit"].red, input[type="reset"].red, input[type="button"].red {
+    background-color: #e60000;
+    border-color: #e60000;
+    color: white;
+}
+button.red:hover, .button.red:hover, input[type="submit"].red:hover, input[type="reset"].red:hover, input[type="button"].red:hover {
+    background-color: #ff1a1a;
+}
+button.orange:hover, .button.orange:hover, input[type="submit"].orange:hover, input[type="reset"].orange:hover, input[type="button"].orange:hover {
+    background-color: #ff751a;
+}
+button.green:hover, .button.green:hover, input[type="submit"].green:hover, input[type="reset"].green:hover, input[type="button"].green:hover {
+    background-color: #00cc00;
+}
+button.blue:hover, .button.blue:hover, input[type="submit"].blue:hover, input[type="reset"].blue:hover, input[type="button"].blue:hover {
+    background-color: #6666ff;
+}
+button.basic:hover, .button.basic:hover, input[type="submit"].basic:hover, input[type="reset"].basic:hover, input[type="button"].basic:hover {
+    background-color: #595959;
+}
+button:hover, .button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+    background-color: #d9d9d9;
+}
+button:active, .button:active, input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+}
+/*three different sizes, normal is just the default*/
+button.xsmall, .button.xsmall, input[type="submit"].xsmall, input[type="reset"].xsmall, input[type="button"].xsmall {
+    padding: 5px;
+    height: 25px;
+    font-size: .7em;
+}
+button.small, .button.small, input[type="submit"].small, input[type="reset"].small, input[type="button"].small {
+    padding: 5px;
+    height: 30px;
+    font-size: .85em;
+}
+button.large, .button.large, input[type="submit"].large, input[type="reset"].large, input[type="button"].large {
+    padding: 15px;
+    font-size: 1.25em;
+    height: 55px;
+}
+/*End of BUTTONS__________________________*/
+
+/*FORMS___________________________________*/
+/*End of FORMS____________________________*/
+
+/*LISTS___________________________________*/
+ul {
+    list-style-type: none;
+    margin: 5px;
+}
+li {
+    padding: 3px;
+}
+.listCircle {
+    list-style-type: circle;
+}
+.listBullet {
+    list-style-type: disc;
+}
+/*End of LISTS___________________________*/
+
+/*TABLES_________________________________*/
 table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
     border: 1px solid #ccc;
 }
-
 th, td {
     text-align: left;
     padding: 8px;
 }
-
-.tableEx {
-    background-color: #81aff9;
-    padding: 1rem;
-}
 .resTable {
     overflow-x: auto;
 }
-
 .table-simple {
     background-color: #fff;
 }
@@ -634,7 +616,6 @@ th, td {
 .table-zebra tr:nth-child(even){
     background-color: #f2f2f2;
 }
-
 .table-invert {
     background-color: #000;
     color: #fff;
@@ -642,116 +623,107 @@ th, td {
 .table-invert.table-zebra tr:nth-child(even){
     background-color: #414142;
 }
+/*End of TABLES___________________________*/
 
-/*Icons*/
-
-.iconEx {
-    background-color: #ccc;
-    padding: .5rem;
-}
-
-.iconEx li {
-    height: 50px;
-    display: inline-block;
-}
-
+/*ICONS___________________________________*/
 .about {
+    height: 55px;
     left: 0px;
-    width: 44px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 0;
 }
-
 .home {
+    height: 55px;
     left: 0px;
-    width: 44px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -53px;
 }
-
 .contact {
+    height: 55px;
     left: 0px;
-    width: 44px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -106px;
 }
-
 .location {
+    height: 55px;
     left: 0px;
-    width: 44px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -160px;
 }
-
 .projects {
+    height: 55px;
     left: 0px;
-    width: 44px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -214px;
 }
-
 .insta {
+    height: 55px;
     left: 0px;
-    width: 44px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -268px;
 }
-
 .fb {
+    height: 55px;
     left: 0px;
-    width: 44px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -322px;
 }
-
 .in {
+    height: 55px;
     left: 0px;
-    width: 44px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -376px;
 }
-
 .twitter {
+    height: 55px;
     left: 0px;
-    width: 44px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -430px;
 }
-
 .upload {
+    height: 55px;
     left: 0px;
-    width: 44px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -484px;
 }
-
 .download {
+    height: 55px;
     left: 0px;
-    width: 44px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -539px;
 }
-
 .print {
+    height: 55px;
     left: 0px;
-    width: 44px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -593px;
 }
-
 .hamMenu {
+    height: 55px;
     left: 0px;
-    width: 44px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -647px;
 }
-
 .hamX {
+    height: 55px;
     left: 0px;
-    width: 44px;
+    width: 50px;
     background: url("../images/iconSprite.png") 0 -700px;
 }
+/*End of ICONS_____________________________*/
 
-  /*Makes content not show up on print*/
-  @media print {
-      .no-print {
-          display: none;
-      }
-  }
-  .responsiveImg {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-  }
-  
-/*Media queries*/
+/*NO PRINT_________________________________*/
+/*Makes content not show up on print*/
+@media print {
+    .no-print {
+        display: none;
+    }
+}
+.responsiveImg {
+    max-width: 100%;
+    height: auto;
+}
+/*NO PRINT_________________________________*/
 
 /* COMPONENTS______________________________ */
 /* Header */
@@ -773,17 +745,19 @@ th, td {
     align-self: center;
     align-items: center;
 }
+.header .bg {
+    background-color: rgba(0, 0, 0, 0.728);
+}
 .header h1 {
     font-size: 2.25rem;
     color: #f1f1f1;
     text-shadow: 1px 1px #000;
-    /* I'm open to the idea of rgba background on all tags; the reason I put the text shadow here specifically in the header is in case the user provides no image, and there is a light background behind light text. Could also set a contrasting (in this case dark) background by default when there's no image. I think this is where I was waiting on what the other framework categories will look like (e.g. if there ends up being classes like a bg-light, bg-dark, text-dark, etc.) */
     margin: 0;
 }
 .header p {
     color: #f1f1f1;
     text-shadow: 1px 1px #000;
-    background-color: transparent;
+    /* background-color: transparent; */
     font-size: 1.25rem;
     margin: 0;
 }
@@ -805,6 +779,7 @@ th, td {
         max-height: 15rem;
     }
 }
+
 /* Accordion */
 .accordion {
     width: 75%;
@@ -827,32 +802,24 @@ th, td {
     padding-top: 10px;
 }
 
-/* End of COMPONENTS______________________________ */
-
-/*MISC________________________________*/
 /*Mask Images*/
-.maskEx {
-    background-color: #81aff9;
-    padding: 1rem;
-}
-
 .pixelMask {
     -webkit-mask-image: url(../images/pixelMask.png);
     -webkit-mask-size: 100%;
     -webkit-mask-repeat: no-repeat;
 }
-
 .stripeMask {
     -webkit-mask-image: url(../images/stripeMask.png);
     -webkit-mask-size: 100%;
     -webkit-mask-repeat: no-repeat;
 }
-
 .circuitMask {
     -webkit-mask-image: url(../images/circuitMask.png);
     -webkit-mask-size: 100%;
     -webkit-mask-repeat: no-repeat;
 }
 
+/* End of COMPONENTS_______________________*/
 
-/*End of MISC________________________________*/
+/*MISC_____________________________________*/
+/*End of MISC______________________________*/
