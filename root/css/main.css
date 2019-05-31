@@ -31,6 +31,19 @@ p {
     background-color: #81aff9;
     padding: 1rem;
 }
+.iconEx {
+    background-color: #fff;
+    padding: 0.5rem;
+}
+.iconEx li {
+    height: 50px;
+    display: inline-block;
+    padding: 0.5rem;
+}
+.maskEx {
+    background-color: #81aff9;
+    padding: 1rem;
+}
 /*End of CUSTOM______________________________________*
 
 
