@@ -1,3 +1,4 @@
+
 /*CUSTOM______________________________________*/
 .tableEx {
     background-color: #81aff9;
@@ -70,7 +71,6 @@ pre code {
     position: relative;
     color: rgb(255, 166, 0);
 }
-
 /*End of CUSTOM_____________________________*/
 
 /*RESETS____________________________________*/
@@ -254,9 +254,9 @@ button .button {
 .padding-3 {
     padding: 1em;
 }
-/*End of DISPLAY & SPACING_____________________*/
+/*End of DISPLAY & SPACING____________________________________*/
 
-/*HELPER CLASSES_______________________________*/
+/*HELPER CLASSES____________________________________*/
 .float-left {
     float: left;
 }
@@ -267,8 +267,8 @@ button .button {
     overflow: auto;
     clear: both;
 }
-/*End of HELPER CLASSES________________________*/
-  
+/*End of HELPER CLASSES____________________________________*/
+
 /*NAVIGATION___________________________________*/
 .nav1-flex {
     display: flex;
@@ -719,10 +719,6 @@ th, td {
         display: none;
     }
 }
-.responsiveImg {
-    max-width: 100%;
-    height: auto;
-}
 /*NO PRINT_________________________________*/
 
 /* COMPONENTS______________________________ */
@@ -785,6 +781,12 @@ th, td {
     width: 75%;
     max-width: 700px;
     margin-top: 20px;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 15px;
+    box-sizing: border-box;
+    transition: all .3s;
     background-color: #f2f2f2;
 }
 .accordion h1, .accordion h2, .accordion h3, .accordion h4, .accordion h5, .accordion h5 {
@@ -802,6 +804,7 @@ th, td {
     padding-top: 10px;
 }
 
+
 /*Mask Images*/
 .pixelMask {
     -webkit-mask-image: url(../images/pixelMask.png);
@@ -818,8 +821,12 @@ th, td {
     -webkit-mask-size: 100%;
     -webkit-mask-repeat: no-repeat;
 }
-
 /* End of COMPONENTS_______________________*/
 
 /*MISC_____________________________________*/
+/* Responsive Image */
+.responsiveImg {
+    max-width: 100%;
+    height: auto;
+}
 /*End of MISC______________________________*/

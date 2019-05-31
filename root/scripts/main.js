@@ -20,4 +20,6 @@ $(function(){
                 $(this).toggleClass('active');
                 $(this).children('div').stop().fadeToggle();
             }); //end accordion
+
 }) //end doc ready
+
