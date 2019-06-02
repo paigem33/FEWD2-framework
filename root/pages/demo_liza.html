@@ -6,23 +6,56 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <title>Framework project ideas</title>
         <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/demo_liza.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     </head>
-    <body>
-        <header>
-            <nav class="mainNav2">
+    <body class="container">
+        <header class="margin-3" id="home">
+            <img src="../images/demo_liza/TB_logo.jpg" alt="TB logo" class="responsiveImg mx-auto">
+            <h1 class="center-text">TechBrain</h1>
+        </header>
+        <nav class="mainNav2">
                 <ul>
-                    <li class="inline-block"><a href="#" class="home"></a></li>
-                    <li class="inline-block"><a href="#" class="about"></a></li>
-                    <li class="inline-block"><a href="#" class="projects"></a></li>
-                    <li class="inline-block"><a href="#" class="contact"></a></li>
+                    <li class="inline-block"><a href="#home" class="home"></a></li>
+                    <li class="inline-block"><a href="#about" class="about"></a></li>
+                    <li class="inline-block"><a href="#work" class="projects"></a></li>
+                    <li class="inline-block"><a href="#contact" class="contact"></a></li>
                 </ul>
             </nav>
-        </header>
         <section>
-            
+            <h2 class="center-text">What We Do</h2>
+            <p>TechBrain software pairs human and machine intelligence to augment and enhance customer experience and boost process and operational productivity in a practical, scalable, and responsible manner.</p> 
+        </section>
+        <section id="about">
+            <h2 class="center-text">About Us</h2>
+            <img src="../images/demo_liza/sanDiego.jpg" alt="SD" class="circuitMask responsiveImg">
+            <h4>TechBrain pairs humans and machines to augment human potential</h4>
+            <p>Based out of San Diego, TechBrain is an Enterprise AI software pioneer that pairs humans and machines to bring practical, scalable, trusted AI solutions to life. MOBO Media is among the top global innovators that trust TechBrain to transform customer engagement and make business processes intelligent.</p>
+            <p>TechBrain’s award-winning and proven Cortex software and expert teams empower  digital commerce to radically simplify the development, deployment and management of their AI systems.</p>
+            <p>TechBrain implements the Cognitive Agent Modeling and Execution Language (CAMEL) which defines an open, language, and platform-agnostic specification for programming cognitive agents. Enterprises can leverage CAMEL to create AI agents, skills, models, and datasets to avoid vendor lock-in.</p>
+        </section>
+        <section id="work">
+            <h2 class="center-text">Our Work</h2>
+            <h4>Cortex Cognitive Platform</h4>
+            <img src="../images/demo_liza/computerImg.gif" alt="computer" class="responsiveImg">
+            <p>Cortex Cognitive Platform is a unified programming and operating environment that enables data science and software development teams to be more agile and bring business experts deeper into the development of a cognitive business process. Cortex radically simplifies the development, deployment and management of enterprise AI systems, and is the first enterprise AI software that drives 70% cost savings to build an AI solution, 3x faster speed to realizing business value, and 60% reduction in support and maintenance.</p>
+        </section>
+        <section id="contact">
+             <h2 class="center-text">Contact Us</h2>
+              <form action="" method="post" id="form" class="form-control">
+                <h3>Please fill out below</h3>
+                <label for="name">Name: <span id="invalidN">*</span></label>
+                <input type="text" id="name" placeholder="Name"/>
+                <label for="email">Email: <span id="invalidE">*</span></label>
+                <input type="text" id="email" placeholder="Email"/>
+                <label for="contact">Contact No: <span id="invalidC">*</span></label>
+                <input type="text" id="contact" placeholder="10 digit Mobile no."/>
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Message......." class="form-control"></textarea>
+                <input type="submit" id="submit" value="Send Message"/>
+             </form>
         </section>
 <!--
         <footer>
