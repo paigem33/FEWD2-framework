@@ -39,7 +39,7 @@ line numbers-COMPONENTS
   */
 
 /*CUSTOM_____________________*/
-/* 
+/*
 Should probably get rid of CUSTOM section altogether once we're done (the
 things we will use will go in separate CSS files anyway).
 main.css could serve as a kind of user manual. The user will be encouraged
@@ -173,8 +173,10 @@ button:active, .button:active {
 
 /*DISPLAY & SPACING________*/
 /* Flex - Display */
-.flex {
+@media screen and (min-width: 768px) {
+  .flex {
     display: flex;
+}
 }
 /* Flex - Direction */
 .flex.direction-row {
@@ -860,16 +862,22 @@ button.large, .button.large, input[type="submit"].large, input[type="reset"].lar
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .footer-icons{
     margin-top: 10px;
+    padding-top: 10px;
     text-align: center;
 }
 .footer-icons li{
     margin: 0 10px;
     height: 55px;
     display: inline-block;
+    transition: transform .2s;
+}
+.footer-icons li:hover {
+  transform: translate(0,-5px);
+  cursor: pointer;
 }
 @media screen and (max-width:768px){
     .footer2{

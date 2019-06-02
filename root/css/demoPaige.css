@@ -1,0 +1,49 @@
+img {
+  display: block;
+}
+#logo a {
+  color: black;
+  font-size: 2em;
+}
+#logo a:hover {
+  text-decoration: none;
+}
+footer {
+  background-color: rgba(0, 51, 0,.6)
+}
+#accordion {
+  margin-bottom: 30px
+}
+.regP {
+  margin: 0 35px;
+}
+button {
+  margin: 10px;
+}
+@media screen and (min-width: 500px) {
+  .container img {
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 768px){
+  .container img {
+    max-width: 100%;
+  }
+  #accordion {
+    min-height: 600px;
+    margin-bottom: 0;
+  }
+  .group2 {
+    margin-top: 25px;
+  }
+  #group2-sec1 p {
+    margin: 0 40px;
+  }
+  .regP {
+    margin: 0 auto;
+  }
+  #welcome {
+    margin: 0 100px 25px;
+    border-bottom: solid 2px rgba(0, 51, 0,.6);
+  }
+}
