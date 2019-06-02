@@ -45,12 +45,8 @@ things we will use will go in separate CSS files anyway).
 main.css could serve as a kind of user manual. The user will be encouraged
 to create their own custom CSS file. That way the line numbers don't change.
 */
-/* Just for display purposes (remove when no longer needed)*/
-p {
-    background-color: #d9d9d9;
-}
 /* Please move these to a separate CSS file, or remove once no longer needed: */
-.tableEx {
+/* .tableEx {
     background-color: #81aff9;
     padding: 1rem;
 }
@@ -66,7 +62,7 @@ p {
 .maskEx {
     background-color: #81aff9;
     padding: 1rem;
-}
+} */
 /* Code Examples */
 /* Will move this portion to a separate CSS file */
 .code-example {
@@ -99,24 +95,7 @@ pre i {
 pre code {
     white-space: pre-line;
 }
-/* Logo/Text - will be moved to a separate CSS file.*/
-.nav1-name h4 {
-    border: solid 5px rgb(173, 208, 228);
-    border-radius: 15px;
-    padding: 5px;
-    font-weight: normal;
-    color: rgb(173, 208, 228);
-    background-color: rgba(153, 207, 226, 0.1);
-}
-.nav1-name span {
-    font-weight: bold;
-    color: rgb(33, 101, 179);
-}
-.nav1-name i {
-    top: 3px;
-    position: relative;
-    color: rgb(255, 166, 0);
-}
+
 /*End CUSTOM________________*
 
 /*RESETS____________________*/
@@ -160,6 +139,7 @@ button:active, .button:active {
     .col-2, .col-4 {
         flex: 50%;
     }
+    }
     .col-66 {
         flex: 66%;
     }
@@ -173,90 +153,93 @@ button:active, .button:active {
 
 /*DISPLAY & SPACING________*/
 /* Flex - Display */
+.flex-always {
+  display: flex;
+}
 @media screen and (min-width: 768px) {
   .flex {
     display: flex;
 }
 }
 /* Flex - Direction */
-.flex.direction-row {
+.direction-row {
     flex-direction: row;
 }
-.flex.direction-row-reverse {
+.direction-row-reverse {
     flex-direction:row-reverse;
 }
-.flex.direction-column {
+.direction-column {
     flex-direction: column;
 }
-.flex.direction-column-reverse {
+.direction-column-reverse {
     flex-direction: column-reverse;
 }
 /* Flex - Wrap */
-.flex.nowrap {
+.nowrap {
     flex-wrap: nowrap;
 }
-.flex.wrap {
+.wrap {
     flex-wrap: wrap;
 }
-.flex.wrap-reverse {
+.wrap-reverse {
     flex-wrap: wrap-reverse;
 }
 /* Flex - Justify Content */
-.flex.justify-content-start {
+.justify-content-start {
     justify-content: flex-start;
 }
-.flex.justify-content-end {
+.justify-content-end {
     justify-content: flex-end;
 }
-.flex.justify-content-center {
+.justify-content-center {
     justify-content: center;
 }
-.flex.justify-content-between {
+.justify-content-between {
     justify-content: space-between;
 }
-.flex.justify-content-around {
+.justify-content-around {
     justify-content: space-around;
 }
-.flex.justify-content-evenly {
+.justify-content-evenly {
     justify-content: space-evenly;
 }
 /* Flex - Align Self */
-.flex.align-self-auto {
+.align-self-auto {
     align-self: auto;
 }
-.flex.align-self-start {
+.align-self-start {
     align-self: flex-start;
 }
-.flex.align-self-end {
+.align-self-end {
     align-self: flex-end;
 }
-.flex.align-self-center {
+.align-self-center {
     align-self: center;
 }
-.flex.align-self-baseline {
+.align-self-baseline {
     align-self: baseline;
 }
-.flex.align-self-stretch {
+.align-self-stretch {
     align-self: stretch;
 }
 /* Flex - Align-Items */
-.flex.align-items-stretch {
+.align-items-stretch {
     align-items: stretch;
 }
-.flex.align-items-start {
+.align-items-start {
     align-items: flex-start;
 }
-.flex.align-items-end {
+.align-items-end {
     align-items: flex-end;
 }
-.flex.align-items-center {
+.align-items-center {
     align-items: center;
 }
-.flex.align-items-baseline {
+.align-items-baseline {
     align-items: baseline;
 }
 /* Flex - Grow */
-.flex.grow {
+.grow {
     flex-grow: 1;
 }
 /* Block/Inline */
@@ -762,6 +745,13 @@ button.large, .button.large, input[type="submit"].large, input[type="reset"].lar
     padding: 5px 0;
     display: none;
 }
+.nav1-name a, .nav2-name a {
+  color: black;
+  font-size: 2em;
+}
+.nav1-name a:hover, .nav2-name a:hover {
+  text-decoration: none;
+}
 .mainNav1 a {
     display: block;
     color: #000000;
@@ -952,7 +942,7 @@ button.large, .button.large, input[type="submit"].large, input[type="reset"].lar
     box-shadow: 2px 2px 20px rgba(0,0,0,.2);
 }
 .accordionContent {
-    color: #96999d;
+    color: #595959;
     align-items: center;
     font-weight: 500;
     display: none;

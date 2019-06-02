@@ -1,13 +1,13 @@
 img {
   display: block;
 }
-#logo a {
+/* #logo a {
   color: black;
   font-size: 2em;
 }
 #logo a:hover {
   text-decoration: none;
-}
+} */
 footer {
   background-color: rgba(0, 51, 0,.6)
 }
