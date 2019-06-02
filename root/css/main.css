@@ -14,6 +14,11 @@ line numbers-TYPOGRAPHY
     line number-Typography Classes
     line number-Links
     line number-Lists
+line numbers-COLORS
+    line number-Tinted Or Transparent Background
+    line number-Background Color Only
+    line number-Text Color Only 
+    line number-Text Color And Background
 line numbers-TABLES
 line numbers-FORMS
 line numbers-BUTTONS
@@ -433,6 +438,122 @@ li {
     list-style-type: disc;
 }
 /* End TYPOGRAPHY____________*/
+
+/*COLORS_____________________*/
+/* Tinted or transparent background */
+.bg-tint-black {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.bg-tint-white {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.bg-transparent {
+    background-color: transparent;
+}
+/* Sets background color only */
+.bg-black {
+    background-color: #000;
+}
+.bg-dark {
+    background-color: #414142;
+}
+.bg-basic {
+    background-color: #808080;
+}
+.bg-light {
+    background-color: #e7e5e5;
+}
+.bg-white {
+    background-color: #fff;
+}
+.bg-red {
+    background-color: #e60000;
+}
+.bg-orange {
+    background-color: #e65c00;
+}
+.bg-yellow {
+    background-color: #ffff00;  
+}
+.bg-green {
+    background-color: #009900;
+}
+.bg-blue {
+    background-color: #3333ff;
+}
+/* Sets text color only */
+.text-black {
+    color: #000;
+}
+.text-dark {
+    color: #414142;
+}
+.text-basic {
+    color: #808080;
+}
+.text-light {
+    color: #e7e5e5;
+}
+.text-white {
+    color: #fff;
+}
+.text-red {
+    color: #e60000;
+}
+.text-orange {
+    color: #e65c00;
+}
+.text-yellow {
+    color: #ffff00;
+}
+.text-green {
+    color: #009900;;
+}
+.text-blue {
+    color: #3333ff;
+}
+/* Sets both text color and background */
+.black {
+    background-color: #000;
+    color: #fff;
+}
+.dark {
+    background-color: #414142;
+    color: #e7e5e5;
+}
+.basic {
+    background-color: #808080;
+    color: #e7e5e5;
+}
+.light {
+    background-color: #e7e5e5;
+    color: #414142;
+}
+.white {
+    background-color: #fff;
+    color: #000;
+}
+.red {
+    background-color: #e60000;
+    color: #fff;
+}
+.orange {
+    background-color: #e65c00;
+    color: #000;
+}
+.yellow {
+    background-color: #ffff00;
+    color: #000;    
+}
+.green {
+    background-color: #009900;
+    color: #000;
+}
+.blue {
+    background-color: #3333ff;
+    color: #fff;
+}
+/*End COLORS_________________*/
 
 /*TABLES_____________________*/
 table {
