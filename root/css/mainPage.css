@@ -25,7 +25,12 @@ button, .button {
     color: rgb(255, 166, 0);
 }
 /* to style the download button area */
-
+.downloadArea1 {
+  margin-top: 40px;
+}
+.exampleDivSection {
+  padding: 30px;
+}
 #mainPageDownload {
   font-size: 1.75em;
   padding: 5px;
@@ -33,6 +38,9 @@ button, .button {
 }
 .documentation {
   margin: 40px 0;
+}
+.documentation h2 {
+  padding-bottom: 25px;
 }
 .examples, .components {
   background-color: rgba(179,179,179,.2);
