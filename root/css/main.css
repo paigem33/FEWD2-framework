@@ -434,116 +434,116 @@ li {
 /*COLORS_____________________*/
 /* Tinted or transparent background */
 .bg-tint-black {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3) !important;
 }
 .bg-tint-white {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.7) !important;
 }
 .bg-transparent {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 /* Sets background color only */
 .bg-black {
-    background-color: #000;
+    background-color: #000 !important;
 }
 .bg-dark {
-    background-color: #414142;
+    background-color: #414142 !important;
 }
 .bg-basic {
-    background-color: #808080;
+    background-color: #808080 !important;
 }
 .bg-light {
-    background-color: #e7e5e5;
+    background-color: #e7e5e5 !important;
 }
 .bg-white {
-    background-color: #fff;
+    background-color: #fff !important;
 }
 .bg-red {
-    background-color: #e60000;
+    background-color: #e60000 !important;
 }
 .bg-orange {
-    background-color: #e65c00;
+    background-color: #e65c00 !important;
 }
 .bg-yellow {
-    background-color: #ffff00;  
+    background-color: #ffff00 !important;  
 }
 .bg-green {
-    background-color: #009900;
+    background-color: #009900 !important;
 }
 .bg-blue {
-    background-color: #3333ff;
+    background-color: #3333ff !important;
 }
 /* Sets text color only */
 .text-black {
-    color: #000;
+    color: #000 !important;
 }
 .text-dark {
-    color: #414142;
+    color: #414142 !important;
 }
 .text-basic {
-    color: #808080;
+    color: #808080 !important;
 }
 .text-light {
-    color: #e7e5e5;
+    color: #e7e5e5 !important;
 }
 .text-white {
-    color: #fff;
+    color: #fff !important;
 }
 .text-red {
-    color: #e60000;
+    color: #e60000 !important;
 }
 .text-orange {
-    color: #e65c00;
+    color: #e65c00 !important;
 }
 .text-yellow {
-    color: #ffff00;
+    color: #ffff00 !important;
 }
 .text-green {
-    color: #009900;;
+    color: #009900 !important;
 }
 .text-blue {
-    color: #3333ff;
+    color: #3333ff !important;
 }
 /* Sets both text color and background */
 .black {
-    background-color: #000;
-    color: #fff;
+    background-color: #000 !important;
+    color: #fff !important;
 }
 .dark {
-    background-color: #414142;
-    color: #e7e5e5;
+    background-color: #414142 !important;
+    color: #e7e5e5 !important;
 }
 .basic {
-    background-color: #808080;
-    color: #e7e5e5;
+    background-color: #808080 !important;
+    color: #e7e5e5 !important;
 }
 .light {
-    background-color: #e7e5e5;
-    color: #414142;
+    background-color: #e7e5e5 !important;
+    color: #414142 !important;
 }
 .white {
-    background-color: #fff;
-    color: #000;
+    background-color: #fff !important;
+    color: #000 !important;
 }
 .red {
-    background-color: #e60000;
-    color: #fff;
+    background-color: #e60000 !important;
+    color: #fff !important;
 }
 .orange {
-    background-color: #e65c00;
-    color: #000;
+    background-color: #e65c00 !important;
+    color: #000 !important;
 }
 .yellow {
-    background-color: #ffff00;
-    color: #000;    
+    background-color: #ffff00 !important;
+    color: #000 !important;    
 }
 .green {
-    background-color: #009900;
-    color: #000;
+    background-color: #009900 !important;
+    color: #000 !important;
 }
 .blue {
-    background-color: #3333ff;
-    color: #fff;
+    background-color: #3333ff !important;
+    color: #fff !important;
 }
 /*End COLORS_________________*/
 
@@ -882,7 +882,6 @@ button.large, .button.large, input[type="submit"].large, input[type="reset"].lar
     padding: 10px;
 }
 .mainNav1 {
-    background-color: #f2f2f2;
     padding: 5px 0;
     display: none;
 }
@@ -921,7 +920,6 @@ button.large, .button.large, input[type="submit"].large, input[type="reset"].lar
         display: none;
     }
     .mainNav1, .nav2 .mainNav2 {
-        background-color: #fff;
         display: block;
         display: flex;
         justify-content: space-around;
