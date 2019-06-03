@@ -24,6 +24,7 @@ line numbers-FORMS
 line numbers-BUTTONS
 line numbers-MISCELLANEOUS
     line number-Border Rounded
+    line-number-Full Width Elements
     line number-Helper Classes
     line number-No Print
     line number-Responsive Image
@@ -755,6 +756,10 @@ button.large, .button.large, input[type="submit"].large, input[type="reset"].lar
 .border-rounded{
     border-radius: 10px;
 }
+/*Add full width to any element*/
+.full-width{
+    width: 100%;
+}
 /* Helper Classes */
 .float-left {
     float: left;
@@ -773,6 +778,7 @@ button.large, .button.large, input[type="submit"].large, input[type="reset"].lar
     }
 }
 /* Responsive Image */
+
 .responsiveImg {
     max-width: 100%;
     height: auto;
