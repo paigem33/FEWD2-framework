@@ -2,203 +2,627 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSSEO | Home</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>CSSEO | Framework</title>
     <link rel="stylesheet" href="css/main.css">
-
+    <link rel="stylesheet" href="css/mainPage.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700&display=swap" rel="stylesheet">
     <script src="scripts/main.js"></script>
 </head>
 <body>
-    <nav class="nav1">
-       <div class="flex">
-           <div class=""><h1>CS<span class="bold">SE</span><i class="fas fa-search"></i></h1></div>
-            <div class="icon"><i class="fas fa-bars"></i></div>
-       </div>
-        <ul class="mainNav1">
-            <li><a href="#">Menu Item</a></li>
-
-            <li class="nav1-showSub">
-                <a href="#">Sub Menu</a>
-                <ul class="nav1-subMenu">
-                    <li><a href="#">Sub Item</a></li>
-                    <li><a href="#">Sub Item</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Menu Item</a></li>
-            <li class="nav1-showSub">
-                <a href="#">Sub Menu</a>
-                <ul class="nav1-subMenu">
-                    <li><a href="#">Sub Item</a></li>
-                    <li><a href="#">Sub Item</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Menu Item</a></li>
-        </ul>
-    </nav>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad accusantium quod molestias labore, ratione blanditiis, iure quasi a dolor deleniti recusandae dicta mollitia, praesentium quae animi ab nesciunt cupiditate veniam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto placeat in dolore dolores suscipit beatae sunt eius, excepturi eos saepe nisi accusantium odio minima. Veniam dolores praesentium ipsum sunt dolorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, sit blanditiis eaque, assumenda totam odio. At facere, porro rerum recusandae sit ducimus minus fugit alias. Numquam consectetur, maiores quo distinctio.</p>
-
-   <div class="container">
-
-
-        <div class="group">
-            <div class="column"><p>I use the grid system, I have a class of column</p></div>
-            <div class="column colSmall"><p>I use the grid system, I have a class of column</p></div>
-            <div class="column colSmall"><p>I use the grid system, I have a class of column</p></div>
-            <div class="column colSmall"><p>I use the grid system, I have a class of column</p></div>
-        </div>
-        <div class="group">
-            <div class="column colLarge"><p>I use the grid system, I have a class of colLarge</p></div>
-            <div class="column"><p>I use the grid system, I have a class of column</p></div>
-        </div>
-        <div class="group">
-            <div class="column"><p>I use the grid system, I have a class of column</p></div>
-            <div class="column colLarge"><p>I use the grid system, I have a class of colLarge</p></div>
-        </div>
-        <div class="group">
-            <div class="column colSmall"><p>I use the grid system, I have a class of colSmall</p></div>
-            <div class="column"><p>I use the grid system, I have a class of column</p></div>
-        </div>
-        <div class>
-            <button class="button">Click me please</button>
-            <button class="button basic">Click me</button>
-            <button class="button blue">Click me</button>
-            <button class="button green">Click me</button>
-            <button class="button orange">Click me</button>
-            <button class="button red">Click me</button>
-        </div>
-        <div class>
-            <button class="button">I'm normal</button>
-            <button class="button basic xsmall">I'm extra small</button>
-            <button class="button blue xsmall">I'm extra small</button>
-            <button class="button green small">I'm small</button>
-            <button class="button orange small">I'm small</button>
-            <button class="button red large">I'm large</button>
-        </div>
-        <div class="no-print">
-            <h1>Hello, none of us will print</h1>
-            <h2>Hello, none of us will print</h2>
-            <h3>Hello, none of us will print</h3>
-            <h4>Hello, none of us will print</h4>
-            <h5>Hello, none of us will print</h5>
-            <h6>Hello, none of us will print</h6>
-        </div>
-        <div class="group">
-            <p class="uppercase column">I have a class of uppercase</p>
-            <p class="lowercase column">I have a class of lowercase</p>
-            <p class="capitalize column">I have a class of capitalize</p>
-        </div>
-        <div class="group">
-            <form action="#" class="column">
-                <div class="group">
-                    <div class="column">
-                        <label for="fName">First Name:</label>
-                        <input type="fNAme">
+    <div class="container">
+      <header>
+      <nav class="nav1">
+         <div class="nav1-flex">
+             <div class="nav1-name"><a href="#"><h6>CS<span class="bold">SE</span><i class="fas fa-search"></i></h6></a></div>
+              <div class="hamMenu"></div>
+         </div>
+          <ul class="mainNav1">
+              <li><a href="#">Download</a></li>
+              <li class="nav1-showSub">
+                  <a href="#">Examples</a>
+                  <ul class="nav1-subMenu">
+                      <li><a href="#">Lightbulb Media</a></li>
+                      <li><a href="#">Liza's page name</a></li>
+                      <li><a href="#">Chris' page name</a></li>
+                      <li><a href="#">Carlos' page name</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Components</a></li>
+          </ul>
+      </nav>
+      <div class="header">
+                <img class="responsiveImg flex align-self-end" src="images/framework-bg.jpg" alt="">
+                <div class="flex">
+                    <div class="">
+                        <div class="nav1-name logo-pos"><a href="#"><h4>CS<span class="bold">SE</span><i class="fas fa-search"></i></h4></a></div>
                     </div>
-                    <div class="column">
-                        <label for="mName">Middle Name:</label>
-                        <input type="mName">
-                    </div>
-                    <div class="column">
-                        <label for="lName">Last Name:</label>
-                        <input type="lName">
-                    </div>
+                    <h4 class="">The CSS Framework Made For SEO Companies.</h4>
                 </div>
-                <div class="group">
-                    <div class="column">
-                        <label for="street">Street Address:</label>
-                        <input type="street">
-                    </div>
-                </div>
-                <div class="group">
-                    <div class="column">
-                        <label for="city">City:</label>
-                        <input type="city">
-                    </div>
-                    <div class="column">
-                        <label for="state">State:</label>
-                        <input type="state">
-                    </div>
-                    <div class="column">
-                        <label for="zip">Zip Code:</label>
-                        <input type="zip">
-                    </div>
-                </div>
-            </form>
-            <form action="#" class="column">
-                <div class="group">
-                    <div class="column">
-                        <label for="fName">First Name:</label>
-                        <input type="fNAme">
-                    </div>
-                    <div class="column">
-                        <label for="mName">Middle Name:</label>
-                        <input type="mName">
-                    </div>
-                    <div class="column">
-                        <label for="lName">Last Name:</label>
-                        <input type="lName">
-                    </div>
-                </div>
-                <div class="group">
-                    <div class="column">
-                        <label for="street">Street Address:</label>
-                        <input type="street">
-                    </div>
-                </div>
-                <div class="group">
-                    <div class="column">
-                        <label for="city">City:</label>
-                        <input type="city">
-                    </div>
-                    <div class="column">
-                        <label for="state">State:</label>
-                        <input type="state">
-                    </div>
-                    <div class="column">
-                        <label for="zip">Zip Code:</label>
-                        <input type="zip">
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div>
-            <p class="bold">I have a class of bold</p>
-            <p class="italic">I have a class of italic</p>
-            <p class="cite">I have a class of cite</p>
-            <p class="variable">I have a class of variable</p>
-            <p class="code">I have a class of code</p>
-        </div>
-        <div class="group">
-            <a href="#" class="column">I'm a default link</a>
-            <a href="#" class="column">I'm a default link</a>
+      </div>
+      </header>
+      <section class="flex align-items-center downloadArea1">
+        <article class="col-2 margin-2 downloadArea">
+          <h3 class="center-text">Download now to get started</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit enim, aperiam numquam minima eaque animi harum vitae reiciendis voluptatibus! Non dolore ut cumque laudantium odio sit officiis quia. Fuga, blanditiis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus optio nulla harum voluptatibus. Eligendi earum saepe labore adipisci. Fugit quos soluta est porro aliquid, necessitatibus omnis. Vero aut odio aliquam!</p>
+          <div class="flex-always align-items-center justify-content-center download-btn">
+            <div class="download"></div>
+            <div><a href="path_to_file" download="proposed_file_name" id="mainPageDownload">Download</a></div>
+          </div>
+        </article>
+        <article class="col-2 margin-2">
+          <img src="images/main-page.jpg" alt="" class="responsiveImg border-rounded">
+        </article>
+      </section>
+      <section class="examples">
+        <div class="exampleDivSection">
+          <h2 class="center-text">So many options, one framework!</h2>
+          <h6 class="center-text">All of these sites use our framework, but they are still very unique. Thats the freedom our framework gives you, and what makes it stand out from all the others.</h6>
         </div>
         <div class="flex">
-            <div class="col-3">
-                <ul class="listCircle">
-                    <li>I am a list item</li>
-                    <li>I am a list item</li>
-                    <li>I am a list item</li>
-                </ul>
+          <article class="col-2 padding-3">
+            <a href=""><img src="images/demoPaige-img.png" alt="" class="responsiveImg border-rounded"></a>
+            <h5 class="center-text">Lightbulb Media</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quas perspiciatis facere animi suscipit corporis asperiores at numquam odio, odit nulla repellat! Itaque animi vel dignissimos quae, sint necessitatibus explicabo. <a href="#">Visit the site!</a></p>
+          </article>
+          <article class="col-2 padding-3">
+            <a href=""><img src="https://via.placeholder.com/500x349" alt="" class="responsiveImg"></a>
+            <h5 class="center-text">Liza's demo</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quas perspiciatis facere animi suscipit corporis asperiores at numquam odio, odit nulla repellat! Itaque animi vel dignissimos quae, sint necessitatibus explicabo. <a href="#">Visit the site!</a></p>
+          </article>
+        </div>
+        <div class="flex">
+          <article class="col-2 padding-3">
+            <a href=""><img src="https://via.placeholder.com/500x349" alt="" class="responsiveImg"></a>
+            <h5 class="center-text">Chris' Demo</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quas perspiciatis facere animi suscipit corporis asperiores at numquam odio, odit nulla repellat! Itaque animi vel dignissimos quae, sint necessitatibus explicabo. <a href="#">Visit the site!</a></p>
+          </article>
+          <article class="col-2 padding-3">
+            <a href=""><img src="https://via.placeholder.com/500x349" alt="" class="responsiveImg"></a>
+            <h5 class="center-text">Carlos' demo</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quas perspiciatis facere animi suscipit corporis asperiores at numquam odio, odit nulla repellat! Itaque animi vel dignissimos quae, sint necessitatibus explicabo. <a href="#">Visit the site!</a></p>
+          </article>
+        </div>
+      </section>
+      <section class="documentation">
+        <h2 class="center-text">Documentation</h2>
+       
+          <div class="container medium padding-3">
+            <h6>Copy the following starter HTML5 document</h6>
+            <pre>
+              <code>
+                  &lt;<b>!DOCTYPE html</b>>
+                  &lt;<b>html</b><i>lang</i>=<u>"en"</u>&gt;
+                  &lt;<b>head</b>>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;<b>meta</b> <i>charset</i>=<u>"UTF-8"</u> 
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;<b>meta</b> <i>name</i>=<u>"viewport"</u>  <i>content</i>=<u>"width=device-width, initial-scale=1.0"</u>>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;<b>meta</b><i>http-equiv</i>=<u>"X-UA-Compatible"</u> <i>content</i>=<u>"ie=edge"</u>>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;<b>title</b>>Document&lt;<b>/title</b>>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;<b>link</b> <i>rel</i>=<u>"stylesheet"</u> <i>href</i>=<u>"css/main.css"</u>>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;<b>link</b>  <i>rel</i>=<u>"stylesheet"</u> <i>href</i>=<u>"https://use.fontawesome.com/releases/v5.8.2/css/all.css"</u> <i>integrity</i>=<u>"sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"</u> <i>crossorigin</i>=<u>"anonymous"</u>>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;<b>link</b>  <i>href</i>=<u>"https://fonts.googleapis.com/css?family=Raleway:400,400i,700&display=swap"</u> <i>rel</i>=<u>"stylesheet"</u>>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;<b>script</b>  <i>src</i>=<u>"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"</u>>&lt;<b>/script</b>>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;<b>script</b> <i>src</i>=<u>"scripts/main.js"</u>>&lt;<b>/script</b>>
+                  &lt;<b>/head</b>>
+                    &lt;<b>body </b>>
+
+                  &lt;<b>/body</b>>
+                  &lt;<b>/html</b>>
+              </code>
+            </pre>
+          </div>
+          <div class="flex container large">
+           <div class="col-2 padding-2">
+                <h6>What is all that?</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nulla adipisci suscipit expedita iusto reprehenderit exercitationem et sequi natus, sapiente consequuntur aperiam, voluptates, cupiditate pariatur inventore quasi, perferendis maxime. Hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id vitae, culpa facilis qui consequuntur corrupti a quas illum iure porro doloremque, maxime ut autem voluptatibus. Consectetur laborum repellendus, sunt provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem itaque nulla quisquam, magnam quos voluptatum, adipisci recusandae quasi quis mollitia corrupti eos consequatur ipsam tenetur soluta, sequi at maiores sit.</p>
             </div>
-            <div class="col-3">
-                <ul class="listBullet">
-                    <li>I am a list item</li>
-                    <li>I am a list item</li>
-                    <li>I am a list item</li>
-                </ul>
+            <div class="col-2 padding-2">
+                <h6>What else you need to know:</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi ullam, itaque, voluptates nisi iure, quos sit corporis porro quae dolores odio ab harum quasi quo impedit. Autem, quasi, molestiae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sapiente, fugiat libero reiciendis, voluptatum excepturi dignissimos alias voluptas, tempore dolorem facere soluta, non error? Atque placeat, quia id facere qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat accusamus molestiae porro iusto excepturi sapiente aliquam harum, ratione quam. Expedita dolor laborum itaque, earum nesciunt mollitia odio, quis explicabo. Sunt.</p>
+          </div>
+        </div>
+          
+        <h2 class="center-text">Classes and what they do:</h2>
+        <div class="flex">
+          <div class="col-2">
+            <div class="accordion">
+                <h6>Container/Grid</h6>
+                <div class="accordionContent">
+                    <p>Use the class of container to show where the bulk of your page content will be. Think of it as a tag to wrap around everything on the page. If you want the entire page to be fixed in the middle of the screen at the standard width of 960px, use the class of container along with the class of small.</p>
+                    <p>We use flexbox for our grid system. To use it, you will have to have a parent element with the class of flex, and then based on how many columns you want, you will have col-1, col-2, col-3, col-4 on the child elements. You also have the option to have some of the columns larger or smaller than the others using col-33 or col-66. These are demonstrated below:</p>
+                    <div class="flex-always">
+                      <div class="col-1 exampleDiv">col-1</div>
+                    </div>
+                    <div class="flex-always">
+                      <div class="col-2 exampleDiv">col-2</div>
+                      <div class="col-2 exampleDiv">col-2</div>
+                    </div>
+                    <div class="flex-always">
+                      <div class="col-3 exampleDiv">col-3</div>
+                      <div class="col-3 exampleDiv">col-3</div>
+                      <div class="col-3 exampleDiv">col-3</div>
+                    </div>
+                    <div class="flex-always">
+                      <div class="col-4 exampleDiv">col-4</div>
+                      <div class="col-4 exampleDiv">col-4</div>
+                      <div class="col-4 exampleDiv">col-4</div>
+                      <div class="col-4 exampleDiv">col-4</div>
+                    </div>
+                    <div class="flex-always">
+                      <div class="col-33 exampleDiv">col-33</div>
+                      <div class="col-66 exampleDiv">col-66</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-3">
-                <ol>
-                    <li>I am a list item</li>
-                    <li>I am a list item</li>
-                    <li>I am a list item</li>
-                </ol>
+            <div class="accordion">
+                <h6>Flex</h6>
+                <div class="accordionContent">
+                    <p>There are so many things you can do with flexbox to change the layout of your content. Below are some examples of what you can do with some simple classes. Note that all of these classes would be on the parent element and will only work in addition to the flex class.</p>
+                    <p>Flex Direction: row</p>
+                    <div class="flex-always direction-row">
+                      <div class="col-4 exampleDiv">1</div>
+                      <div class="col-4 exampleDiv">2</div>
+                      <div class="col-4 exampleDiv">3</div>
+                      <div class="col-4 exampleDiv">4</div>
+                    </div>
+                    <p>Flex Direction: row reverse</p>
+                    <div class="flex-always direction-row-reverse">
+                      <div class="col-4 exampleDiv">1</div>
+                      <div class="col-4 exampleDiv">2</div>
+                      <div class="col-4 exampleDiv">3</div>
+                      <div class="col-4 exampleDiv">4</div>
+                    </div>
+                    <p>Flex Direction: column</p>
+                    <div class="flex-always direction-column">
+                      <div class="col-4 exampleDiv">1</div>
+                      <div class="col-4 exampleDiv">2</div>
+                      <div class="col-4 exampleDiv">3</div>
+                      <div class="col-4 exampleDiv">4</div>
+                    </div>
+                    <p>Flex Direction: column reverse</p>
+                    <div class="flex-always direction-column-reverse">
+                      <div class="col-4 exampleDiv">1</div>
+                      <div class="col-4 exampleDiv">2</div>
+                      <div class="col-4 exampleDiv">3</div>
+                      <div class="col-4 exampleDiv">4</div>
+                    </div>
+                    <p>Justify-Content: start</p>
+                    <div class="flex-always justify-content-start">
+                      <div class="col-4 exampleDiv">1</div>
+                      <div class="col-4 exampleDiv">2</div>
+                      <div class="col-4 exampleDiv">3</div>
+                      <div class="col-4 exampleDiv">4</div>
+                    </div>
+                    <p>Justify-Content: end</p>
+                    <div class="flex-always justify-content-end">
+                      <div class="col-4 exampleDiv">1</div>
+                      <div class="col-4 exampleDiv">2</div>
+                      <div class="col-4 exampleDiv">3</div>
+                      <div class="col-4 exampleDiv">4</div>
+                    </div>
+                    <p>Justify-Content: center</p>
+                    <div class="flex-always justify-content-center">
+                      <div class="col-4 exampleDiv">1</div>
+                      <div class="col-4 exampleDiv">2</div>
+                      <div class="col-4 exampleDiv">3</div>
+                      <div class="col-4 exampleDiv">4</div>
+                    </div>
+                    <p>Justify-Content: space between</p>
+                    <div class="flex-always justify-content-between">
+                      <div class="col-4 exampleDiv">1</div>
+                      <div class="col-4 exampleDiv">2</div>
+                    </div>
+                    <p>Justify-Content: space around</p>
+                    <div class="flex-always justify-content-around">
+                      <div class="col-4 exampleDiv">1</div>
+                      <div class="col-4 exampleDiv">2</div>
+                    </div>
+                    <p>Justify-Content: space evenly</p>
+                    <div class="flex-always justify-content-evenly">
+                      <div class="col-4 exampleDiv">1</div>
+                      <div class="col-4 exampleDiv">2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <h6>Inline/Block/Inline-block</h6>
+                <div class="accordionContent">
+                    <p>Inline:</p>
+                    <div class="flex-always direction-row">
+                      <div class="col-4 exampleDiv inline">Inline</div>
+                    </div>
+                    <p>Block:</p>
+                    <div class="flex-always direction-row">
+                      <div class="col-4 exampleDiv block">Block</div>
+                    </div>
+                    <p>Inline-block:</p>
+                    <div class="flex-always direction-row">
+                      <div class="col-4 exampleDiv inline-block">Block</div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <h6>Margin/Padding</h6>
+                <div class="accordionContent">
+                    <p>To quickly add margin or padding all around an element, use one of this built in classes:</p>
+                    <p>Margin:</p>
+                    <div class="flex-always direction-row">
+                      <div class="col-4 exampleDiv2 margin-1">Margin-1</div>
+                      <div class="col-4 exampleDiv2 margin-2">Margin-2</div>
+                      <div class="col-4 exampleDiv2 margin-3">Margin-3</div>
+                    </div>
+                    <p>Padding:</p>
+                    <div class="flex-always direction-row">
+                      <div class="col-4 exampleDiv2 padding-1 margin-1">Padding-1</div>
+                      <div class="col-4 exampleDiv2 padding-2 margin-1">Padding-2</div>
+                      <div class="col-4 exampleDiv2 padding-3 margin-1">Padding-3</div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <h6>Typography classes</h6>
+                <div class="accordionContent">
+                  <p>Simply add these classes to the element you wish to effect.</p>
+                    <div class="flex-always">
+                      <div class="col-1 exampleDiv uppercase">Uppercase</div>
+                    </div>
+                    <div class="flex-always">
+                      <div class="col-1 exampleDiv lowercase">Lowercase</div>
+                    </div>
+                    <div class="flex-always">
+                      <div class="col-1 exampleDiv capitalize">Capitalize</div>
+                    </div>
+                    <div class="flex-always">
+                      <div class="col-1 exampleDiv bold">Bold</div>
+                    </div>
+                    <div class="flex-always">
+                      <div class="col-1 exampleDiv italic">Italic, cite, variable</div>
+                    </div>
+                    <div class="flex-always">
+                      <div class="col-1 exampleDiv code">Code</div>
+                    </div>
+                    <div class="flex-always">
+                      <div class="col-1 exampleDiv3 left-text">left-text</div>
+                    </div>
+                    <div class="flex-always">
+                      <div class="col-1 exampleDiv">Center-text</div>
+                    </div>
+                    <div class="flex-always">
+                      <div class="col-1 exampleDiv3 right-text">Right-text</div>
+                    </div>
+                    <div class="flex-always">
+                      <div class="col-1 exampleDiv3 justify-text">Justify-text will make where the text start and end the same nor matter how much text you have or what the length of each line is.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <h6>Lists</h6>
+                <div class="accordionContent">
+                    <p>By default, any ul tags will not show bullets. To add bullets, you would add one of the following classes:</p>
+                    <div class="flex-always">
+                      <div class="col-1 margin-3">
+                        <p>listBullets:</p>
+                      <ul class="listBullet">
+                        <li>Bullets</li>
+                        <li>Bullets</li>
+                        <li>Bullets</li>
+                      </ul>
+                    </div>
+                    <div class="col-1 margin-3">
+                      <p>listCircle:</p>
+                      <ul class="listCircle">
+                        <li>Circles</li>
+                        <li>Circles</li>
+                        <li>Circles</li>
+                      </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="accordion">
+                <h6>Tables</h6>
+                <div class="accordionContent">
+                    <p>You can create simple and responsive tables for your data. Just wrap your table with a class of resTable and for the style just add a class in your table element. See below for examples and what classes you'll need to use for each.</p>
+                    <p>Table with class table-simple</p>
+                    <div class="resTable">
+                    <table class="table-simple">
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>Qtr1</th>
+                            <th>Qtr2</th>
+                            <th>Qtr3</th>
+                            <th>Qtr4</th>
+                            <th>Qtr5</th>
+                        </tr>
+                        <tr>
+                            <td>Stacy</td>
+                            <td>35</td>
+                            <td>Seattle</td>
+                            <td>WA</td>
+                            <td>45</td>
+                            <td>99</td>
+                            <td>65</td>
+                            <td>74</td>
+                            <td>55</td>
+                        </tr>
+                        <tr>
+                            <td>Joe</td>
+                            <td>25</td>
+                            <td>Denver</td>
+                            <td>CO</td>
+                            <td>89</td>
+                            <td>25</td>
+                            <td>45</td>
+                            <td>78</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>Adam</td>
+                            <td>28</td>
+                            <td>New York</td>
+                            <td>NY</td>
+                            <td>77</td>
+                            <td>60</td>
+                            <td>31</td>
+                            <td>45</td>
+                            <td>12</td>
+                        </tr>
+                    </table>
+                </div>
+                <p>Table with class table-zebra</p>
+                <div class="resTable">
+                    <table class="table-zebra">
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>Qtr1</th>
+                            <th>Qtr2</th>
+                            <th>Qtr3</th>
+                            <th>Qtr4</th>
+                            <th>Qtr5</th>
+                        </tr>
+                        <tr>
+                            <td>Stacy</td>
+                            <td>35</td>
+                            <td>Seattle</td>
+                            <td>WA</td>
+                            <td>45</td>
+                            <td>99</td>
+                            <td>65</td>
+                            <td>74</td>
+                            <td>55</td>
+                        </tr>
+                        <tr>
+                            <td>Joe</td>
+                            <td>25</td>
+                            <td>Denver</td>
+                            <td>CO</td>
+                            <td>89</td>
+                            <td>25</td>
+                            <td>45</td>
+                            <td>78</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>Adam</td>
+                            <td>28</td>
+                            <td>New York</td>
+                            <td>NY</td>
+                            <td>77</td>
+                            <td>60</td>
+                            <td>31</td>
+                            <td>45</td>
+                            <td>12</td>
+                        </tr>
+                    </table>
+                </div>
+                <p>Table with class table-invert</p>
+                <div class="resTable">
+                    <table class="table-invert">
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>Qtr1</th>
+                            <th>Qtr2</th>
+                            <th>Qtr3</th>
+                            <th>Qtr4</th>
+                            <th>Qtr5</th>
+                        </tr>
+                        <tr>
+                            <td>Stacy</td>
+                            <td>35</td>
+                            <td>Seattle</td>
+                            <td>WA</td>
+                            <td>45</td>
+                            <td>99</td>
+                            <td>65</td>
+                            <td>74</td>
+                            <td>55</td>
+                        </tr>
+                        <tr>
+                            <td>Joe</td>
+                            <td>25</td>
+                            <td>Denver</td>
+                            <td>CO</td>
+                            <td>89</td>
+                            <td>25</td>
+                            <td>45</td>
+                            <td>78</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>Adam</td>
+                            <td>28</td>
+                            <td>New York</td>
+                            <td>NY</td>
+                            <td>77</td>
+                            <td>60</td>
+                            <td>31</td>
+                            <td>45</td>
+                            <td>12</td>
+                        </tr>
+                    </table>
+                </div>
+                <p>If you want stripes with your invert table just add the table-zebra class.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <h6>Forms</h6>
+                <div class="accordionContent">
+                    <p>Example/explain forms here</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <h6>Buttons</h6>
+                <div class="accordionContent">
+                    <p>You can make buttons by either using the button tag or by adding the button class to an a tag. There are different sizes and different colors built right in. See below for examples and what classes you'll need to use for each.</p>
+                    <p>These buttons are the default size, and their classes are simply the names of the colors.</p>
+                    <div class="flex-always">
+                      <div class="col-3"><button class="button">Default</button></div>
+                      <div class="col-3"><button class="button basic">Basic</button></div>
+                      <div class="col-3"><button class="button blue">Blue</button></div>
+                    </div>
+                    <div class="flex-always">
+                      <div class="col-3"><button class="button green">Green</button></div>
+                      <div class="col-3"><button class="button orange">Orange</button></div>
+                      <div class="col-3"><button class="button red">Red</button></div>
+                    </div>
+                    <p>These are the different sizes you can use for buttons:</p>
+                    <div class="flex-always">
+                      <div class="col-4"><button class="button">Default</button></div>
+                      <div class="col-4"><button class="button xsmall">xsmall</button></div>
+                      <div class="col-4"><button class="button small">small</button></div>
+                      <div class="col-4"><button class="button large">large</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <h6>Misc/helper classes</h6>
+                <div class="accordionContent">
+                    <p>We have a .float-left class to quickly float an item left, a .float-right class to quickly float an item right, and an .clearfix class to quickly clear items from floating.</p>
+                    <p>We have a .no-print class to keep content from being printed</p>
+                    <p>We have .responsiveImg class to quickly make an image responsive.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <h6>Icons</h6>
+                <div class="accordionContent">
+                    <p>We offer a set of icons in this framework, and all you have to do is set a class to make the icon appear!</p>
+                    <div class="flex-always">
+                      <div class="about"></div>
+                      <div class="home"></div>
+                      <div class="contact"></div>
+                      <div class="location"></div>
+                      <div class="projects"></div>
+                      <div class="insta"></div>
+                      <div class="fb"></div>
+                      <div class="in"></div>
+                    </div>
+                    <div class="flex-always">
+                      <div class="twitter"></div>
+                      <div class="upload"></div>
+                      <div class="download"></div>
+                      <div class="print"></div>
+                      <div class="hamMenu"></div>
+                      <div class="hamX"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion">
+                <h6>Colors</h6>
+                <div class="accordionContent">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat blanditiis, numquam doloremque dolorum eaque deleniti mollitia praesentium magnam tenetur debitis aperiam doloribus officiis enim quidem quo eos ut qui.</p>
+                </div>
             </div>
         </div>
-    </body>
-</div>
+          </div>
+      </section>
+      <section class="components">
+        <h2 class="center-text">Components</h2>
+        <div class="flex">
+          <div class="col-2 padding-3">
+            <img src="https://via.placeholder.com/500x349" class="responsiveImg" alt="">
+            <h5 class="center-text">Navigation</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem veniam aliquid in esse quam nisi architecto veritatis asperiores alias, vitae, unde culpa, distinctio debitis omnis sed voluptates voluptatem exercitationem, reprehenderit!</p>
+            <pre>
+              <code>
 
+              </code>
+            </pre>
+          </div>
+          <div class="col-2 padding-3">
+            <!-- <img src="https://via.placeholder.com/500x349" alt=""> -->
+             <img src="https://via.placeholder.com/500x349" class="responsiveImg" alt="">
+            <h5 class="center-text">Header</h5>
+            <p>Our Header component works with or without a background image. Option to add a button.
+               Your brand or message will immediately catch the user's attention at the top of the page.
+            </p>
+            <div class="code-example">
+            <pre>
+                <code>
+                    <span>&lt;!-- The classes "header short" will show a header with restricted height, as opposed to showing the full height of the image used. --&gt;</span>
+                    &lt;<b>header</b> <i>class</i>=<u>"header short"</u>&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp; <span>&lt;!-- Option to change img class to align-self-start, align-self-center etc. --&gt;</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;<b>img</b> <i>class</i>=<u>"responsiveImg flex align-self-end"</u> <i>src</i>=<u>"path-to-your-images/your-image.gif"</u> <i>alt</i>=<u>"Add alt text only when adding image"</u>&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;<b>div</b>&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;<b>h1</b>&gt;Header message&lt;<b>/h1</b>&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;<b>p</b>&gt;Descriptive Text Goes Here.&lt;<b>/p</b>&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;<b>button</b> <i>class</i>=<u>"button"</u>&gt;Click Me Please&lt;<b>/button</b>&gt;
+                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;<b>/div</b>&gt;
+                    &lt;<b>/header</b>&gt;
+                </code>
+            </pre>
+        </div>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="col-2 padding-3">
+            <img src="https://via.placeholder.com/500x349" class="responsiveImg" alt="">
+            <h5 class="center-text">Masked Images</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt repellat quaerat magnam ipsam voluptate, rerum sint fugit soluta, hic quia, vel. Nihil illum architecto totam delectus commodi sunt laboriosam illo!</p>
+            <pre>
+              <code>
+
+              </code>
+            </pre>
+          </div>
+          <div class="col-2 padding-3">
+            <img src="https://via.placeholder.com/500x349" class="responsiveImg" alt="">
+            <h5 class="center-text">Accordion</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, ea esse dolorem vel quos omnis. Numquam corporis natus molestias molestiae accusamus tempora, autem laborum cumque consequuntur eaque qui accusantium consequatur.</p>
+            <pre>
+              <code>
+
+              </code>
+            </pre>
+          </div>
+        </div>
+      </section>
+      <footer>
+      <div class="col-1 footer-icons my-auto">
+          <ul>
+               <li class="insta"></li>
+                  <li class="fb"></li>
+                  <li class="in"></li>
+                  <li class="twitter"></li>
+          </ul>
+      </div>
+      <div class="copyright my-auto">©2019 CSSEO Framework</div>
+     
+     
+    </footer>
+    </div>
+</body>
 </html>
