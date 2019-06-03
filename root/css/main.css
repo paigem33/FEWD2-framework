@@ -23,6 +23,7 @@ line numbers-TABLES
 line numbers-FORMS
 line numbers-BUTTONS
 line numbers-MISCELLANEOUS
+    line number-Border Rounded
     line number-Helper Classes
     line number-No Print
     line number-Responsive Image
@@ -604,7 +605,7 @@ label {
 }
 .form-control{
     margin: 1em 0;
-    border: solid 1px white;
+    border: solid 1px #e7e5e5;
     border-radius: 5px;
     width: 100%;
     font-size: 1rem;
@@ -617,9 +618,9 @@ label {
 .form-control:focus{
     color: #495057;
     background-color: #fff;
-    border-color: #96f7a9;
+    border-color: #808080;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(150, 247, 247, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(212,212,212, 0.25);
 }
 .select{
      margin: 1em 0;
@@ -639,9 +640,9 @@ textarea.form-control{
 .select:focus{
     color: #495057;
     background-color: #fff;
-    border-color: #96f7a9;
+    border-color: #808080;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(150, 247, 247, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(212, 212, 212, 0.25);
 }
 .form-check {
     position: relative;
@@ -749,6 +750,11 @@ button.large, .button.large, input[type="submit"].large, input[type="reset"].lar
 /* End BUTTONS_______________*/
 
 /* MISCELLANEOUS_____________*/
+
+/*Add a border to any element*/
+.border-rounded{
+    border-radius: 10px;
+}
 /* Helper Classes */
 .float-left {
     float: left;
@@ -771,9 +777,7 @@ button.large, .button.large, input[type="submit"].large, input[type="reset"].lar
     max-width: 100%;
     height: auto;
 }
-.border-rounded{
-    border-radius: 10px;
-}
+
 /* End MISCELLANEOUS__________*/
 
 /* ICONS______________________*/
