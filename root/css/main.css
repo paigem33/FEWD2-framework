@@ -73,9 +73,10 @@ to create their own custom CSS file. That way the line numbers don't change.
 /* Code Examples */
 /* Will move this portion to a separate CSS file */
 .code-example {
-    display: flex;
-    justify-content: center;
-    margin: 2rem;
+    /* display: flex; */
+    /* justify-content: center; */
+    margin: 2em;
+    padding: 2em;
 }
 pre {
     background-color: rgb(52, 55, 56);
@@ -101,6 +102,7 @@ pre i {
 }
 pre code {
     white-space: pre-line;
+    word-wrap: break-word;
 }
 
 /*End CUSTOM________________*
@@ -434,7 +436,7 @@ li {
 /*COLORS_____________________*/
 /* Tinted or transparent background */
 .bg-tint-black {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3) !important;
 }
 .bg-tint-white {
     background-color: rgba(255, 255, 255, 0.7);
