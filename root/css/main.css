@@ -1100,4 +1100,8 @@ button.large, .button.large, input[type="submit"].large, input[type="reset"].lar
     -webkit-mask-size: 100%;
     -webkit-mask-repeat: no-repeat;
 }
+
+.gradiMask {
+    -webkit-mask-image: linear-gradient(black, white, transparent);
+}
 /* End COMPONENTS__________*/
