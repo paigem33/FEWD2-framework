@@ -1,14 +1,77 @@
-/*CUSTOM______________________________________*/
-/* Just for display purposes */
-.group {
-    background-color: #f1f1f1;
+/* Table of Contents:
+
+line numbers-name of section
+
+line numbers-RESETS
+line numbers-GRID
+line numbers-DISPLAY & SPACING
+    line number-Flex
+    line number-Block/Inline
+    line number-Margins
+    line number-Padding
+line numbers-TYPOGRAPHY
+    line number-Font Sizes and Line Heights
+    line number-Typography Classes
+    line number-Links
+    line number-Lists
+line numbers-COLORS
+    line number-Tinted Or Transparent Background
+    line number-Background Color Only
+    line number-Text Color Only 
+    line number-Text Color And Background
+line numbers-TABLES
+line numbers-FORMS
+line numbers-BUTTONS
+line numbers-MISCELLANEOUS
+    line number-Border Rounded
+    line-number-Full Width Elements
+    line number-Helper Classes
+    line number-No Print
+    line number-Responsive Image
+line numbers-ICONS
+line numbers-COMPONENTS
+    line number-Navigation
+    line number-Footer
+    line number-Header
+    line number-Accordion
+    line number-Masked Images
+ */
+
+ /*
+ Media Queries (for our own temporary use - remove when done)
+    Common Screen Widths:
+    - Phones: 320px to 414px
+    - Tablets: 768px to 1024px
+    - Laptops/Desktops: 1366px
+  */
+
+/*CUSTOM_____________________*/
+/*
+Should probably get rid of CUSTOM section altogether once we're done (the
+things we will use will go in separate CSS files anyway).
+main.css could serve as a kind of user manual. The user will be encouraged
+to create their own custom CSS file. That way the line numbers don't change.
+*/
+/* Please move these to a separate CSS file, or remove once no longer needed: */
+/* .tableEx {
+    background-color: #81aff9;
+    padding: 1rem;
 }
-p {
-    background-color: #d9d9d9;
-    margin: 10px;
+.iconEx {
+    background-color: #fff;
+    padding: 0.5rem;
 }
+.iconEx li {
+    height: 50px;
+    display: inline-block;
+    padding: 0.5rem;
+}
+.maskEx {
+    background-color: #81aff9;
+    padding: 1rem;
+} */
 /* Code Examples */
-/* https://www.sitepoint.com/best-practice-for-code-examples/ */
+/* Will move this portion to a separate CSS file */
 .code-example {
     display: flex;
     justify-content: center;
@@ -39,28 +102,10 @@ pre i {
 pre code {
     white-space: pre-line;
 }
-/* Logo/Text */
-.nav1-name h4 {
-    border: solid 5px rgb(173, 208, 228);
-    border-radius: 15px;
-    padding: -5px;
-    font-weight: normal;
-    color: rgb(173, 208, 228);
-    background-color: rgba(153, 207, 226, 0.1);
-}
-.nav1-name span {
-    font-weight: bold;
-    color: rgb(33, 101, 179);
-}
-.nav1-name i {
-    top: 3px;
-    position: relative;
-    color: rgb(255, 166, 0);
-}
 
-/*End of CUSTOM______________________________________*
+/*End CUSTOM________________*
 
-/*RESETS____________________________________*/
+/*RESETS____________________*/
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -74,18 +119,15 @@ html {
     margin: 0;
     box-sizing: inherit;
 }
-article, aside, figcaption, figure, footer, header, menu, nav, section { 
+article, aside, figcaption, figure, footer, header, menu, nav, section {
     display: block;
 }
-/*End of RESETS_____________________________*/
+button:active, .button:active {
+  outline: none;
+}
+/*End RESETS_______________*/
 
-/*GRID____________________________________*/
-/* Common Screen Widths: 
- - Phones: 320px to 414px
- - Tablets: 768px to 1024px 
- - Laptops/Desktops: 1366px
- */
-
+/*GRID_____________________*/
 .container {
     width: 100%;
     margin: 0 auto;
@@ -93,16 +135,17 @@ article, aside, figcaption, figure, footer, header, menu, nav, section {
 .container.small {
     max-width: 960px;
 }
-.group, .row {
-    display: flex;
-    flex-wrap: wrap;
+.container.medium {
+    max-width: 1024px;
+}
+.container.large {
+    max-width: 1366px;
 }
 .col-1, .col-2, .col-3, .col-4, .col-33, .col-66 {
   flex: 100%;
   box-sizing: border-box;
- 
+  
 }
-
 @media (min-width: 768px) {
     .col-3, .col-33 {
         flex: 33%;
@@ -110,102 +153,107 @@ article, aside, figcaption, figure, footer, header, menu, nav, section {
     .col-2, .col-4 {
         flex: 50%;
     }
+    }
     .col-66 {
         flex: 66%;
     }
 }
-
 @media (min-width: 1024px) {
     .col-4 {
         flex: 25%;
     }
 }
-/*End of GRID____________________________________*/
+/*End GRID_________________*/
 
-/*DISPLAY & SPACING____________________________________*/
-/* Flex */
-.flex {
+/*DISPLAY & SPACING________*/
+/* Flex - Display */
+.flex-always {
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .flex {
     display: flex;
 }
-/* Flex Direction */
-.flex.direction-row {
+}
+/* Flex - Direction */
+.direction-row {
     flex-direction: row;
 }
-.flex.direction-row-reverse {
-    flex-direction: row-reverse;
+.direction-row-reverse {
+    flex-direction:row-reverse;
 }
-.flex.direction-column {
+.direction-column {
     flex-direction: column;
 }
-.flex.direction-column-reverse {
+.direction-column-reverse {
     flex-direction: column-reverse;
 }
-/* Flex Wrap */
-.flex.nowrap {
+/* Flex - Wrap */
+.nowrap {
     flex-wrap: nowrap;
 }
-.flex.wrap {
+.wrap {
     flex-wrap: wrap;
 }
-.flex.wrap-reverse {
+.wrap-reverse {
     flex-wrap: wrap-reverse;
 }
-/* Justify Content */
-.flex.justify-content-start {
+/* Flex - Justify Content */
+.justify-content-start {
     justify-content: flex-start;
 }
-.flex.justify-content-end {
+.justify-content-end {
     justify-content: flex-end;
 }
-.flex.justify-content-center {
+.justify-content-center {
     justify-content: center;
 }
-.flex.justify-content-between {
+.justify-content-between {
     justify-content: space-between;
 }
-.flex.justify-content-around {
+.justify-content-around {
     justify-content: space-around;
 }
-.flex.justify-content-evenly {
+.justify-content-evenly {
     justify-content: space-evenly;
 }
-/* Align Self */
-.flex.align-self-auto {
+/* Flex - Align Self */
+.align-self-auto {
     align-self: auto;
 }
-.flex.align-self-start {
+.align-self-start {
     align-self: flex-start;
 }
-.flex.align-self-end {
+.align-self-end {
     align-self: flex-end;
 }
-.flex.align-self-center {
+.align-self-center {
     align-self: center;
 }
-.flex.align-self-baseline {
+.align-self-baseline {
     align-self: baseline;
 }
-.flex.align-self-stretch {
+.align-self-stretch {
     align-self: stretch;
 }
-/* Align-Items */
-.flex.align-items-stretch {
+/* Flex - Align-Items */
+.align-items-stretch {
     align-items: stretch;
 }
-.flex.align-items-start {
+.align-items-start {
     align-items: flex-start;
 }
-.flex.align-items-end {
+.align-items-end {
     align-items: flex-end;
 }
-.flex.align-items-center {
+.align-items-center {
     align-items: center;
 }
-.flex.align-items-baseline {
+.align-items-baseline {
     align-items: baseline;
 }
-/* Flex Grow */
-.flex.grow {
+/* Flex - Grow */
+.grow {
     flex-grow: 1;
 }
 /* Block/Inline */
@@ -224,7 +272,6 @@ article, aside, figcaption, figure, footer, header, menu, nav, section {
 }
 .my-auto {
    margin: auto 0;
-    
 }
 .margin-1 {
     margin: 0.25em;
@@ -245,9 +292,475 @@ article, aside, figcaption, figure, footer, header, menu, nav, section {
 .padding-3 {
     padding: 1em;
 }
-/*End of DISPLAY & SPACING____________________________________*/
+/* End DISPLAY & SPACING____*/
 
-/*HELPER CLASSES____________________________________*/
+/* TYPOGRAPHY________________*/
+/* Font Sizes and Line Heights */
+html {
+    font-size: 100%;
+}
+body {
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.25;
+}
+p {
+    font-size: 1em;
+    line-height: 1.25;
+    padding: 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+    padding: 10px;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.25;
+}
+h2 {
+    font-size: 1.875em;
+    line-height: 1.15384615;
+}
+h3 {
+    font-size: 1.625em;
+    line-height: 1.375;
+}
+h4 {
+    font-size: 1.50em;
+    line-height: 1.11111111;
+}
+h5 {
+    font-size: 1.25em;
+    line-height: 1;
+}
+h6 {
+    font-size: 1em;
+    line-height: 1;
+}
+blockquote {
+    font-size: 1.25em;
+    line-height: 1.25;
+}
+@media screen and (min-width: 768px) {
+    p {
+        line-height: 1.375;
+    }
+    h1 {
+        font-size: 3.25em;
+        line-height: 1.05;
+    }
+    h2 {
+        font-size: 2.5em;
+        line-height: 1.25;
+    }
+    h3 {
+        font-size: 2.25em;
+        line-height: 1.25;
+    }
+    h4 {
+        font-size: 1.75em;
+        line-height: 1.22222222;
+    }
+    h5 {
+        font-size: 1.50em;
+        line-height: 1em;
+    }
+    h6 {
+        font-size: 1.25em;
+        line-height: 1em;
+    }
+    blockquote {
+        font-size: 1.5em;
+        line-height: 1.45;
+    }
+}
+/* Typography Classes */
+.uppercase {
+    text-transform: uppercase;
+}
+.lowercase {
+    text-transform: lowercase;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.bold {
+    font-weight: bold;
+}
+.italic, .cite, .variable {
+    font-style: italic;
+}
+.code {
+    font-family: monospace;
+}
+.center-text {
+    text-align: center;
+}
+.left-text {
+    text-align: left;
+}
+.right-text {
+    text-align: right;
+}
+.justify-text {
+    text-align: justify;
+}
+/* Links */
+a {
+    text-decoration: none;
+    color: #000080;
+}
+a:visited {
+    color: #00004d;
+}
+a:hover {
+    text-decoration: underline;
+}
+/* Lists */
+ul {
+    list-style-type: none;
+    margin: 5px;
+}
+li {
+    padding: 3px;
+}
+.listCircle {
+    list-style-type: circle;
+}
+.listBullet {
+    list-style-type: disc;
+}
+/* End TYPOGRAPHY____________*/
+
+/*COLORS_____________________*/
+/* Tinted or transparent background */
+.bg-tint-black {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.bg-tint-white {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.bg-transparent {
+    background-color: transparent;
+}
+/* Sets background color only */
+.bg-black {
+    background-color: #000;
+}
+.bg-dark {
+    background-color: #414142;
+}
+.bg-basic {
+    background-color: #808080;
+}
+.bg-light {
+    background-color: #e7e5e5;
+}
+.bg-white {
+    background-color: #fff;
+}
+.bg-red {
+    background-color: #e60000;
+}
+.bg-orange {
+    background-color: #e65c00;
+}
+.bg-yellow {
+    background-color: #ffff00;  
+}
+.bg-green {
+    background-color: #009900;
+}
+.bg-blue {
+    background-color: #3333ff;
+}
+/* Sets text color only */
+.text-black {
+    color: #000;
+}
+.text-dark {
+    color: #414142;
+}
+.text-basic {
+    color: #808080;
+}
+.text-light {
+    color: #e7e5e5;
+}
+.text-white {
+    color: #fff;
+}
+.text-red {
+    color: #e60000;
+}
+.text-orange {
+    color: #e65c00;
+}
+.text-yellow {
+    color: #ffff00;
+}
+.text-green {
+    color: #009900;;
+}
+.text-blue {
+    color: #3333ff;
+}
+/* Sets both text color and background */
+.black {
+    background-color: #000;
+    color: #fff;
+}
+.dark {
+    background-color: #414142;
+    color: #e7e5e5;
+}
+.basic {
+    background-color: #808080;
+    color: #e7e5e5;
+}
+.light {
+    background-color: #e7e5e5;
+    color: #414142;
+}
+.white {
+    background-color: #fff;
+    color: #000;
+}
+.red {
+    background-color: #e60000;
+    color: #fff;
+}
+.orange {
+    background-color: #e65c00;
+    color: #000;
+}
+.yellow {
+    background-color: #ffff00;
+    color: #000;    
+}
+.green {
+    background-color: #009900;
+    color: #000;
+}
+.blue {
+    background-color: #3333ff;
+    color: #fff;
+}
+/*End COLORS_________________*/
+
+/*TABLES_____________________*/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+.resTable {
+    overflow-x: auto;
+}
+.table-simple {
+    background-color: #fff;
+}
+.table-zebra {
+    background-color: #fff;
+}
+.table-zebra tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.table-invert {
+    background-color: #000;
+    color: #fff;
+}
+.table-invert.table-zebra tr:nth-child(even){
+    background-color: #414142;
+}
+/* End TABLES_______________*/
+
+/* FORMS____________________*/
+form {
+    border: solid 3px grey;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 10px;
+    padding: 10px;
+    text-align: center;
+}
+label {
+    text-align: left;
+    display: block;
+}
+.group-form{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+.group-form > [class*="col-"] {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.form-control{
+    margin: 1em 0;
+    border: solid 1px #e7e5e5;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    padding: 0.375rem 0.75rem;
+    height: 2.5em;
+}
+.form-control:focus{
+    color: #495057;
+    background-color: #fff;
+    border-color: #808080;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(212,212,212, 0.25);
+}
+.select{
+     margin: 1em 0;
+    display: inline-block;
+    width: 100%;
+    border: solid 1px white;
+    border-radius: 7px;
+    height: 2.5em;
+    padding: 0.55em;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #495057;
+}
+textarea.form-control{
+    height: auto;
+}
+.select:focus{
+    color: #495057;
+    background-color: #fff;
+    border-color: #808080;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(212, 212, 212, 0.25);
+}
+.form-check {
+    position: relative;
+    display: block;
+    padding-left: 1.25rem;
+    margin: 1em 0;
+    text-align: left;
+}
+.form-checkbox {
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    position: absolute;
+    margin-top: 0.1rem;
+    margin-left: -1.25rem;
+}
+fieldset{
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+/* End FORMS________________*/
+
+/* BUTTONS__________________*/
+/* Button Colors */
+button, .button, input[type="submit"], input[type="reset"], input[type="button"] {
+    background-color: transparent;
+    margin: 5px;
+    border-radius: 4px;
+    border: solid 1px #808080;
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1em;
+    height: 40px;
+}
+button.basic, .button.basic, input[type="submit"].basic, input[type="reset"].basic, input[type="button"].basic {
+    background-color: #808080;
+    color: white;
+}
+button.blue, .button.blue, input[type="submit"].blue, input[type="reset"].blue, input[type="button"].blue {
+    background-color: #3333ff;
+    color: white;
+    border-color: #3333ff;
+}
+button.green, .button.green, input[type="submit"].green, input[type="reset"].green, input[type="button"].green {
+    background-color: #009900;
+    color: white;
+    border-color: #009900;
+}
+button.orange, .button.orange, input[type="submit"].orange, input[type="reset"].orange, input[type="button"].orange {
+    background-color: #e65c00;
+    color: white;
+    border-color: #e65c00;
+}
+button.red, .button.red, input[type="submit"].red, input[type="reset"].red, input[type="button"].red {
+    background-color: #e60000;
+    border-color: #e60000;
+    color: white;
+}
+button.red:hover, .button.red:hover, input[type="submit"].red:hover, input[type="reset"].red:hover, input[type="button"].red:hover {
+    background-color: #ff1a1a;
+}
+button.orange:hover, .button.orange:hover, input[type="submit"].orange:hover, input[type="reset"].orange:hover, input[type="button"].orange:hover {
+    background-color: #ff751a;
+}
+button.green:hover, .button.green:hover, input[type="submit"].green:hover, input[type="reset"].green:hover, input[type="button"].green:hover {
+    background-color: #00cc00;
+}
+button.blue:hover, .button.blue:hover, input[type="submit"].blue:hover, input[type="reset"].blue:hover, input[type="button"].blue:hover {
+    background-color: #6666ff;
+}
+button.basic:hover, .button.basic:hover, input[type="submit"].basic:hover, input[type="reset"].basic:hover, input[type="button"].basic:hover {
+    background-color: #595959;
+}
+button:hover, .button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+    background-color: #d9d9d9;
+}
+button:active, .button:active, input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+}
+/*Button Sizes*/
+button.xsmall, .button.xsmall, input[type="submit"].xsmall, input[type="reset"].xsmall, input[type="button"].xsmall {
+    padding: 5px;
+    height: 25px;
+    font-size: .7em;
+}
+button.small, .button.small, input[type="submit"].small, input[type="reset"].small, input[type="button"].small {
+    padding: 5px;
+    height: 30px;
+    font-size: .85em;
+}
+button.large, .button.large, input[type="submit"].large, input[type="reset"].large, input[type="button"].large {
+    padding: 15px;
+    font-size: 1.25em;
+    height: 55px;
+}
+/* End BUTTONS_______________*/
+
+/* MISCELLANEOUS_____________*/
+
+/*Add a border to any element*/
+.border-rounded{
+    border-radius: 10px;
+}
+/*Add full width to any element*/
+.full-width{
+    width: 100%;
+}
+/* Helper Classes */
 .float-left {
     float: left;
 }
@@ -258,39 +771,134 @@ article, aside, figcaption, figure, footer, header, menu, nav, section {
     overflow: auto;
     clear: both;
 }
-/*End of HELPER CLASSES____________________________________*/
+/* No Print - Makes content not show up on print */
+@media print {
+    .no-print {
+        display: none;
+    }
+}
+/* Responsive Image */
 
-/*Base styles: font sizes*/
-html {
-    font-size: 100%;
-  }
-  body {
-    font-size: 1em;
-    font-family: 'Raleway', sans-serif;
-    line-height: 1.25;
-  }
-  
- /*NAVIGATION*/
+.responsiveImg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* End MISCELLANEOUS__________*/
+
+/* ICONS______________________*/
+.about {
+    left: 0px;
+    height: 55px;
+    width: 50px;
+    background: url("../images/iconSprite.png") 0 0;
+}
+.home {
+    left: 0px;
+    height: 55px;
+    width: 50px;
+    background: url("../images/iconSprite.png") 0 -53px;
+}
+.contact {
+    left: 0px;
+    height: 55px;
+    width: 50px;
+    background: url("../images/iconSprite.png") 0 -106px;
+}
+.location {
+    left: 0px;
+    height: 55px;
+    width: 50px;
+    background: url("../images/iconSprite.png") 0 -160px;
+}
+.projects {
+    left: 0px;
+    height: 55px;
+    width: 50px;
+    background: url("../images/iconSprite.png") 0 -214px;
+}
+.insta {
+    left: 0px;
+    height: 55px;
+    width: 50px;
+    background: url("../images/iconSprite.png") 0 -268px;
+}
+.fb {
+    left: 0px;
+    height: 55px;
+    width: 50px;
+    background: url("../images/iconSprite.png") 0 -322px;
+}
+.in {
+    left: 0px;
+    height: 55px;
+    width: 50px;
+    background: url("../images/iconSprite.png") 0 -376px;
+}
+.twitter {
+    left: 0px;
+    height: 55px;
+    width: 50px;
+    background: url("../images/iconSprite.png") 0 -430px;
+}
+.upload {
+    left: 0px;
+    height: 55px;
+    width: 50px;
+    background: url("../images/iconSprite.png") 0 -484px;
+}
+.download {
+    left: 0px;
+    height: 55px;
+    width: 50px;
+    background: url("../images/iconSprite.png") 0 -539px;
+}
+.print {
+    left: 0px;
+    height: 55px;
+    width: 50px;
+    background: url("../images/iconSprite.png") 0 -593px;
+}
+.hamMenu {
+    left: 0px;
+    height: 55px;
+    width: 50px;
+    background: url("../images/iconSprite.png") 0 -647px;
+}
+.hamX {
+    left: 0px;
+    height: 55px;
+    width: 50px;
+    background: url("../images/iconSprite.png") 0 -700px;
+}
+/* End ICONS__________________*/
+
+/* COMPONENTS_________________*/
+/* Navigation Bar 1 - Standard*/
 .nav1-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
-.nav1-flex .icon {
-    font-size: 30px;
-}
 .mainNav1 {
     background-color: #f2f2f2;
     padding: 5px 0;
     display: none;
 }
+.nav1-name a, .nav2-name a {
+  color: black;
+  font-size: 2em;
+}
+.nav1-name a:hover, .nav2-name a:hover {
+  text-decoration: none;
+}
 .mainNav1 a {
     display: block;
     color: #000000;
-    font-size: 1.25em;
+    font-size: 1.05em;
     text-align: center;
-    padding: 5px;
+    padding: 3px;
 }
 .mainNav1 a:visited, .mainNav2 a:visited {
     color: #000000;
@@ -303,14 +911,13 @@ html {
     font-size: 1em;
     display: none;
 }
-
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
     .nav1, .nav2 {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .nav1 .icon {
+    .nav1 .hamMenu {
         display: none;
     }
     .mainNav1, .nav2 .mainNav2 {
@@ -346,7 +953,7 @@ html {
         display: block;
     }
 }
-/*NAV 2 bottom of screen*/
+/* Navigation Bar 2 - Bottom In Mobile*/
 .mainNav2 {
     display: flex;
     background-color: #f2f2f2;
@@ -358,6 +965,8 @@ html {
     justify-content: space-around;
     align-items: center;
     height: 80px;
+    z-index: 1;
+    margin: 0;
 }
 .mainNav2 a {
     display: block;
@@ -375,463 +984,37 @@ html {
 .mainNav2 .nav2-subMenu {
     display: none;
 }
-  
-  /*Typography*/
-  /*standard typography*/
-  p {
-      font-size: 1em;
-      line-height: 1.25;
-  }
-  h1 {
-      font-size: 2.25em;
-      line-height: 1.25;
-  }
-  h2 {
-      font-size: 1.875em;
-      line-height: 1.15384615;
-  }
-  h3 {
-      font-size: 1.625em;
-      line-height: 1.375;
-  }
-  h4 {
-      font-size: 1.50em;
-      line-height: 1.11111111;
-  }
-  h5 {
-      font-size: 1.25em;
-      line-height: 1;
-  }
-  h6 {
-      font-size: 1em;
-      line-height: 1;
-  }
-  blockquote {
-      font-size: 1.25em;
-      line-height: 1.25;
-  }
-  /*typography classes*/
-  .uppercase {
-      text-transform: uppercase;
-  }
-  .lowercase {
-      text-transform: lowercase;
-  }
-  .capitalize {
-      text-transform: capitalize;
-  }
-  .bold {
-      font-weight: bold;
-  }
-  .italic, .cite, .variable {
-      font-style: italic;
-  }
-  .code {
-      font-family: monospace;
-  }
-  .center-text {
-      text-align: center;
-  }
-  .left-text {
-      text-align: left;
-  }
-  .right-text {
-      text-align: right;
-  }
-  .justify-text {
-      text-align: justify;
-  }
-  @media screen and (min-width: 700px) {
-      p {
-      line-height: 1.375;
-      }
-      h1 {
-          font-size: 3.25em;
-          line-height: 1.05;
-      }
-      h2 {
-          font-size: 2.5em;
-          line-height: 1.25;
-      }
-      h3 {
-          font-size: 2.25em;
-          line-height: 1.25;
-      }
-      h4 {
-          font-size: 1.75em;
-          line-height: 1.22222222;
-      }
-      h5 {
-          font-size: 1.50em;
-          line-height: 1em;
-      }
-      h6 {
-          font-size: 1.25em;
-          line-height: 1em;
-      }
-      blockquote {
-          font-size: 1.5em;
-          line-height: 1.45;
-      }
-  }
-  /*Link styles*/
-  
-  a {
-      text-decoration: none;
-      color: #000080;
-  }
-  a:visited {
-      color: #00004d;
-  }
-  a:hover {
-      text-decoration: underline;
-  }
-  
-  /*Buttons*/
-  
-  /*four different colors*/
-  button, .button, input[type="submit"], input[type="reset"], input[type="button"] {
-      background-color: transparent;
-      margin: 5px;
-      border-radius: 4px;
-      border: solid 1px #808080;
-      display: inline-block;
-      padding: 10px;
-      text-transform: uppercase;
-      cursor: pointer;
-      font-size: 1em;
-      height: 40px;
-  }
-  button.basic, .button.basic, input[type="submit"].basic, input[type="reset"].basic, input[type="button"].basic {
-      background-color: #808080;
-      color: white;
-  }
-  button.blue, .button.blue, input[type="submit"].blue, input[type="reset"].blue, input[type="button"].blue {
-      background-color: #3333ff;
-      color: white;
-      border-color: #3333ff
-  }
-  button.green, .button.green, input[type="submit"].green, input[type="reset"].green, input[type="button"].green {
-      background-color: #009900;
-      color: white;
-      border-color: #009900;
-  }
-  button.orange, .button.orange, input[type="submit"].orange, input[type="reset"].orange, input[type="button"].orange {
-      background-color: #e65c00;
-      color: white;
-      border-color: #e65c00;
-  }
-  button.red, .button.red, input[type="submit"].red, input[type="reset"].red, input[type="button"].red {
-      background-color: #e60000;
-      border-color: #e60000;
-      color: white;
-  }
-  button.red:hover, .button.red:hover, input[type="submit"].red:hover, input[type="reset"].red:hover, input[type="button"].red:hover {
-      background-color: #ff1a1a;
-  }
-  button.orange:hover, .button.orange:hover, input[type="submit"].orange:hover, input[type="reset"].orange:hover, input[type="button"].orange:hover {
-      background-color: #ff751a;
-  }
-  button.green:hover, .button.green:hover, input[type="submit"].green:hover, input[type="reset"].green:hover, input[type="button"].green:hover {
-      background-color: #00cc00;
-  }
-  button.blue:hover, .button.blue:hover, input[type="submit"].blue:hover, input[type="reset"].blue:hover, input[type="button"].blue:hover {
-      background-color: #6666ff;
-  }
-  button.basic:hover, .button.basic:hover, input[type="submit"].basic:hover, input[type="reset"].basic:hover, input[type="button"].basic:hover {
-      background-color: #595959
-  }
-  button:hover, .button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
-      background-color: #d9d9d9;
-  }
-  button:active, .button:active, input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active {
-      transform: translateY(1px);
-      filter: saturate(150%);
-  }
-  
-  
-  /*three different sizes, normal is just the default*/
-  
-  button.xsmall, .button.xsmall, input[type="submit"].xsmall, input[type="reset"].xsmall, input[type="button"].xsmall {
-      padding: 5px;
-      height: 25px;
-      font-size: .7em
-  }
-  button.small, .button.small, input[type="submit"].small, input[type="reset"].small, input[type="button"].small {
-      padding: 5px;
-      height: 30px;
-      font-size: .85em
-  }
-  button.large, .button.large, input[type="submit"].large, input[type="reset"].large, input[type="button"].large {
-      padding: 15px;
-      font-size: 1.25em;
-      height: 55px;
-  }
-  /*Forms*/
-  form {
-      border: solid 3px grey;
-      border-radius: 5px;
-      padding: 5px;
-      margin: 0 10px;
-      padding: 10px;
-      text-align: center;
-  }
-  label {
-      text-align: left;
-      display: block;
-  }
-  .group-form{
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      margin-right: -5px;
-      margin-left: -5px;
-    
-  }
-  .group-form > [class*="col-"] {
-      padding-right: 5px;
-      padding-left: 5px;
-    }
-
- .form-control{
-      margin: 1em 0;
-      border: solid 1px white;
-      border-radius: 5px;
-      width: 100%;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.5;
-      color: #495057;
-      padding: 0.375rem 0.75rem;
-      height: 2.5em;
-  }
-.form-control:focus{
-      color: #495057;
-      background-color: #fff;
-      border-color: #96f7a9;
-      outline: 0;
-      box-shadow: 0 0 0 0.2rem rgba(150, 247, 247, 0.25);
-}
-/*Dropwdown list*/
-.select{
-     margin: 1em 0;
-    display: inline-block;
-    width: 100%;
-    border: solid 1px white;
-    border-radius: 7px;
-    height: 2.5em;
-    padding: 0.55em;
+/* Footer */
+.copyright{
     font-size: 1em;
-    line-height: 1.5;
-    color: #495057;
-}
-textarea.form-control{
-    height: auto;
-}
-.select:focus{
-      color: #495057;
-      background-color: #fff;
-      border-color: #96f7a9;
-      outline: 0;
-      box-shadow: 0 0 0 0.2rem rgba(150, 247, 247, 0.25);
-}
-.form-check {
-  position: relative;
-  display: block;
-  padding-left: 1.25rem;
-  margin: 1em 0;
-    text-align: left;
-}
-
-.form-checkbox {
-  height: 15px;
-  width: 15px;
-  background-color: #eee;
-  position: absolute;
-  margin-top: 0.1rem;
-  margin-left: -1.25rem;
-}
-
-fieldset{
-    min-width: 0;
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-input[type=checkbox], input[type=radio] {
-    box-sizing: border-box;
-    padding: 0;
-}
-  @media screen and (min-width:700px){
-     
-  }
-  /*lists*/
-  
-  ul {
-      list-style-type: none;
-  }
-  li {
-      padding: 3px;
-  }
-  .listCircle {
-      list-style-type: circle;
-  }
-  .listBullet {
-      list-style-type: disc;
-  }
-  
-  /*Tables*/
-/*Tables*/
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
+    height: 3em;
     width: 100%;
-    border: 1px solid #ccc;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
-
-th, td {
-    text-align: left;
-    padding: 8px;
+.footer-icons{
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
 }
-
-.tableEx {
-    background-color: #81aff9;
-    padding: 1rem;
-}
-.resTable {
-    overflow-x: auto;
-}
-
-.table-simple {
-    background-color: #fff;
-}
-.table-zebra {
-    background-color: #fff;
-}
-.table-zebra tr:nth-child(even){
-    background-color: #f2f2f2;
-}
-
-.table-invert {
-    background-color: #000;
-    color: #fff;
-}
-.table-invert.table-zebra tr:nth-child(even){
-    background-color: #414142;
-}
-
-/*Icons*/
-
-.iconEx {
-    background-color: #ccc;
-    padding: .5rem;
-}
-
-.iconEx li {
+.footer-icons li{
+    margin: 0 10px;
+    height: 55px;
     display: inline-block;
+    transition: transform .2s;
 }
-
-.about {
-    left: 0px;
-    width: 44px;
-    background: url("../images/iconSprite.png") 0 0;
+.footer-icons li:hover {
+  transform: translate(0,-5px);
+  cursor: pointer;
 }
-
-.home {
-    left: 0px;
-    width: 44px;
-    background: url("../images/iconSprite.png") 0 -53px;
+@media screen and (max-width:768px){
+    .footer2{
+        display: none;
+    }
 }
-
-.contact {
-    left: 0px;
-    width: 44px;
-    background: url("../images/iconSprite.png") 0 -106px;
-}
-
-.location {
-    left: 0px;
-    width: 44px;
-    background: url("../images/iconSprite.png") 0 -160px;
-}
-
-.projects {
-    left: 0px;
-    width: 44px;
-    background: url("../images/iconSprite.png") 0 -214px;
-}
-
-.insta {
-    left: 0px;
-    width: 50px;
-    background: url("../images/iconSprite.png") 0 -268px;
-}
-
-.fb {
-    left: 0px;
-    width: 50px;
-     height: 60px;
-    background: url("../images/iconSprite.png") 0 -322px;
-}
-
-.in {
-    left: 0px;
-    width: 50px;
-    background: url("../images/iconSprite.png") 0 -376px;
-}
-
-.twitter {
-    left: 0px;
-    width: 50px;
-    background: url("../images/iconSprite.png") 0 -430px;
-}
-
-.upload {
-    left: 0px;
-    width: 44px;
-    background: url("../images/iconSprite.png") 0 -484px;
-}
-
-.download {
-    left: 0px;
-    width: 44px;
-    background: url("../images/iconSprite.png") 0 -539px;
-}
-
-.print {
-    left: 0px;
-    width: 44px;
-    background: url("../images/iconSprite.png") 0 -593px;
-}
-
-.hamMenu {
-    left: 0px;
-    width: 44px;
-    background: url("../images/iconSprite.png") 0 -647px;
-}
-
-.hamX {
-    left: 0px;
-    width: 44px;
-    background: url("../images/iconSprite.png") 0 -700px;
-}
-
-  /*Makes content not show up on print*/
-  @media print {
-      .no-print {
-          display: none;
-      }
-  }
-  .responsiveImg {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-  }
-  
-/*Media queries*/
-
-/* COMPONENTS______________________________ */
 /* Header */
 .header {
     background-color: rgb(247, 242, 242);
@@ -841,6 +1024,10 @@ th, td {
 .header.short {
     min-height: 8.5rem;
     max-height: 9.5rem;
+}
+.header .bg {
+  background-color: rgba(0,0,0,.5);
+  padding: 15px;
 }
 .header > div {
     width: 100%;
@@ -852,32 +1039,23 @@ th, td {
     align-items: center;
 }
 .header h1 {
-    font-size: 2.25rem;
     color: #f1f1f1;
     text-shadow: 1px 1px #000;
-    /* I'm open to the idea of rgba background on all tags; the reason I put the text shadow here specifically in the header is in case the user provides no image, and there is a light background behind light text. Could also set a contrasting (in this case dark) background by default when there's no image. I think this is where I was waiting on what the other framework categories will look like (e.g. if there ends up being classes like a bg-light, bg-dark, text-dark, etc.) */
     margin: 0;
 }
-.header p {
+.header p, .header h2, .header h3, .header h4 {
     color: #f1f1f1;
     text-shadow: 1px 1px #000;
-    background-color: transparent;
-    font-size: 1.25rem;
     margin: 0;
 }
-
 @media (min-width: 768px) {
     .header.short {
         min-height: 12rem;
     }
     .header h1 {
-        font-size: 3rem;
-    }
-    .header p {
-        font-size: 1.75rem;
+      font-size: 4em;
     }
 }
-
 @media (min-width: 1024px) {
     .header.short {
         max-height: 15rem;
@@ -885,10 +1063,17 @@ th, td {
 }
 /* Accordion */
 .accordion {
-    width: 75%;
-    max-width: 700px;
-    margin-top: 20px;
-    background-color: #f2f2f2;
+            width: 90%;
+            max-width: 700px;
+            padding: 20px;
+            margin: 0 auto;
+            position: relative;
+            border: 1px solid rgba(0,0,0,.1);
+            border-radius: 15px;
+            box-sizing: border-box;
+            transition: all .3s;
+            margin-top: 20px;
+            background-color: #f2f2f2;
 }
 .accordion h1, .accordion h2, .accordion h3, .accordion h4, .accordion h5, .accordion h5 {
     cursor: pointer;
@@ -898,22 +1083,13 @@ th, td {
     box-shadow: 2px 2px 20px rgba(0,0,0,.2);
 }
 .accordionContent {
-    color: #96999d;
+    color: #595959;
     align-items: center;
     font-weight: 500;
     display: none;
     padding-top: 10px;
 }
-
-/* End of COMPONENTS______________________________ */
-
-/*MISC________________________________*/
 /*Mask Images*/
-.maskEx {
-    background-color: #81aff9;
-    padding: 1rem;
-}
-
 .pixelMask {
     -webkit-mask-image: url(../images/pixelMask.png);
     -webkit-mask-size: 100%;
@@ -931,34 +1107,4 @@ th, td {
     -webkit-mask-size: 100%;
     -webkit-mask-repeat: no-repeat;
 }
-
-
-/*End of MISC________________________________*/
-
-
-/* FOOTER */
-.copyright{
-    font-size: 1em;
-    height: 3em;
-    width: 100%;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5px;
-}
-.footer-icons{
-    margin-top: 10px;
-    text-align: center;
-}
-.footer-icons li{
-    margin: 0 10px;
-    height: 55px;
-    display: inline-block;
-}
-
-@media screen and (max-width:700px){
-    .footer2{
-        display: none;
-    }
-  }
+/* End COMPONENTS__________*/

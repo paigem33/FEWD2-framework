@@ -1,0 +1,90 @@
+.logo-pos i {
+  top: 7px!important;
+}
+img {
+  display: block;
+  margin: auto;
+}
+button, .button {
+  display: block;
+  margin: 0 auto 10px;
+}
+/* Logo/Text - will be moved to a separate CSS file.*/
+.nav1-name h6, .nav1-name h5, .nav1-name h4, .nav1-name h3, .nav1-name h2, .nav1-name h1 {
+    border: solid 5px rgb(173, 208, 228);
+    border-radius: 15px;
+    padding: 5px;
+    font-weight: normal;
+    color: rgb(173, 208, 228);
+    background-color: rgba(153, 207, 226, 0.1);
+}
+.nav1-name span {
+    font-weight: bold;
+    color: rgb(33, 101, 179);
+}
+.nav1-name i {
+    top: 3px;
+    position: relative;
+    color: rgb(255, 166, 0);
+}
+/* to style the download button area */
+.downloadArea1 {
+  margin-top: 40px;
+}
+.exampleDivSection {
+  padding: 30px;
+}
+#mainPageDownload {
+  font-size: 1.75em;
+  padding: 5px;
+  color: black;
+}
+.documentation {
+  margin: 40px 0;
+}
+.documentation h2 {
+  padding-bottom: 25px;
+}
+.examples, .components {
+  background-color: rgba(179,179,179,.2);
+}
+.examples {
+  margin-top: 40px;
+}
+.examples p {
+  margin: 0 20px;
+}
+footer {
+  background-color:
+}
+.exampleDiv {
+  background-color: rgba(179,179,179,.2);
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+.exampleDiv2 {
+  background-color: rgba(179,179,179,.2);
+  text-align: center;
+}
+.exampleDiv3 {
+  background-color: rgba(179,179,179,.2);
+  margin: 5px;
+  padding: 5px;
+}
+@media screen and (min-width: 768px) {
+  .downloadArea {
+    margin-left: 30px
+  }
+}
+
+@media screen and (min-width: 968px) {
+  .doc-example {
+    width:100%;
+      
+  }
+  .doc-example1 {
+    width:100%;
+      
+  }
+}

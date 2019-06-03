@@ -1,8 +1,9 @@
 $(function(){
     //for navigation
         if ($(window).width() <= 699){
-            $('div.icon').click(function(){
+            $('div.hamMenu').click(function(){
             $('.mainNav1').stop().slideToggle();
+            $('.hamMenu').toggleClass('hamX');
         })
         $('.nav1-showSub').click(function(){
             $(this).children('ul').stop().slideToggle();
@@ -20,4 +21,5 @@ $(function(){
                 $(this).toggleClass('active');
                 $(this).children('div').stop().fadeToggle();
             }); //end accordion
+
 }) //end doc ready
