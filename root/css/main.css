@@ -101,6 +101,7 @@ pre i {
 }
 pre code {
     white-space: pre-line;
+    word-wrap: break-word;
 }
 
 /*End CUSTOM________________*
