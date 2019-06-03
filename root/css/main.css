@@ -99,6 +99,7 @@ pre i {
 }
 pre code {
     white-space: pre-line;
+    word-wrap: break-word;
 }
 
 /*End CUSTOM________________*
@@ -1086,5 +1087,9 @@ button.large, .button.large, input[type="submit"].large, input[type="reset"].lar
     -webkit-mask-image: url(../images/circuitMask.png);
     -webkit-mask-size: 100%;
     -webkit-mask-repeat: no-repeat;
+}
+
+.gradiMask {
+    -webkit-mask-image: linear-gradient(black, white, transparent);
 }
 /* End COMPONENTS__________*/
