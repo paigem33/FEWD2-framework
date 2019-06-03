@@ -77,3 +77,14 @@ footer {
     margin-left: 30px
   }
 }
+
+@media screen and (min-width: 968px) {
+  .doc-example {
+    width:100%;
+      
+  }
+  .doc-example1 {
+    width:100%;
+      
+  }
+}
