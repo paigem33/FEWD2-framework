@@ -44,17 +44,17 @@
         </section>
         <section id="contact">
              <h2 class="center-text">Contact Us</h2>
-              <form action="" method="post" id="form" class="form-control">
+              <form action="" method="post" id="form" class="col-1">
                 <h3>Please fill out below</h3>
-                <label for="name">Name: <span id="invalidN">*</span></label>
-                <input type="text" id="name" placeholder="Name"/>
-                <label for="email">Email: <span id="invalidE">*</span></label>
-                <input type="text" id="email" placeholder="Email"/>
-                <label for="contact">Contact No: <span id="invalidC">*</span></label>
-                <input type="text" id="contact" placeholder="10 digit Mobile no."/>
+                <div class="group-form">
+                <label for="name">Name:</label>
+                <input class="form-control" type="text" id="name" placeholder="Name"/>
+                <label for="email">Email:</label>
+                <input class="form-control" type="text" id="email" placeholder="Email"/>
                 <label for="message">Message:</label>
-                <textarea id="message" placeholder="Message......." class="form-control"></textarea>
+                <textarea class="form-control" id="message" placeholder="Message......." class="form-control"></textarea>
                 <input type="submit" id="submit" value="Send Message"/>
+                </div>
              </form>
         </section>
 <!--

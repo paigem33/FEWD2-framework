@@ -1,5 +1,7 @@
 /* Table of Contents:
+
 line numbers-name of section
+
 line numbers-RESETS
 line numbers-GRID
 line numbers-DISPLAY & SPACING
@@ -12,6 +14,11 @@ line numbers-TYPOGRAPHY
     line number-Typography Classes
     line number-Links
     line number-Lists
+line numbers-COLORS
+    line number-Tinted Or Transparent Background
+    line number-Background Color Only
+    line number-Text Color Only 
+    line number-Text Color And Background
 line numbers-TABLES
 line numbers-FORMS
 line numbers-BUTTONS
@@ -37,18 +44,14 @@ line numbers-COMPONENTS
   */
 
 /*CUSTOM_____________________*/
-/* 
+/*
 Should probably get rid of CUSTOM section altogether once we're done (the
 things we will use will go in separate CSS files anyway).
 main.css could serve as a kind of user manual. The user will be encouraged
 to create their own custom CSS file. That way the line numbers don't change.
 */
-/* Just for display purposes (remove when no longer needed)*/
-p {
-    background-color: #d9d9d9;
-}
 /* Please move these to a separate CSS file, or remove once no longer needed: */
-.tableEx {
+/* .tableEx {
     background-color: #81aff9;
     padding: 1rem;
 }
@@ -64,7 +67,7 @@ p {
 .maskEx {
     background-color: #81aff9;
     padding: 1rem;
-}
+} */
 /* Code Examples */
 /* Will move this portion to a separate CSS file */
 .code-example {
@@ -97,25 +100,9 @@ pre i {
 pre code {
     white-space: pre-line;
 }
-/* Logo/Text - will be moved to a separate CSS file.*/
-.nav1-name h4 {
-    border: solid 5px rgb(173, 208, 228);
-    border-radius: 15px;
-    padding: 5px;
-    font-weight: normal;
-    color: rgb(173, 208, 228);
-    background-color: rgba(153, 207, 226, 0.1);
-}
-.nav1-name span {
-    font-weight: bold;
-    color: rgb(33, 101, 179);
-}
-.nav1-name i {
-    top: 3px;
-    position: relative;
-    color: rgb(255, 166, 0);
-}
+
 /*End CUSTOM________________*
+
 /*RESETS____________________*/
 html {
     box-sizing: border-box;
@@ -157,6 +144,7 @@ button:active, .button:active {
     .col-2, .col-4 {
         flex: 50%;
     }
+    }
     .col-66 {
         flex: 66%;
     }
@@ -170,88 +158,93 @@ button:active, .button:active {
 
 /*DISPLAY & SPACING________*/
 /* Flex - Display */
-.flex {
+.flex-always {
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .flex {
     display: flex;
 }
+}
 /* Flex - Direction */
-.flex.direction-row {
+.direction-row {
     flex-direction: row;
 }
-.flex.direction-row-reverse {
+.direction-row-reverse {
     flex-direction:row-reverse;
 }
-.flex.direction-column {
+.direction-column {
     flex-direction: column;
 }
-.flex.direction-column-reverse {
+.direction-column-reverse {
     flex-direction: column-reverse;
 }
 /* Flex - Wrap */
-.flex.nowrap {
+.nowrap {
     flex-wrap: nowrap;
 }
-.flex.wrap {
+.wrap {
     flex-wrap: wrap;
 }
-.flex.wrap-reverse {
+.wrap-reverse {
     flex-wrap: wrap-reverse;
 }
 /* Flex - Justify Content */
-.flex.justify-content-start {
+.justify-content-start {
     justify-content: flex-start;
 }
-.flex.justify-content-end {
+.justify-content-end {
     justify-content: flex-end;
 }
-.flex.justify-content-center {
+.justify-content-center {
     justify-content: center;
 }
-.flex.justify-content-between {
+.justify-content-between {
     justify-content: space-between;
 }
-.flex.justify-content-around {
+.justify-content-around {
     justify-content: space-around;
 }
-.flex.justify-content-evenly {
+.justify-content-evenly {
     justify-content: space-evenly;
 }
 /* Flex - Align Self */
-.flex.align-self-auto {
+.align-self-auto {
     align-self: auto;
 }
-.flex.align-self-start {
+.align-self-start {
     align-self: flex-start;
 }
-.flex.align-self-end {
+.align-self-end {
     align-self: flex-end;
 }
-.flex.align-self-center {
+.align-self-center {
     align-self: center;
 }
-.flex.align-self-baseline {
+.align-self-baseline {
     align-self: baseline;
 }
-.flex.align-self-stretch {
+.align-self-stretch {
     align-self: stretch;
 }
 /* Flex - Align-Items */
-.flex.align-items-stretch {
+.align-items-stretch {
     align-items: stretch;
 }
-.flex.align-items-start {
+.align-items-start {
     align-items: flex-start;
 }
-.flex.align-items-end {
+.align-items-end {
     align-items: flex-end;
 }
-.flex.align-items-center {
+.align-items-center {
     align-items: center;
 }
-.flex.align-items-baseline {
+.align-items-baseline {
     align-items: baseline;
 }
 /* Flex - Grow */
-.flex.grow {
+.grow {
     flex-grow: 1;
 }
 /* Block/Inline */
@@ -428,6 +421,122 @@ li {
     list-style-type: disc;
 }
 /* End TYPOGRAPHY____________*/
+
+/*COLORS_____________________*/
+/* Tinted or transparent background */
+.bg-tint-black {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.bg-tint-white {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.bg-transparent {
+    background-color: transparent;
+}
+/* Sets background color only */
+.bg-black {
+    background-color: #000;
+}
+.bg-dark {
+    background-color: #414142;
+}
+.bg-basic {
+    background-color: #808080;
+}
+.bg-light {
+    background-color: #e7e5e5;
+}
+.bg-white {
+    background-color: #fff;
+}
+.bg-red {
+    background-color: #e60000;
+}
+.bg-orange {
+    background-color: #e65c00;
+}
+.bg-yellow {
+    background-color: #ffff00;  
+}
+.bg-green {
+    background-color: #009900;
+}
+.bg-blue {
+    background-color: #3333ff;
+}
+/* Sets text color only */
+.text-black {
+    color: #000;
+}
+.text-dark {
+    color: #414142;
+}
+.text-basic {
+    color: #808080;
+}
+.text-light {
+    color: #e7e5e5;
+}
+.text-white {
+    color: #fff;
+}
+.text-red {
+    color: #e60000;
+}
+.text-orange {
+    color: #e65c00;
+}
+.text-yellow {
+    color: #ffff00;
+}
+.text-green {
+    color: #009900;;
+}
+.text-blue {
+    color: #3333ff;
+}
+/* Sets both text color and background */
+.black {
+    background-color: #000;
+    color: #fff;
+}
+.dark {
+    background-color: #414142;
+    color: #e7e5e5;
+}
+.basic {
+    background-color: #808080;
+    color: #e7e5e5;
+}
+.light {
+    background-color: #e7e5e5;
+    color: #414142;
+}
+.white {
+    background-color: #fff;
+    color: #000;
+}
+.red {
+    background-color: #e60000;
+    color: #fff;
+}
+.orange {
+    background-color: #e65c00;
+    color: #000;
+}
+.yellow {
+    background-color: #ffff00;
+    color: #000;    
+}
+.green {
+    background-color: #009900;
+    color: #000;
+}
+.blue {
+    background-color: #3333ff;
+    color: #fff;
+}
+/*End COLORS_________________*/
 
 /*TABLES_____________________*/
 table {
@@ -757,6 +866,13 @@ button.large, .button.large, input[type="submit"].large, input[type="reset"].lar
     padding: 5px 0;
     display: none;
 }
+.nav1-name a, .nav2-name a {
+  color: black;
+  font-size: 2em;
+}
+.nav1-name a:hover, .nav2-name a:hover {
+  text-decoration: none;
+}
 .mainNav1 a {
     display: block;
     color: #000000;
@@ -857,16 +973,22 @@ button.large, .button.large, input[type="submit"].large, input[type="reset"].lar
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .footer-icons{
     margin-top: 10px;
+    padding-top: 10px;
     text-align: center;
 }
 .footer-icons li{
     margin: 0 10px;
     height: 55px;
     display: inline-block;
+    transition: transform .2s;
+}
+.footer-icons li:hover {
+  transform: translate(0,-5px);
+  cursor: pointer;
 }
 @media screen and (max-width:768px){
     .footer2{
@@ -941,7 +1063,7 @@ button.large, .button.large, input[type="submit"].large, input[type="reset"].lar
     box-shadow: 2px 2px 20px rgba(0,0,0,.2);
 }
 .accordionContent {
-    color: #96999d;
+    color: #595959;
     align-items: center;
     font-weight: 500;
     display: none;
