@@ -1,8 +1,66 @@
 body {
-    background-image: url(../images/data_connection.jpg);
+    background-image: url(../images/demo_liza/data_connection.jpg);
     background-position: top center;
     background-repeat: no-repeat;
 }
+
 h2 {
     color: #11bdff;
+}
+
+form {
+    margin-bottom: 95px;
+}
+footer {
+    display: none;
+}
+.mainNav1 {
+    display: none;
+}
+#compHeader {
+    display: none;
+}
+#weDo {
+    background-color: #f2f2f2;
+}
+#SDimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 449px) {
+    footer {
+        display: block;
+        background-color: #f2f2f2;
+    }
+    
+    .mainNav2 {
+        display: none;
+    }
+    
+    .mainNav1 {
+        background-color: #fff;
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 55px;
+    }
+    
+    #mobileHeader {
+        display: none;
+    }
+    
+    #compHeader {
+        display: flex;
+        align-items: center;
+        background-color: #f2f2f2;
+    } 
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
 }

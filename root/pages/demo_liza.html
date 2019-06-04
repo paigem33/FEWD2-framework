@@ -11,10 +11,17 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     </head>
-    <body class="container" id="home">
+    <body id="home">
+       <div class="container">
         <header class="margin-3">
-            <img src="../images/demo_liza/TB_logo.jpg" alt="TB logo" class="responsiveImg mx-auto">
-            <h1 class="center-text">TechBrain</h1>
+           <div id="mobileHeader">
+                <img src="../images/demo_liza/TB_logo.jpg" alt="TB logo" class="responsiveImg">
+                <h1 class="center-text">TechBrain</h1>
+           </div>
+           <div id="compHeader">
+                <img src="../images/demo_liza/TB_logo_sm.jpg" alt="TB logo" class="responsiveImg" id="mainLogo">
+                <h1 class="center-text">TechBrain</h1>
+           </div>
         </header>
         <nav class="mainNav2">
                 <ul>
@@ -23,75 +30,80 @@
                     <li class="inline-block"><a href="#work" class="projects"></a></li>
                     <li class="inline-block"><a href="#contact" class="contact"></a></li>
                 </ul>
-            </nav>
-        <section>
+        </nav>
+        <nav class="mainNav1">
+                <ul>
+                    <li class="inline-block"><a href="#home" class="home"></a></li>
+                    <li class="inline-block"><a href="#about" class="about"></a></li>
+                    <li class="inline-block"><a href="#work" class="projects"></a></li>
+                    <li class="inline-block"><a href="#contact" class="contact"></a></li>
+                </ul>
+        </nav>
+        <section class="margin-3" id="weDo">
             <h2 class="center-text">What We Do</h2>
             <p>TechBrain software pairs human and machine intelligence to augment and enhance customer experience and boost process and operational productivity in a practical, scalable, and responsible manner.</p> 
         </section>
-        <section id="about">
+        <section id="about" class="margin-3">
             <h2 class="center-text">About Us</h2>
-            <img src="../images/demo_liza/sanDiego.jpg" alt="SD" class="circuitMask responsiveImg">
+            <img src="../images/demo_liza/sanDiego.jpg" alt="SD" class="circuitMask responsiveImg" id="SDimg">
             <h4 class="center-text">TechBrain pairs humans and machines to augment human potential</h4>
             <p>Based out of San Diego, TechBrain is an Enterprise AI software pioneer that pairs humans and machines to bring practical, scalable, trusted AI solutions to life. MOBO Media is among the top global innovators that trust TechBrain to transform customer engagement and make business processes intelligent.</p>
             <p>TechBrain’s award-winning and proven Cortex software and expert teams empower  digital commerce to radically simplify the development, deployment and management of their AI systems.</p>
             <p>TechBrain implements the Cognitive Agent Modeling and Execution Language (CAMEL) which defines an open, language, and platform-agnostic specification for programming cognitive agents. Enterprises can leverage CAMEL to create AI agents, skills, models, and datasets to avoid vendor lock-in.</p>
         </section>
-        <section id="work">
+        <section id="work" class="margin-3">
             <h2 class="center-text">Our Work</h2>
             <h4 class="center-text">Cortex Cognitive Platform</h4>
             <img src="../images/demo_liza/computerImg.gif" alt="computer" class="responsiveImg">
             <p>Cortex Cognitive Platform is a unified programming and operating environment that enables data science and software development teams to be more agile and bring business experts deeper into the development of a cognitive business process. Cortex radically simplifies the development, deployment and management of enterprise AI systems, and is the first enterprise AI software that drives 70% cost savings to build an AI solution, 3x faster speed to realizing business value, and 60% reduction in support and maintenance.</p>
             <p></p>
+            <p>View charts that Search Impressions which can show whether Clicks and Sessions are increasing or decreasing.</p>
             <div class="resTable">
                     <table class="table-invert table-zebra">
                         <tr>
-                            <th>Country</th>
+                            <th>Key Group</th>
                             <th>Average</th>
                             <th>Clicks</th>
                             <th>Impressions</th>
-                            <th>Qtr1</th>
-                            <th>Qtr2</th>
-                            <th>Qtr3</th>
-                            <th>Qtr4</th>
-                            <th>Qtr5</th>
+                            <th>Site CTR</th>
+                            <th>Count</th>
                         </tr>
                         <tr>
-                            <td>Stacy</td>
-                            <td>35</td>
-                            <td>Seattle</td>
-                            <td>WA</td>
-                            <td>45</td>
-                            <td>99</td>
-                            <td>65</td>
-                            <td>74</td>
-                            <td>55</td>
+                            <td>RegEx</td>
+                            <td>23.7</td>
+                            <td>0.9</td>
+                            <td>-14.6%</td>
+                            <td>2.3%</td>
+                            <td>1003</td>
                         </tr>
                         <tr>
-                            <td>Joe</td>
-                            <td>25</td>
-                            <td>Denver</td>
-                            <td>CO</td>
-                            <td>89</td>
-                            <td>25</td>
-                            <td>45</td>
-                            <td>78</td>
-                            <td>45</td>
+                            <td>JS Variables</td>
+                            <td>27.5</td>
+                            <td>0.5</td>
+                            <td>-10.1%</td>
+                            <td>3.5%</td>
+                            <td>587</td>
                         </tr>
                         <tr>
-                            <td>Adam</td>
-                            <td>28</td>
-                            <td>New York</td>
-                            <td>NY</td>
-                            <td>77</td>
-                            <td>60</td>
-                            <td>31</td>
-                            <td>45</td>
-                            <td>12</td>
+                            <td>Link Tracking</td>
+                            <td>15.8</td>
+                            <td>0.5</td>
+                            <td>-8.7%</td>
+                            <td>2.3%</td>
+                            <td>566</td>
+                        </tr>
+                        <tr>
+                            <td>Debugging</td>
+                            <td>16.7</td>
+                            <td>0.4</td>
+                            <td>-5.1%</td>
+                            <td>1.5%</td>
+                            <td>321</td>
                         </tr>
                     </table>
                 </div>
         </section>
-        <section id="contact">
+        <section id="contact" class="margin-3">
              <h2 class="center-text">Contact Us</h2>
               <form action="" method="post" id="form" class="col-1">
                 <h3>Please fill out below</h3>
@@ -106,15 +118,15 @@
                 </div>
              </form>
         </section>
-<!--
-        <footer>
+        </div>
+        <footer class="col-1 footer-icons my-auto">
             <ul>
-                <li class="inline-block"><a href="#" class="insta"></a></li>
-                <li class="inline-block"><a href="#" class="fb"></a></li>
-                <li class="inline-block"><a href="#" class="in"></a></li>
-                <li class="inline-block"><a href="#" class="twitter"></a></li>
-            </ul>
+               <li class="insta"></li>
+               <li class="fb"></li>
+               <li class="in"></li>
+               <li class="twitter"></li>
+           </ul>
+           <div class="copyright my-auto">©2019 TechBrain</div>
         </footer>
--->
     </body>
 </html>
