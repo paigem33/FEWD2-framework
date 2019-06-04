@@ -1,7 +1,12 @@
 body {
-    background-image: url(../images/demo_liza/data_connection.jpg);
+    background-image: url(../images/demo_liza/data_connection2.jpg);
     background-position: top center;
     background-repeat: no-repeat;
+}
+
+h1 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 h2 {
@@ -10,6 +15,7 @@ h2 {
 
 form {
     margin-bottom: 95px;
+    max-width: 500px;
 }
 footer {
     display: none;
@@ -22,11 +28,6 @@ footer {
 }
 #weDo {
     background-color: #f2f2f2;
-}
-#SDimg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 @media screen and (min-width: 449px) {
@@ -54,13 +55,15 @@ footer {
     
     #compHeader {
         display: flex;
-        align-items: center;
-        background-color: #f2f2f2;
-    } 
+    }
 }
 
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
+    }
+    
+    #work img {
+        max-width: 355px;
     }
 }
