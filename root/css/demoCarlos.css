@@ -73,7 +73,7 @@ text-area.form-control{
   color: #000; }
 
 .caption_4 {
-  position: absolute;
+  position: relative;
   padding: 0.1em;
   top: 10%;
   width: 100%;
@@ -88,6 +88,11 @@ text-area.form-control{
 textarea {
   height: 140px; }
 
+@media only screen and (max-width: 460px){
+.header-logo {
+    display: none;
+}
+}
 @media only screen and (min-width: 750px) {
   .nul {
     background-color: rgba(0, 0, 0, 0.5); }
@@ -126,5 +131,4 @@ textarea {
   margin: auto;
   background-color: black;
   opacity: .6; }
-
-/*# sourceMappingURL=style.css.map */
+}
