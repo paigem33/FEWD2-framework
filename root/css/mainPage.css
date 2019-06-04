@@ -6,6 +6,13 @@ button, .button {
   display: block;
   margin: 0 auto 10px;
 }
+hr {
+  margin: 0.5em 0 1em 0;
+  border-top: solid 0px #e7e5e5;
+}
+.smallDiv {
+  width: 2.5em;
+}
 
 /* Logo/Text */
 .nav1-name h6, .nav1-name h5, .nav1-name h4, .nav1-name h3, .nav1-name h2, .nav1-name h1 {
