@@ -1,0 +1,71 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation link colors */
+.mainNav1 a {
+    color: #e65c00;
+    font-size: 1.2em;
+}
+.mainNav1 a:visited {
+    color: #e65c00;
+}
+.mainNav1 a:hover {
+    text-decoration: none;
+    color: #f3a048;
+}
+
+/* Uncategorized */
+h4 {
+    font-weight: 200;
+}
+img {
+    display: block;
+    margin: auto;
+}
+button, .button {
+    display: block;
+    margin: 0 auto 10px;
+}
+hr {
+    margin: 0.5em 0 1em 0;
+    border-top: solid 0px #e7e5e5;
+}
+.accordion {
+    border: solid 5px #e65c00;
+}
+ul {
+    margin: 0 !important;
+}
+
+/* Logo/Text */
+.nav1-name h6, .nav1-name h5, .nav1-name h4, .nav1-name h3, .nav1-name h2, .nav1-name h1 {
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: -2px;
+    color: rgb(235, 110, 15);
+    background-image: linear-gradient(rgb(235, 110, 15), rgb(16, 16, 16));
+    border: solid 2px rgb(43, 43, 43);
+    border-radius: 10px;
+    padding: 0 10px 5px 5px;
+    line-height: 0.65;
+}
+.nav1-name span {
+    font-size: 0.75em;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+.header-logo h6 {
+    font-size: 2em;
+    letter-spacing: -4px;
+    border-radius: 20px;
+    padding: 0 15px 10px 5px;
+    line-height: 0.65;
+}
+
+/* Hide header logo on smaller screens */
+@media screen and (max-width: 460px) {
+    .header-logo {
+        display: none;
+    }
+}
