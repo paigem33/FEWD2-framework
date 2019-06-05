@@ -1,0 +1,77 @@
+body {
+    background-image: url(../images/data_connection2.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: #1146ff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h2 {
+    color: #11bdff;
+}
+
+form {
+    max-width: 500px;
+}
+footer {
+    display: none;
+}
+.mainNav1 {
+    display: none;
+}
+#work, #about, #weDo {
+    margin-bottom: 20px;
+}
+#contact {
+    margin-bottom: 95px;
+}
+#compHeader {
+    display: none;
+}
+#weDo {
+    background-color: #f2f2f2;
+}
+#about img {
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 449px) {
+    footer {
+        display: block;
+        background-color: #f2f2f2;
+    }
+
+    .mainNav2 {
+        display: none;
+    }
+
+    .mainNav1 {
+        background-color: #fff;
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 55px;
+    }
+
+    #mobileHeader {
+        display: none;
+    }
+
+    #compHeader {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    #work img {
+        max-width: 355px;
+    }
+}
