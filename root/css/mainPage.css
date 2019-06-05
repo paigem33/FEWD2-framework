@@ -20,6 +20,12 @@ hr {
   text-align: center;
   padding: 2px;
 }
+.colorDiv {
+  width: 7.5em;
+  text-align: center;
+  padding: 2px;
+  margin: 2px;
+}
 
 /* Logo/Text */
 .nav1-name h6, .nav1-name h5, .nav1-name h4, .nav1-name h3, .nav1-name h2, .nav1-name h1 {
