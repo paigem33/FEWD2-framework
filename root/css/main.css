@@ -964,7 +964,7 @@ button.large, .button.large, input[type="submit"].large, input[type="reset"].lar
     text-shadow: 1px 1px #000;
     margin: 0;
 }
-.header p, .header h2, .header h3, .header h4 {
+.header p, .header h2, .header h3, .header h4, .header h5, .header h6 {
     color: #f1f1f1;
     text-shadow: 1px 1px #000;
     margin: 0;
