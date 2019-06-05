@@ -12,6 +12,13 @@ hr {
 }
 .smallDiv {
   width: 2.5em;
+  text-align: center;
+  padding: 2px;
+}
+.mediumDiv {
+  width: 5em;
+  text-align: center;
+  padding: 2px;
 }
 
 /* Logo/Text */
