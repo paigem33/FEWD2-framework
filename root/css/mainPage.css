@@ -104,3 +104,30 @@ footer {
     width:100%;
   }
 }
+
+/* Code Examples */
+pre {
+  background-color: rgb(52, 55, 56);
+  color: #e7e5e5;
+  padding: 0 2em;
+}
+pre span {
+  color: rgb(106, 172, 106);
+}
+pre b {
+  font-weight: normal;
+  color:rgb(87, 135, 190);
+}
+pre u {
+  text-decoration: none;
+  color:rgb(219, 157, 128);
+}
+pre i {
+  text-decoration: none;
+  font-style: normal;
+  color:rgb(173, 208, 228);
+}
+pre code {
+  white-space: pre-line;
+  word-wrap: break-word;
+}

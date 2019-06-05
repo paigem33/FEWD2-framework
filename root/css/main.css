@@ -1,103 +1,39 @@
 /* Table of Contents:
 
-line numbers-name of section
-
-line 102-RESETS
-line 124-GRID
-line 161-DISPLAY & SPACING
-    line 162-Flex
-    line 253-Block/Inline
-    line 263-Margins
-    line 279-Padding
-line 291-TYPOGRAPHY
-    line 292-Font Sizes and Line Heights
-    line 370-Typography Classes
-    line 403-Links
-    line 414-Lists
-line 430-COLORS
-    line 431-Tinted Or Transparent Background
-    line 441-Background Color Only
-    line 472-Text Color Only 
-    line 503-Text Color And Background
-line 546-TABLES
-line 578-FORMS
-line 671-BUTTONS
-line 740-MISCELLANEOUS
-    line 742-Border Rounded
-    line-746-Full Width Elements
-    line 750-Helper Classes
-    line 761-No Print
-    line 767-Responsive Image
-line 776-ICONS
-line 863-COMPONENTS
-    line 864-Navigation
-    line 972-Footer
-    line 1003-Header
-    line 1049-Accordion
-    line 1077-Masked Images
+Line 38-RESETS
+Line 60-GRID
+Line 97-DISPLAY & SPACING
+    Line 98-Flex
+    Line 189-Block/Inline
+    Line 199-Margins
+    Line 215-Padding
+Line 227-TYPOGRAPHY
+    Line 228-Font Sizes and Line Heights
+    Line 306-Typography Classes
+    Line 339-Links
+    Line 350-Lists
+Line 366-COLORS
+    Line 367-Tinted Or Transparent Background
+    Line 377-Background Color Only
+    Line 408-Text Color Only 
+    Line 439-Text Color And Background
+Line 482-TABLES
+Line 514-FORMS
+Line 607-BUTTONS
+Line 676-MISCELLANEOUS
+    Line 678-Border Rounded
+    Line-682-Full Width Elements
+    Line 686-Helper Classes
+    Line 697-No Print
+    Line 703-Responsive Image
+Line 712-ICONS
+Line 799-COMPONENTS
+    Line 800-Navigation
+    Line 908-Footer
+    Line 939-Header
+    Line 985-Accordion
+    Line 1013-Masked Images
  */
-
- /*
- Media Queries (for our own temporary use - remove when done)
-    Common Screen Widths:
-    - Phones: 320px to 414px
-    - Tablets: 768px to 1024px
-    - Laptops/Desktops: 1366px
-  */
-
-/*CUSTOM_____________________*/
-/*
-Should probably get rid of CUSTOM section altogether once we're done (the
-things we will use will go in separate CSS files anyway).
-main.css could serve as a kind of user manual. The user will be encouraged
-to create their own custom CSS file. That way the line numbers don't change.
-*/
-/* Please move these to a separate CSS file, or remove once no longer needed: */
-/* .tableEx {
-    background-color: #81aff9;
-    padding: 1rem;
-}
-.iconEx {
-    background-color: #fff;
-    padding: 0.5rem;
-}
-.iconEx li {
-    height: 50px;
-    display: inline-block;
-    padding: 0.5rem;
-}
-.maskEx {
-    background-color: #81aff9;
-    padding: 1rem;
-} */
-/* Code Examples */
-pre {
-    background-color: rgb(52, 55, 56);
-    color: #e7e5e5;
-    padding: 0 2em;
-}
-pre span {
-    color: rgb(106, 172, 106);
-}
-pre b {
-    font-weight: normal;
-    color:rgb(87, 135, 190);
-}
-pre u {
-    text-decoration: none;
-    color:rgb(219, 157, 128);
-}
-pre i {
-    text-decoration: none;
-    font-style: normal;
-    color:rgb(173, 208, 228);
-}
-pre code {
-    white-space: pre-line;
-    word-wrap: break-word;
-}
-
-/*End CUSTOM________________*
 
 /*RESETS____________________*/
 html {
@@ -1074,7 +1010,7 @@ button.large, .button.large, input[type="submit"].large, input[type="reset"].lar
     display: none;
     padding-top: 10px;
 }
-/*Mask Images*/
+/* Masked Images */
 .pixelMask {
     -webkit-mask-image: url(../images/pixelMask.png);
     -webkit-mask-size: 100%;
