@@ -5,7 +5,7 @@ body {
 }
 
 h1 {
-    color: #fff;
+    color: #1146ff;
     text-shadow: 2px 2px 4px #000000;
 }
 
@@ -14,7 +14,6 @@ h2 {
 }
 
 form {
-    margin-bottom: 95px;
     max-width: 500px;
 }
 footer {
@@ -23,11 +22,20 @@ footer {
 .mainNav1 {
     display: none;
 }
+#work, #about, #weDo {
+    margin-bottom: 20px;
+}
+#contact {
+    margin-bottom: 95px;
+}
 #compHeader {
     display: none;
 }
 #weDo {
     background-color: #f2f2f2;
+}
+#about img {
+    margin-bottom: 10px;
 }
 
 @media screen and (min-width: 449px) {
