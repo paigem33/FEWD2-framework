@@ -23,19 +23,19 @@ img {
     display: block;
     margin: auto;
 }
-button, .button {
-    display: block;
-    margin: 0 auto 10px;
-}
 hr {
     margin: 0.5em 0 1em 0;
     border-top: solid 0px #e7e5e5;
 }
 .accordion {
-    border: solid 5px #e65c00;
+    border: solid 3px #e65c00;
 }
 ul {
     margin: 0 !important;
+}
+form, input[type="submit"] {
+    border: solid 3px #e65c00;
+    border-radius: 15px;
 }
 
 /* Logo/Text */
